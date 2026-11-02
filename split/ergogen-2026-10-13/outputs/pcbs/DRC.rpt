@@ -1,0 +1,717 @@
+** Drc report for keyboard.kicad_pcb **
+** Created on 2026-10-13T16:54:57 **
+** Report includes: Errors, Warnings **
+
+** Found 175 DRC violations **
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(55.5877 mm, 138.4579 mm): Pad 1 [COL_MACRO] of S2 on F.Cu
+    @(57.4979 mm, 140.4992 mm): NPTH pad of S2
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(52.4501 mm, 102.5949 mm): Pad 1 [COL_MACRO] of S4 on F.Cu
+    @(54.3603 mm, 104.6362 mm): NPTH pad of S4
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(54.0189 mm, 120.5264 mm): Pad 1 [COL_MACRO] of S3 on F.Cu
+    @(55.9291 mm, 122.5677 mm): NPTH pad of S3
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(57.1565 mm, 156.3894 mm): Pad 1 [COL_MACRO] of S1 on F.Cu
+    @(59.0667 mm, 158.4307 mm): NPTH pad of S1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(94.2935 mm, 89.5300 mm): Pad 1 [COL_RING] of S14 on F.Cu
+    @(96.0185 mm, 91.7300 mm): NPTH pad of S14
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(75.0880 mm, 154.8206 mm): Pad 1 [COL_PINKY] of S6 on F.Cu
+    @(76.9982 mm, 156.8619 mm): NPTH pad of S6
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.2935 mm, 120.5300 mm): Pad 1 [COL_MIDDLE] of S17 on F.Cu
+    @(114.0185 mm, 122.7300 mm): NPTH pad of S17
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(68.8128 mm, 83.0946 mm): Pad 1 [COL_PINKY] of S10 on F.Cu
+    @(70.7230 mm, 85.1358 mm): NPTH pad of S10
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.2935 mm, 66.5300 mm): Pad 1 [COL_MIDDLE] of S20 on F.Cu
+    @(114.0185 mm, 68.7300 mm): NPTH pad of S20
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(130.2935 mm, 144.5300 mm): Pad 1 [COL_INDEX] of S21 on F.Cu
+    @(132.0185 mm, 146.7300 mm): NPTH pad of S21
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(122.2935 mm, 163.5300 mm): Pad 1 [COL_RING] of S31 on F.Cu
+    @(124.0185 mm, 165.7300 mm): NPTH pad of S31
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(71.9504 mm, 118.9576 mm): Pad 1 [COL_PINKY] of S8 on F.Cu
+    @(73.8606 mm, 120.9989 mm): NPTH pad of S8
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.2935 mm, 102.5300 mm): Pad 1 [COL_MIDDLE] of S18 on F.Cu
+    @(114.0185 mm, 104.7300 mm): NPTH pad of S18
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(148.2935 mm, 74.5300 mm): Pad 1 [COL_INNER] of S30 on F.Cu
+    @(150.0185 mm, 76.7300 mm): NPTH pad of S30
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(50.8813 mm, 84.6634 mm): Pad 1 [COL_MACRO] of S5 on F.Cu
+    @(52.7915 mm, 86.7047 mm): NPTH pad of S5
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(130.2935 mm, 108.5300 mm): Pad 1 [COL_INDEX] of S23 on F.Cu
+    @(132.0185 mm, 110.7300 mm): NPTH pad of S23
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(94.2935 mm, 143.5300 mm): Pad 1 [COL_RING] of S11 on F.Cu
+    @(96.0185 mm, 145.7300 mm): NPTH pad of S11
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(130.2935 mm, 72.5300 mm): Pad 1 [COL_INDEX] of S25 on F.Cu
+    @(132.0185 mm, 74.7300 mm): NPTH pad of S25
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(94.2935 mm, 107.5300 mm): Pad 1 [COL_RING] of S13 on F.Cu
+    @(96.0185 mm, 109.7300 mm): NPTH pad of S13
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(94.2935 mm, 71.5300 mm): Pad 1 [COL_RING] of S15 on F.Cu
+    @(96.0185 mm, 73.7300 mm): NPTH pad of S15
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(73.5192 mm, 136.8891 mm): Pad 1 [COL_PINKY] of S7 on F.Cu
+    @(75.4294 mm, 138.9304 mm): NPTH pad of S7
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(130.2935 mm, 90.5300 mm): Pad 1 [COL_INDEX] of S24 on F.Cu
+    @(132.0185 mm, 92.7300 mm): NPTH pad of S24
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(94.2935 mm, 125.5300 mm): Pad 1 [COL_RING] of S12 on F.Cu
+    @(96.0185 mm, 127.7300 mm): NPTH pad of S12
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(148.2935 mm, 146.5300 mm): Pad 1 [COL_INNER] of S26 on F.Cu
+    @(150.0185 mm, 148.7300 mm): NPTH pad of S26
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(45.9250 mm, 103.1657 mm): Pad 1 [COL_MACRO] of S4 on B.Cu
+    @(44.3983 mm, 105.5077 mm): NPTH pad of S4
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(140.2935 mm, 163.5300 mm): Pad 1 [COL_MIDDLE] of S32 on F.Cu
+    @(142.0185 mm, 165.7300 mm): NPTH pad of S32
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(105.7435 mm, 138.5300 mm): Pad 1 [COL_MIDDLE] of S16 on B.Cu
+    @(104.0185 mm, 140.7300 mm): NPTH pad of S16
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(63.8565 mm, 101.5969 mm): Pad 1 [COL_PINKY] of S9 on B.Cu
+    @(62.3298 mm, 103.9389 mm): NPTH pad of S9
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(105.7435 mm, 84.5300 mm): Pad 1 [COL_MIDDLE] of S19 on B.Cu
+    @(104.0185 mm, 86.7300 mm): NPTH pad of S19
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(49.0626 mm, 139.0288 mm): Pad 1 [COL_MACRO] of S2 on B.Cu
+    @(47.5359 mm, 141.3707 mm): NPTH pad of S2
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(130.2935 mm, 126.5300 mm): Pad 1 [COL_INDEX] of S22 on F.Cu
+    @(132.0185 mm, 128.7300 mm): NPTH pad of S22
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(123.7435 mm, 144.5300 mm): Pad 1 [COL_INDEX] of S21 on B.Cu
+    @(122.0185 mm, 146.7300 mm): NPTH pad of S21
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(105.7435 mm, 102.5300 mm): Pad 1 [COL_MIDDLE] of S18 on B.Cu
+    @(104.0185 mm, 104.7300 mm): NPTH pad of S18
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(65.4253 mm, 119.5284 mm): Pad 1 [COL_PINKY] of S8 on B.Cu
+    @(63.8986 mm, 121.8704 mm): NPTH pad of S8
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(123.7435 mm, 108.5300 mm): Pad 1 [COL_INDEX] of S23 on B.Cu
+    @(122.0185 mm, 110.7300 mm): NPTH pad of S23
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(50.6314 mm, 156.9603 mm): Pad 1 [COL_MACRO] of S1 on B.Cu
+    @(49.1047 mm, 159.3022 mm): NPTH pad of S1
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(47.4938 mm, 121.0972 mm): Pad 1 [COL_MACRO] of S3 on B.Cu
+    @(45.9671 mm, 123.4392 mm): NPTH pad of S3
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(141.7435 mm, 74.5300 mm): Pad 1 [COL_INNER] of S30 on B.Cu
+    @(140.0185 mm, 76.7300 mm): NPTH pad of S30
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(148.2935 mm, 128.5300 mm): Pad 1 [COL_INNER] of S27 on F.Cu
+    @(150.0185 mm, 130.7300 mm): NPTH pad of S27
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(62.2877 mm, 83.6654 mm): Pad 1 [COL_PINKY] of S10 on B.Cu
+    @(60.7610 mm, 86.0074 mm): NPTH pad of S10
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(141.7435 mm, 110.5300 mm): Pad 1 [COL_INNER] of S28 on B.Cu
+    @(140.0185 mm, 112.7300 mm): NPTH pad of S28
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(87.7435 mm, 125.5300 mm): Pad 1 [COL_RING] of S12 on B.Cu
+    @(86.0185 mm, 127.7300 mm): NPTH pad of S12
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(105.7435 mm, 66.5300 mm): Pad 1 [COL_MIDDLE] of S20 on B.Cu
+    @(104.0185 mm, 68.7300 mm): NPTH pad of S20
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(44.3562 mm, 85.2342 mm): Pad 1 [COL_MACRO] of S5 on B.Cu
+    @(42.8295 mm, 87.5762 mm): NPTH pad of S5
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(68.5629 mm, 155.3915 mm): Pad 1 [COL_PINKY] of S6 on B.Cu
+    @(67.0362 mm, 157.7334 mm): NPTH pad of S6
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(141.7435 mm, 146.5300 mm): Pad 1 [COL_INNER] of S26 on B.Cu
+    @(140.0185 mm, 148.7300 mm): NPTH pad of S26
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(87.7435 mm, 143.5300 mm): Pad 1 [COL_RING] of S11 on B.Cu
+    @(86.0185 mm, 145.7300 mm): NPTH pad of S11
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(115.7435 mm, 163.5300 mm): Pad 1 [COL_RING] of S31 on B.Cu
+    @(114.0185 mm, 165.7300 mm): NPTH pad of S31
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(123.7435 mm, 90.5300 mm): Pad 1 [COL_INDEX] of S24 on B.Cu
+    @(122.0185 mm, 92.7300 mm): NPTH pad of S24
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(105.7435 mm, 120.5300 mm): Pad 1 [COL_MIDDLE] of S17 on B.Cu
+    @(104.0185 mm, 122.7300 mm): NPTH pad of S17
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.2935 mm, 138.5300 mm): Pad 1 [COL_MIDDLE] of S16 on F.Cu
+    @(114.0185 mm, 140.7300 mm): NPTH pad of S16
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(123.7435 mm, 72.5300 mm): Pad 1 [COL_INDEX] of S25 on B.Cu
+    @(122.0185 mm, 74.7300 mm): NPTH pad of S25
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(87.7435 mm, 71.5300 mm): Pad 1 [COL_RING] of S15 on B.Cu
+    @(86.0185 mm, 73.7300 mm): NPTH pad of S15
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(141.7435 mm, 128.5300 mm): Pad 1 [COL_INNER] of S27 on B.Cu
+    @(140.0185 mm, 130.7300 mm): NPTH pad of S27
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.2935 mm, 84.5300 mm): Pad 1 [COL_MIDDLE] of S19 on F.Cu
+    @(114.0185 mm, 86.7300 mm): NPTH pad of S19
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(133.7435 mm, 163.5300 mm): Pad 1 [COL_MIDDLE] of S32 on B.Cu
+    @(132.0185 mm, 165.7300 mm): NPTH pad of S32
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(66.9941 mm, 137.4599 mm): Pad 1 [COL_PINKY] of S7 on B.Cu
+    @(65.4674 mm, 139.8019 mm): NPTH pad of S7
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(87.7435 mm, 89.5300 mm): Pad 1 [COL_RING] of S14 on B.Cu
+    @(86.0185 mm, 91.7300 mm): NPTH pad of S14
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(123.7435 mm, 126.5300 mm): Pad 1 [COL_INDEX] of S22 on B.Cu
+    @(122.0185 mm, 128.7300 mm): NPTH pad of S22
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(87.7435 mm, 107.5300 mm): Pad 1 [COL_RING] of S13 on B.Cu
+    @(86.0185 mm, 109.7300 mm): NPTH pad of S13
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(70.3816 mm, 101.0261 mm): Pad 1 [COL_PINKY] of S9 on F.Cu
+    @(72.2918 mm, 103.0674 mm): NPTH pad of S9
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(148.2935 mm, 110.5300 mm): Pad 1 [COL_INNER] of S28 on F.Cu
+    @(150.0185 mm, 112.7300 mm): NPTH pad of S28
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(148.2935 mm, 92.5300 mm): Pad 1 [COL_INNER] of S29 on F.Cu
+    @(150.0185 mm, 94.7300 mm): NPTH pad of S29
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(177.6847 mm, 188.2229 mm): Pad 1 [COL_INNER] of S34 on F.Cu
+    @(176.8254 mm, 190.8832 mm): NPTH pad of S34
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(161.4350 mm, 170.8083 mm): Pad 1 [COL_INDEX] of S33 on F.Cu
+    @(161.9253 mm, 173.5606 mm): NPTH pad of S33
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(182.2407 mm, 175.5719 mm): PTH pad 13 [BAT] of REF**
+    @(183.6975 mm, 177.6526 mm): PTH pad 29 [<no net>] of REF**
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(182.2407 mm, 175.5719 mm): PTH pad 13 [BAT] of REF**
+    @(183.6975 mm, 177.6526 mm): PTH pad 29 [<no net>] of REF**
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(141.7435 mm, 92.5300 mm): Pad 1 [COL_INNER] of S29 on B.Cu
+    @(140.0185 mm, 94.7300 mm): NPTH pad of S29
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(155.6517 mm, 167.7332 mm): Pad 1 [COL_INDEX] of S33 on B.Cu
+    @(153.0958 mm, 168.8659 mm): NPTH pad of S33
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(174.0220 mm, 182.7927 mm): Pad 1 [COL_INNER] of S34 on B.Cu
+    @(171.2335 mm, 182.5928 mm): NPTH pad of S34
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(45.9671 mm, 123.4392 mm): NPTH pad of S3
+    @(47.4938 mm, 121.0972 mm): Pad 1 [COL_MACRO] of S3 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(86.0185 mm, 127.7300 mm): NPTH pad of S12
+    @(87.7435 mm, 125.5300 mm): Pad 1 [COL_RING] of S12 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(150.0185 mm, 148.7300 mm): NPTH pad of S26
+    @(148.2935 mm, 146.5300 mm): Pad 1 [COL_INNER] of S26 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(182.2407 mm, 175.5719 mm): PTH pad 13 [BAT] of REF**
+    @(183.6975 mm, 177.6526 mm): PTH pad 29 [<no net>] of REF**
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(114.0185 mm, 122.7300 mm): NPTH pad of S17
+    @(112.2935 mm, 120.5300 mm): Pad 1 [COL_MIDDLE] of S17 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(73.8606 mm, 120.9989 mm): NPTH pad of S8
+    @(71.9504 mm, 118.9576 mm): Pad 1 [COL_PINKY] of S8 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(182.2407 mm, 175.5719 mm): PTH pad 13 [BAT] of REF**
+    @(183.6975 mm, 177.6526 mm): PTH pad 29 [<no net>] of REF**
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(104.0185 mm, 122.7300 mm): NPTH pad of S17
+    @(105.7435 mm, 120.5300 mm): Pad 1 [COL_MIDDLE] of S17 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(132.0185 mm, 128.7300 mm): NPTH pad of S22
+    @(130.2935 mm, 126.5300 mm): Pad 1 [COL_INDEX] of S22 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(124.0185 mm, 165.7300 mm): NPTH pad of S31
+    @(122.2935 mm, 163.5300 mm): Pad 1 [COL_RING] of S31 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(96.0185 mm, 109.7300 mm): NPTH pad of S13
+    @(94.2935 mm, 107.5300 mm): Pad 1 [COL_RING] of S13 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(54.3603 mm, 104.6362 mm): NPTH pad of S4
+    @(52.4501 mm, 102.5949 mm): Pad 1 [COL_MACRO] of S4 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(63.8986 mm, 121.8704 mm): NPTH pad of S8
+    @(65.4253 mm, 119.5284 mm): Pad 1 [COL_PINKY] of S8 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(122.0185 mm, 128.7300 mm): NPTH pad of S22
+    @(123.7435 mm, 126.5300 mm): Pad 1 [COL_INDEX] of S22 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(44.3983 mm, 105.5077 mm): NPTH pad of S4
+    @(45.9250 mm, 103.1657 mm): Pad 1 [COL_MACRO] of S4 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(114.0185 mm, 165.7300 mm): NPTH pad of S31
+    @(115.7435 mm, 163.5300 mm): Pad 1 [COL_RING] of S31 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(140.0185 mm, 148.7300 mm): NPTH pad of S26
+    @(141.7435 mm, 146.5300 mm): Pad 1 [COL_INNER] of S26 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(114.0185 mm, 104.7300 mm): NPTH pad of S18
+    @(112.2935 mm, 102.5300 mm): Pad 1 [COL_MIDDLE] of S18 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(132.0185 mm, 110.7300 mm): NPTH pad of S23
+    @(130.2935 mm, 108.5300 mm): Pad 1 [COL_INDEX] of S23 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(52.7915 mm, 86.7047 mm): NPTH pad of S5
+    @(50.8813 mm, 84.6634 mm): Pad 1 [COL_MACRO] of S5 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(104.0185 mm, 104.7300 mm): NPTH pad of S18
+    @(105.7435 mm, 102.5300 mm): Pad 1 [COL_MIDDLE] of S18 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(142.0185 mm, 165.7300 mm): NPTH pad of S32
+    @(140.2935 mm, 163.5300 mm): Pad 1 [COL_MIDDLE] of S32 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(72.2918 mm, 103.0674 mm): NPTH pad of S9
+    @(70.3816 mm, 101.0261 mm): Pad 1 [COL_PINKY] of S9 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(86.0185 mm, 109.7300 mm): NPTH pad of S13
+    @(87.7435 mm, 107.5300 mm): Pad 1 [COL_RING] of S13 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(59.0667 mm, 158.4307 mm): NPTH pad of S1
+    @(57.1565 mm, 156.3894 mm): Pad 1 [COL_MACRO] of S1 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(42.8295 mm, 87.5762 mm): NPTH pad of S5
+    @(44.3562 mm, 85.2342 mm): Pad 1 [COL_MACRO] of S5 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(122.0185 mm, 110.7300 mm): NPTH pad of S23
+    @(123.7435 mm, 108.5300 mm): Pad 1 [COL_INDEX] of S23 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(114.0185 mm, 86.7300 mm): NPTH pad of S19
+    @(112.2935 mm, 84.5300 mm): Pad 1 [COL_MIDDLE] of S19 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(132.0185 mm, 165.7300 mm): NPTH pad of S32
+    @(133.7435 mm, 163.5300 mm): Pad 1 [COL_MIDDLE] of S32 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(62.3298 mm, 103.9389 mm): NPTH pad of S9
+    @(63.8565 mm, 101.5969 mm): Pad 1 [COL_PINKY] of S9 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(49.1047 mm, 159.3022 mm): NPTH pad of S1
+    @(50.6314 mm, 156.9603 mm): Pad 1 [COL_MACRO] of S1 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(104.0185 mm, 86.7300 mm): NPTH pad of S19
+    @(105.7435 mm, 84.5300 mm): Pad 1 [COL_MIDDLE] of S19 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(132.0185 mm, 92.7300 mm): NPTH pad of S24
+    @(130.2935 mm, 90.5300 mm): Pad 1 [COL_INDEX] of S24 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(161.9253 mm, 173.5606 mm): NPTH pad of S33
+    @(161.4350 mm, 170.8083 mm): Pad 1 [COL_INDEX] of S33 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(96.0185 mm, 91.7300 mm): NPTH pad of S14
+    @(94.2935 mm, 89.5300 mm): Pad 1 [COL_RING] of S14 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(150.0185 mm, 130.7300 mm): NPTH pad of S27
+    @(148.2935 mm, 128.5300 mm): Pad 1 [COL_INNER] of S27 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(76.9982 mm, 156.8619 mm): NPTH pad of S6
+    @(75.0880 mm, 154.8206 mm): Pad 1 [COL_PINKY] of S6 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(153.0958 mm, 168.8659 mm): NPTH pad of S33
+    @(155.6517 mm, 167.7332 mm): Pad 1 [COL_INDEX] of S33 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(70.7230 mm, 85.1358 mm): NPTH pad of S10
+    @(68.8128 mm, 83.0946 mm): Pad 1 [COL_PINKY] of S10 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(86.0185 mm, 91.7300 mm): NPTH pad of S14
+    @(87.7435 mm, 89.5300 mm): Pad 1 [COL_RING] of S14 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(122.0185 mm, 92.7300 mm): NPTH pad of S24
+    @(123.7435 mm, 90.5300 mm): Pad 1 [COL_INDEX] of S24 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(57.4979 mm, 140.4992 mm): NPTH pad of S2
+    @(55.5877 mm, 138.4579 mm): Pad 1 [COL_MACRO] of S2 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(67.0362 mm, 157.7334 mm): NPTH pad of S6
+    @(68.5629 mm, 155.3915 mm): Pad 1 [COL_PINKY] of S6 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(176.8254 mm, 190.8832 mm): NPTH pad of S34
+    @(177.6847 mm, 188.2229 mm): Pad 1 [COL_INNER] of S34 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(60.7610 mm, 86.0074 mm): NPTH pad of S10
+    @(62.2877 mm, 83.6654 mm): Pad 1 [COL_PINKY] of S10 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(140.0185 mm, 130.7300 mm): NPTH pad of S27
+    @(141.7435 mm, 128.5300 mm): Pad 1 [COL_INNER] of S27 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(96.0185 mm, 73.7300 mm): NPTH pad of S15
+    @(94.2935 mm, 71.5300 mm): Pad 1 [COL_RING] of S15 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(47.5359 mm, 141.3707 mm): NPTH pad of S2
+    @(49.0626 mm, 139.0288 mm): Pad 1 [COL_MACRO] of S2 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(114.0185 mm, 68.7300 mm): NPTH pad of S20
+    @(112.2935 mm, 66.5300 mm): Pad 1 [COL_MIDDLE] of S20 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(75.4294 mm, 138.9304 mm): NPTH pad of S7
+    @(73.5192 mm, 136.8891 mm): Pad 1 [COL_PINKY] of S7 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(132.0185 mm, 74.7300 mm): NPTH pad of S25
+    @(130.2935 mm, 72.5300 mm): Pad 1 [COL_INDEX] of S25 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(171.2335 mm, 182.5928 mm): NPTH pad of S34
+    @(174.0220 mm, 182.7927 mm): Pad 1 [COL_INNER] of S34 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(96.0185 mm, 145.7300 mm): NPTH pad of S11
+    @(94.2935 mm, 143.5300 mm): Pad 1 [COL_RING] of S11 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(86.0185 mm, 145.7300 mm): NPTH pad of S11
+    @(87.7435 mm, 143.5300 mm): Pad 1 [COL_RING] of S11 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(55.9291 mm, 122.5677 mm): NPTH pad of S3
+    @(54.0189 mm, 120.5264 mm): Pad 1 [COL_MACRO] of S3 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(104.0185 mm, 68.7300 mm): NPTH pad of S20
+    @(105.7435 mm, 66.5300 mm): Pad 1 [COL_MIDDLE] of S20 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(122.0185 mm, 74.7300 mm): NPTH pad of S25
+    @(123.7435 mm, 72.5300 mm): Pad 1 [COL_INDEX] of S25 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(86.0185 mm, 73.7300 mm): NPTH pad of S15
+    @(87.7435 mm, 71.5300 mm): Pad 1 [COL_RING] of S15 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(65.4674 mm, 139.8019 mm): NPTH pad of S7
+    @(66.9941 mm, 137.4599 mm): Pad 1 [COL_PINKY] of S7 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(96.0185 mm, 127.7300 mm): NPTH pad of S12
+    @(94.2935 mm, 125.5300 mm): Pad 1 [COL_RING] of S12 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(150.0185 mm, 112.7300 mm): NPTH pad of S28
+    @(148.2935 mm, 110.5300 mm): Pad 1 [COL_INNER] of S28 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(132.0185 mm, 146.7300 mm): NPTH pad of S21
+    @(130.2935 mm, 144.5300 mm): Pad 1 [COL_INDEX] of S21 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(114.0185 mm, 140.7300 mm): NPTH pad of S16
+    @(112.2935 mm, 138.5300 mm): Pad 1 [COL_MIDDLE] of S16 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(122.0185 mm, 146.7300 mm): NPTH pad of S21
+    @(123.7435 mm, 144.5300 mm): Pad 1 [COL_INDEX] of S21 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(140.0185 mm, 112.7300 mm): NPTH pad of S28
+    @(141.7435 mm, 110.5300 mm): Pad 1 [COL_INNER] of S28 on B.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(104.0185 mm, 140.7300 mm): NPTH pad of S16
+    @(105.7435 mm, 138.5300 mm): Pad 1 [COL_MIDDLE] of S16 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(150.0185 mm, 94.7300 mm): NPTH pad of S29
+    @(148.2935 mm, 92.5300 mm): Pad 1 [COL_INNER] of S29 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(140.0185 mm, 94.7300 mm): NPTH pad of S29
+    @(141.7435 mm, 92.5300 mm): Pad 1 [COL_INNER] of S29 on B.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(150.0185 mm, 76.7300 mm): NPTH pad of S30
+    @(148.2935 mm, 74.5300 mm): Pad 1 [COL_INNER] of S30 on F.Cu
+[solder_mask_bridge]: Rear solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(140.0185 mm, 76.7300 mm): NPTH pad of S30
+    @(141.7435 mm, 74.5300 mm): Pad 1 [COL_INNER] of S30 on B.Cu
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(53.8940 mm, 156.6748 mm): NPTH pad of S1
+    @(53.8940 mm, 156.6748 mm): NPTH pad of S1
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(52.3252 mm, 138.7433 mm): NPTH pad of S2
+    @(52.3252 mm, 138.7433 mm): NPTH pad of S2
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(50.7564 mm, 120.8118 mm): NPTH pad of S3
+    @(50.7564 mm, 120.8118 mm): NPTH pad of S3
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(49.1876 mm, 102.8803 mm): NPTH pad of S4
+    @(49.1876 mm, 102.8803 mm): NPTH pad of S4
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(47.6187 mm, 84.9488 mm): NPTH pad of S5
+    @(47.6187 mm, 84.9488 mm): NPTH pad of S5
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(71.8255 mm, 155.1060 mm): NPTH pad of S6
+    @(71.8255 mm, 155.1060 mm): NPTH pad of S6
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(70.2567 mm, 137.1745 mm): NPTH pad of S7
+    @(70.2567 mm, 137.1745 mm): NPTH pad of S7
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(68.6879 mm, 119.2430 mm): NPTH pad of S8
+    @(68.6879 mm, 119.2430 mm): NPTH pad of S8
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(67.1191 mm, 101.3115 mm): NPTH pad of S9
+    @(67.1191 mm, 101.3115 mm): NPTH pad of S9
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(65.5503 mm, 83.3800 mm): NPTH pad of S10
+    @(65.5503 mm, 83.3800 mm): NPTH pad of S10
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.0185 mm, 143.5300 mm): NPTH pad of S11
+    @(91.0185 mm, 143.5300 mm): NPTH pad of S11
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.0185 mm, 125.5300 mm): NPTH pad of S12
+    @(91.0185 mm, 125.5300 mm): NPTH pad of S12
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.0185 mm, 107.5300 mm): NPTH pad of S13
+    @(91.0185 mm, 107.5300 mm): NPTH pad of S13
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.0185 mm, 89.5300 mm): NPTH pad of S14
+    @(91.0185 mm, 89.5300 mm): NPTH pad of S14
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(91.0185 mm, 71.5300 mm): NPTH pad of S15
+    @(91.0185 mm, 71.5300 mm): NPTH pad of S15
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(109.0185 mm, 138.5300 mm): NPTH pad of S16
+    @(109.0185 mm, 138.5300 mm): NPTH pad of S16
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(109.0185 mm, 120.5300 mm): NPTH pad of S17
+    @(109.0185 mm, 120.5300 mm): NPTH pad of S17
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(109.0185 mm, 102.5300 mm): NPTH pad of S18
+    @(109.0185 mm, 102.5300 mm): NPTH pad of S18
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(109.0185 mm, 84.5300 mm): NPTH pad of S19
+    @(109.0185 mm, 84.5300 mm): NPTH pad of S19
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(109.0185 mm, 66.5300 mm): NPTH pad of S20
+    @(109.0185 mm, 66.5300 mm): NPTH pad of S20
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(127.0185 mm, 144.5300 mm): NPTH pad of S21
+    @(127.0185 mm, 144.5300 mm): NPTH pad of S21
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(127.0185 mm, 126.5300 mm): NPTH pad of S22
+    @(127.0185 mm, 126.5300 mm): NPTH pad of S22
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(127.0185 mm, 108.5300 mm): NPTH pad of S23
+    @(127.0185 mm, 108.5300 mm): NPTH pad of S23
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(127.0185 mm, 90.5300 mm): NPTH pad of S24
+    @(127.0185 mm, 90.5300 mm): NPTH pad of S24
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(127.0185 mm, 72.5300 mm): NPTH pad of S25
+    @(127.0185 mm, 72.5300 mm): NPTH pad of S25
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(145.0185 mm, 146.5300 mm): NPTH pad of S26
+    @(145.0185 mm, 146.5300 mm): NPTH pad of S26
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(145.0185 mm, 128.5300 mm): NPTH pad of S27
+    @(145.0185 mm, 128.5300 mm): NPTH pad of S27
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(145.0185 mm, 110.5300 mm): NPTH pad of S28
+    @(145.0185 mm, 110.5300 mm): NPTH pad of S28
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(145.0185 mm, 92.5300 mm): NPTH pad of S29
+    @(145.0185 mm, 92.5300 mm): NPTH pad of S29
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(145.0185 mm, 74.5300 mm): NPTH pad of S30
+    @(145.0185 mm, 74.5300 mm): NPTH pad of S30
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(119.0185 mm, 163.5300 mm): NPTH pad of S31
+    @(119.0185 mm, 163.5300 mm): NPTH pad of S31
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(137.0185 mm, 163.5300 mm): NPTH pad of S32
+    @(137.0185 mm, 163.5300 mm): NPTH pad of S32
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(158.5434 mm, 169.2708 mm): NPTH pad of S33
+    @(158.5434 mm, 169.2708 mm): NPTH pad of S33
+[holes_co_located]: Drilled holes co-located
+    Local override; warning
+    @(175.8533 mm, 185.5078 mm): NPTH pad of S34
+    @(175.8533 mm, 185.5078 mm): NPTH pad of S34
+[lib_footprint_mismatch]: Footprint 'nice_nano_AH_Reversible' does not match copy in library 'PCM_marbastlib-xp-promicroish'
+    Local override; warning
+    @(180.4697 mm, 159.7577 mm): Footprint REF**
+
+** Found 0 unconnected pads **
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

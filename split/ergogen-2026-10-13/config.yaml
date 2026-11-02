@@ -1,0 +1,107 @@
+meta:
+  engine: 4.1.0
+points:
+  key:
+    spread: 18
+    padding: 18
+  zones:
+    matrix:
+      anchor:
+        rotate: 5
+      columns:
+        macro:
+            key.column_net: COL_MACRO
+        pinky:
+          key.column_net: COL_PINKY
+        ring:
+          key.column_net: COL_RING
+          key.splay: -5
+          key.origin: [-12, -19]
+          key.stagger: 11
+        middle:
+          key.column_net: COL_MIDDLE
+          key.stagger: 5
+        index:
+          key.column_net: COL_INDEX
+          key.stagger: -6
+        inner:
+          key.column_net: COL_INNER
+          key.stagger: -2
+      rows:
+        bottom:
+            row_net: ROW_BOT
+        home:
+            row_net: ROW_HOME
+        top:
+            row_net: ROW_TOP
+        nums:
+            row_net: ROW_NUMS
+        fn:
+            row_net: ROW_FN
+    thumbfan:
+      anchor:
+        ref: matrix_inner_bottom
+        shift: [-26, -17]
+      columns:
+        nearest:
+          key.column_net: COL_RING
+        near:
+          key.column_net: COL_MIDDLE
+        home:
+          key.column_net: COL_INDEX
+          key.spread: 16
+          key.splay: -28
+          key.origin: [-8.75, -8]
+        far:
+          key.column_net: COL_INNER
+          key.spread: 17
+          key.splay: -28
+          key.origin: [-9.5, -9]
+      rows:
+        thumb:
+            row_net: ROW_THUMB
+  # rotate: -20
+  mirror:
+    ref: matrix_pinky_home
+    distance: 260.7529778
+
+outlines:
+  print:
+    - what: rectangle
+      where: true
+      size: [18, 18]
+    - what: rectangle
+      where: true
+      size: 14
+      operation: stack
+  board:
+    - what: rectangle
+      where: true
+      size: [22, 19]
+
+pcbs:
+  keyboard:
+    template: kicad8
+    outlines:
+      edge:
+        outline: board
+    footprints:
+      switch:
+        #  choc: hotswap|reverse
+        #  mx_alps: MX & Alps
+        #  choc_mx: Choc | MX
+        what: choc
+        where: true
+        params:
+          hotswap: true
+          reverse: true
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        what: diode
+        where: true
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
