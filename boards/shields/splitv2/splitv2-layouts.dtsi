@@ -1,0 +1,90 @@
+/*
+ * Copyright (c) 2026 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ *
+ * Positions are taken from split/v2/keyboard.kicad_pcb.
+ * 1u = 18mm choc spacing. The right half is this board mirrored.
+ */
+
+#include <physical_layouts.dtsi>
+
+/ {
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Split V2";
+
+        keys
+            // w h x y rot rx ry
+            = <&key_physical_attrs 100 100 0 116 (-500) 50 166> // L_macro_fn
+            , <&key_physical_attrs 100 100 100 107 (-500) 150 157> // L_pinky_fn
+            , <&key_physical_attrs 100 100 238 42 0 288 92> // L_ring_fn
+            , <&key_physical_attrs 100 100 338 14 0 388 64> // L_middle_fn
+            , <&key_physical_attrs 100 100 438 47 0 488 97> // L_index_fn
+            , <&key_physical_attrs 100 100 538 58 0 588 108> // L_inner_fn
+            , <&key_physical_attrs 100 100 1226 58 0 1276 108> // R_inner_fn
+            , <&key_physical_attrs 100 100 1326 47 0 1376 97> // R_index_fn
+            , <&key_physical_attrs 100 100 1426 14 0 1476 64> // R_middle_fn
+            , <&key_physical_attrs 100 100 1526 42 0 1576 92> // R_ring_fn
+            , <&key_physical_attrs 100 100 1665 107 500 1715 157> // R_pinky_fn
+            , <&key_physical_attrs 100 100 1764 116 500 1814 166> // R_macro_fn
+            , <&key_physical_attrs 100 100 9 216 (-500) 59 266> // L_macro_nums
+            , <&key_physical_attrs 100 100 108 207 (-500) 158 257> // L_pinky_nums
+            , <&key_physical_attrs 100 100 238 142 0 288 192> // L_ring_nums
+            , <&key_physical_attrs 100 100 338 114 0 388 164> // L_middle_nums
+            , <&key_physical_attrs 100 100 438 147 0 488 197> // L_index_nums
+            , <&key_physical_attrs 100 100 538 158 0 588 208> // L_inner_nums
+            , <&key_physical_attrs 100 100 1226 158 0 1276 208> // R_inner_nums
+            , <&key_physical_attrs 100 100 1326 147 0 1376 197> // R_index_nums
+            , <&key_physical_attrs 100 100 1426 114 0 1476 164> // R_middle_nums
+            , <&key_physical_attrs 100 100 1526 142 0 1576 192> // R_ring_nums
+            , <&key_physical_attrs 100 100 1656 207 500 1706 257> // R_pinky_nums
+            , <&key_physical_attrs 100 100 1756 216 500 1806 266> // R_macro_nums
+            , <&key_physical_attrs 100 100 17 315 (-500) 67 365> // L_macro_top
+            , <&key_physical_attrs 100 100 117 307 (-500) 167 357> // L_pinky_top
+            , <&key_physical_attrs 100 100 238 242 0 288 292> // L_ring_top
+            , <&key_physical_attrs 100 100 338 214 0 388 264> // L_middle_top
+            , <&key_physical_attrs 100 100 438 247 0 488 297> // L_index_top
+            , <&key_physical_attrs 100 100 538 258 0 588 308> // L_inner_top
+            , <&key_physical_attrs 100 100 1226 258 0 1276 308> // R_inner_top
+            , <&key_physical_attrs 100 100 1326 247 0 1376 297> // R_index_top
+            , <&key_physical_attrs 100 100 1426 214 0 1476 264> // R_middle_top
+            , <&key_physical_attrs 100 100 1526 242 0 1576 292> // R_ring_top
+            , <&key_physical_attrs 100 100 1647 307 500 1697 357> // R_pinky_top
+            , <&key_physical_attrs 100 100 1747 315 500 1797 365> // R_macro_top
+            , <&key_physical_attrs 100 100 26 415 (-500) 76 465> // L_macro_home
+            , <&key_physical_attrs 100 100 126 406 (-500) 176 456> // L_pinky_home
+            , <&key_physical_attrs 100 100 238 342 0 288 392> // L_ring_home
+            , <&key_physical_attrs 100 100 338 314 0 388 364> // L_middle_home
+            , <&key_physical_attrs 100 100 438 347 0 488 397> // L_index_home
+            , <&key_physical_attrs 100 100 538 358 0 588 408> // L_inner_home
+            , <&key_physical_attrs 100 100 1226 358 0 1276 408> // R_inner_home
+            , <&key_physical_attrs 100 100 1326 347 0 1376 397> // R_index_home
+            , <&key_physical_attrs 100 100 1426 314 0 1476 364> // R_middle_home
+            , <&key_physical_attrs 100 100 1526 342 0 1576 392> // R_ring_home
+            , <&key_physical_attrs 100 100 1638 406 500 1688 456> // R_pinky_home
+            , <&key_physical_attrs 100 100 1738 415 500 1788 465> // R_macro_home
+            , <&key_physical_attrs 100 100 35 514 (-500) 85 564> // L_macro_bottom
+            , <&key_physical_attrs 100 100 134 506 (-500) 184 556> // L_pinky_bottom
+            , <&key_physical_attrs 100 100 238 442 0 288 492> // L_ring_bottom
+            , <&key_physical_attrs 100 100 338 414 0 388 464> // L_middle_bottom
+            , <&key_physical_attrs 100 100 438 447 0 488 497> // L_index_bottom
+            , <&key_physical_attrs 100 100 538 458 0 588 508> // L_inner_bottom
+            , <&key_physical_attrs 100 100 1226 458 0 1276 508> // R_inner_bottom
+            , <&key_physical_attrs 100 100 1326 447 0 1376 497> // R_index_bottom
+            , <&key_physical_attrs 100 100 1426 414 0 1476 464> // R_middle_bottom
+            , <&key_physical_attrs 100 100 1526 442 0 1576 492> // R_ring_bottom
+            , <&key_physical_attrs 100 100 1630 506 500 1680 556> // R_pinky_bottom
+            , <&key_physical_attrs 100 100 1729 514 500 1779 564> // R_macro_bottom
+            , <&key_physical_attrs 100 100 394 553 0 444 603> // L_nearest
+            , <&key_physical_attrs 100 100 494 553 0 544 603> // L_near
+            , <&key_physical_attrs 100 100 598 581 2800 648 631> // L_home_thumb
+            , <&key_physical_attrs 100 100 682 660 5600 732 710> // L_far
+            , <&key_physical_attrs 100 100 1082 660 (-5600) 1132 710> // R_far
+            , <&key_physical_attrs 100 100 1166 581 (-2800) 1216 631> // R_home_thumb
+            , <&key_physical_attrs 100 100 1270 553 0 1320 603> // R_near
+            , <&key_physical_attrs 100 100 1370 553 0 1420 603> // R_nearest
+            , <&key_physical_attrs 100 100 140 0 0 190 50> // L_enc
+            , <&key_physical_attrs 100 100 1624 0 0 1674 50> // R_enc
+            ;
+    };
+};

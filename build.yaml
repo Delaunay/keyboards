@@ -1,0 +1,17 @@
+---
+include:
+  # USB central. Any ZMK BLE board can be the dongle; this assumes a nice!nano v2.
+  - board: nice_nano//zmk
+    shield: splitv2_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: splitv2_dongle
+  - board: nice_nano//zmk
+    shield: splitv2_left
+    artifact-name: splitv2_left
+  - board: nice_nano//zmk
+    shield: splitv2_right
+    artifact-name: splitv2_right
+  - board: nice_nano//zmk
+    shield: settings_reset
+    artifact-name: settings_reset

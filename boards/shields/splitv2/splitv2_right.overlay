@@ -1,0 +1,32 @@
+/*
+ * Copyright (c) 2026 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ *
+ * The right half is the same PCB mirrored, so the electrical columns are
+ * still outer-to-inner. List them inner-to-outer here so keymap column 6
+ * is the key closest to the center.
+ * Encoder A and B are swapped so clockwise matches the left knob.
+ */
+
+#include "splitv2.dtsi"
+
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan0 {
+    col-gpios
+        = <&pro_micro 21 GPIO_ACTIVE_HIGH> /* COL_INNER  */
+        , <&pro_micro 19 GPIO_ACTIVE_HIGH> /* COL_INDEX  */
+        , <&pro_micro 18 GPIO_ACTIVE_HIGH> /* COL_MIDDLE */
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH> /* COL_RING   */
+        , <&pro_micro 8 GPIO_ACTIVE_HIGH>  /* COL_PINKY  */
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH> /* COL_MACRO  */
+        ;
+};
+
+&right_encoder {
+    status = "okay";
+    a-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+    b-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+};

@@ -1,0 +1,25 @@
+/*
+ * Copyright (c) 2026 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ *
+ * Central half with no keys. Key events arrive over BLE from the two halves.
+ */
+
+#include "splitv2.dtsi"
+
+&kscan0 {
+    status = "disabled";
+};
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};

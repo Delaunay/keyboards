@@ -1,0 +1,9 @@
+# No whitespace after the comma or in the shield name.
+config SHIELD_SPLITV2_LEFT
+    def_bool $(shields_list_contains,splitv2_left)
+
+config SHIELD_SPLITV2_RIGHT
+    def_bool $(shields_list_contains,splitv2_right)
+
+config SHIELD_SPLITV2_DONGLE
+    def_bool $(shields_list_contains,splitv2_dongle)

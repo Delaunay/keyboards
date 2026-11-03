@@ -1,0 +1,13 @@
+file_format: "1"
+id: splitv2
+name: Split V2
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+  - encoder
+  - studio
+siblings:
+  - splitv2_left
+  - splitv2_right
+  - splitv2_dongle
