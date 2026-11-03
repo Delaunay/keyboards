@@ -19,7 +19,7 @@ The workflow builds four UF2 files:
 | `splitv2_right` | the right nice!nano |
 | `splitv2_settings_reset` | each board, once, before the first real flash |
 
-`build.yaml` uses `nice_nano//zmk` for the dongle, which is a nice!nano v2. If the dongle is a different BLE board, change that one `board:` line. The halves stay on `nice_nano//zmk`.
+`build.yaml` uses `nice_nano_v2` because `west.yml` pins ZMK v0.3. Newer ZMK renamed that board to `nice_nano//zmk`. If the dongle is a different BLE board, change that one `board:` line.
 
 ## First flash
 
