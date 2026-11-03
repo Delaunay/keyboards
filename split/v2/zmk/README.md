@@ -6,21 +6,25 @@ The shield is written for the PCB as built: 6 columns, 5 rows, 4 thumb keys, and
 
 ## Build
 
-Pushing this repository runs `.github/workflows/build.yml`. The workflow builds four UF2 files:
+This folder is the ZMK config for split v2. Another keyboard gets the same layout under its own directory, and a job in `.github/workflows/build.yml` pointing at that directory.
+
+The root workflow is only there because GitHub Actions will not run a workflow stored deeper in the repo. It calls ZMK's build with `build_matrix_path` and `config_path` set to this folder. `config/west.yml` is what `west init` reads, and its `self.path` is `split/v2/zmk/config` so that init works from the repository root. The shield in `boards/` is passed in with `ZMK_EXTRA_MODULES`, because ZMK only auto-loads a `zephyr/module.yml` that sits at the repository root.
+
+The workflow builds four UF2 files:
 
 | Artifact | Flash onto |
 |---|---|
 | `splitv2_dongle` | the dongle |
 | `splitv2_left` | the left nice!nano |
 | `splitv2_right` | the right nice!nano |
-| `settings_reset` | each board, once, before the first real flash |
+| `splitv2_settings_reset` | each board, once, before the first real flash |
 
 `build.yaml` uses `nice_nano//zmk` for the dongle, which is a nice!nano v2. If the dongle is a different BLE board, change that one `board:` line. The halves stay on `nice_nano//zmk`.
 
 ## First flash
 
 1. Double-tap reset on a board so it shows up as a USB drive.
-2. Copy `settings_reset` to that drive and wait for it to reboot. Do this for the dongle and both halves. It clears old Bluetooth bonds.
+2. Copy `splitv2_settings_reset` to that drive and wait for it to reboot. Do this for the dongle and both halves. It clears old Bluetooth bonds.
 3. Flash `splitv2_dongle`, `splitv2_left`, and `splitv2_right` the same way.
 4. Power the halves. They pair to the dongle by themselves.
 5. Plug the dongle into the computer. It is the keyboard.

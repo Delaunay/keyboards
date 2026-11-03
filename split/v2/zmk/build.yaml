@@ -1,0 +1,20 @@
+# This keyboard's firmware. The repo-root workflow points here.
+# ZMK_EXTRA_MODULES is required because zephyr/module.yml is not at the repo root.
+---
+include:
+  - board: nice_nano//zmk
+    shield: splitv2_dongle
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DZMK_EXTRA_MODULES=${GITHUB_WORKSPACE}/split/v2/zmk -DCONFIG_ZMK_STUDIO=y
+    artifact-name: splitv2_dongle
+  - board: nice_nano//zmk
+    shield: splitv2_left
+    cmake-args: -DZMK_EXTRA_MODULES=${GITHUB_WORKSPACE}/split/v2/zmk
+    artifact-name: splitv2_left
+  - board: nice_nano//zmk
+    shield: splitv2_right
+    cmake-args: -DZMK_EXTRA_MODULES=${GITHUB_WORKSPACE}/split/v2/zmk
+    artifact-name: splitv2_right
+  - board: nice_nano//zmk
+    shield: settings_reset
+    artifact-name: splitv2_settings_reset

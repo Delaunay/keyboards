@@ -1,0 +1,13 @@
+manifest:
+  defaults:
+    revision: v0.3
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      import: app/west.yml
+  self:
+    # Path from the keyboards repo root. The root workflow runs west init -l on this file.
+    path: split/v2/zmk/config
