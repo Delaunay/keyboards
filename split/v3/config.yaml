@@ -1,0 +1,136 @@
+meta:
+  engine: 4.1.0
+units:
+  # 16 mm caps with 3 mm of space between them, side to side and front to back.
+  cap: 16
+  gap: 3
+  pitch: cap+gap
+  # Each column sits this much lower than the one outside it. Columns stay
+  # parallel, so the gap does not open up toward the top of the board.
+  step: 4
+points:
+  key:
+    spread: pitch
+    padding: pitch
+    width: cap
+    height: cap
+  zones:
+    matrix:
+      # Whole half leans clockwise. The stair comes from the column steps.
+      anchor:
+        rotate: -10
+      columns:
+        macro:
+          key.column_net: COL_MACRO
+        pinky:
+          key.column_net: COL_PINKY
+          key.stagger: -step
+        ring:
+          key.column_net: COL_RING
+          key.stagger: -step
+          rows.thumb.skip: false
+        middle:
+          key.column_net: COL_MIDDLE
+          key.stagger: -step
+          rows.thumb.skip: false
+        index:
+          key.column_net: COL_INDEX
+          key.stagger: -step
+          rows.thumb.skip: false
+        inner:
+          key.column_net: COL_INNER
+          key.stagger: -step
+          rows.thumb.skip: false
+      rows:
+        thumb:
+          row_net: ROW_THUMB
+          skip: true
+        bottom:
+          row_net: ROW_BOT
+        home:
+          row_net: ROW_HOME
+        top:
+          row_net: ROW_TOP
+        nums:
+          row_net: ROW_NUMS
+        fn:
+          row_net: ROW_FN
+    # Holes for a bridge that holds the halves in this pose. Leave it off to use them split.
+    link_upper:
+      anchor:
+        ref: matrix_inner_fn
+        shift: [16, 0]
+      columns:
+        hole:
+          key.name: connector_upper
+          key.skip: false
+      rows:
+        one: {}
+    link_lower:
+      anchor:
+        ref: matrix_inner_nums
+        shift: [16, 0]
+      columns:
+        hole:
+          key.name: connector_lower
+          key.skip: false
+      rows:
+        one: {}
+  mirror:
+    ref: matrix_pinky_home
+    distance: 204
+
+outlines:
+  caps:
+    - what: rectangle
+      where: /^matrix_|^thumbs_/
+      asym: both
+      size: cap
+  board:
+    - what: rectangle
+      where: /^matrix_|^thumbs_/
+      asym: both
+      size: [23, 21]
+    - what: rectangle
+      where: /^connector_/
+      asym: both
+      size: [14, 12]
+    - what: circle
+      where: /^connector_/
+      asym: both
+      radius: 1.6
+      operation: subtract
+
+pcbs:
+  keyboard:
+    template: kicad8
+    outlines:
+      edge:
+        outline: board
+    footprints:
+      switch:
+        # Kailh Choc PG1350, low profile. The socket below is the soldered part.
+        what: choc_switch
+        where: /^matrix_|^thumbs_/
+        asym: both
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      hotswap:
+        # Kailh Choc hotswap socket, one per key, back side only.
+        what: choc_hotswap
+        where: /^matrix_|^thumbs_/
+        asym: both
+        params:
+          from: "{{column_net}}"
+          to: "{{colrow}}"
+      diode:
+        # Back-side SOD-123. See footprints/diode.js. Cathode (pad 1) faces the row.
+        what: diode
+        where: /^matrix_|^thumbs_/
+        asym: both
+        params:
+          from: "{{colrow}}"
+          to: "{{row_net}}"
+        adjust:
+          shift: [0, -5]
