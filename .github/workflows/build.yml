@@ -2,11 +2,10 @@ name: Build ZMK firmware
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
-  # GitHub only loads workflows from the repository root.
-  # Each keyboard keeps its own ZMK config and gets its own job.
+  # GitHub only runs workflow files from the repository root.
+  # Each keyboard keeps its own ZMK config and is built from that directory.
   split-v2:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
+    uses: ./.github/workflows/zmk.yml
     with:
-      build_matrix_path: split/v2/zmk/build.yaml
-      config_path: split/v2/zmk/config
+      keyboard_dir: split/v2/zmk
       archive_name: split-v2

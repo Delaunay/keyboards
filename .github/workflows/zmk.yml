@@ -1,0 +1,111 @@
+name: Build one ZMK config
+
+on:
+  workflow_call:
+    inputs:
+      keyboard_dir:
+        description: Directory that contains build.yaml, config/west.yml, and zephyr/module.yml
+        required: true
+        type: string
+      archive_name:
+        description: Name of the combined firmware artifact
+        required: true
+        type: string
+
+jobs:
+  matrix:
+    runs-on: ubuntu-22.04
+    outputs:
+      build_matrix: ${{ steps.fetch.outputs.build_matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch Build Matrix
+        id: fetch
+        run: echo "build_matrix=$(yq -oj -I0 '${{ inputs.keyboard_dir }}/build.yaml')" >> $GITHUB_OUTPUT
+
+  build:
+    needs: matrix
+    runs-on: ubuntu-latest
+    container:
+      image: zmkfirmware/zmk-build-arm:stable
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.matrix.outputs.build_matrix) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare workspace
+        shell: bash
+        run: |
+          set -euo pipefail
+          kb="${GITHUB_WORKSPACE}/${{ inputs.keyboard_dir }}"
+          base="$(mktemp -d)"
+          build_dir="$(mktemp -d)"
+          mkdir -p "${base}/config"
+          cp -R "${kb}/config/." "${base}/config/"
+          {
+            echo "base_dir=${base}"
+            echo "build_dir=${build_dir}"
+            echo "kb_dir=${kb}"
+          } >> "$GITHUB_ENV"
+
+      - name: West Init
+        working-directory: ${{ env.base_dir }}
+        run: west init -l config
+
+      - name: West Update
+        working-directory: ${{ env.base_dir }}
+        run: west update --fetch-opt=--filter=tree:0
+
+      - name: West Zephyr export
+        working-directory: ${{ env.base_dir }}
+        run: west zephyr-export
+
+      - name: West Build
+        working-directory: ${{ env.base_dir }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          args=()
+          snippet="${{ matrix.snippet }}"
+          if [ -n "${snippet}" ]; then
+            args+=(-S "${snippet}")
+          fi
+          cmake_args=(
+            -DZMK_CONFIG="${{ env.base_dir }}/config"
+            -DZMK_EXTRA_MODULES="${{ env.kb_dir }}"
+          )
+          shield="${{ matrix.shield }}"
+          if [ -n "${shield}" ]; then
+            cmake_args+=(-DSHIELD="${shield}")
+          fi
+          if [ -n "${{ matrix.cmake-args }}" ]; then
+            # shellcheck disable=SC2206
+            extra=(${{ matrix.cmake-args }})
+            cmake_args+=("${extra[@]}")
+          fi
+          west build -s zmk/app -d "${{ env.build_dir }}" -b "${{ matrix.board }}" "${args[@]}" -- "${cmake_args[@]}"
+
+      - name: Rename firmware
+        run: mv "${{ env.build_dir }}/zephyr/zmk.uf2" "${{ env.build_dir }}/zephyr/${{ matrix.artifact-name }}.uf2"
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ inputs.archive_name }}-${{ matrix.artifact-name }}
+          path: ${{ env.build_dir }}/zephyr/${{ matrix.artifact-name }}.uf2
+          if-no-files-found: error
+
+  merge:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Merge Artifacts
+        uses: actions/upload-artifact/merge@v4
+        with:
+          name: ${{ inputs.archive_name }}
+          pattern: ${{ inputs.archive_name }}-*
+          delete-merged: true

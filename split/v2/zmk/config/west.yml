@@ -9,5 +9,5 @@ manifest:
       remote: zmkfirmware
       import: app/west.yml
   self:
-    # Path from the keyboards repo root. The root workflow runs west init -l on this file.
-    path: split/v2/zmk/config
+    # Relative to the temporary west workspace, which contains this directory as config/.
+    path: config

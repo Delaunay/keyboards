@@ -6,9 +6,9 @@ The shield is written for the PCB as built: 6 columns, 5 rows, 4 thumb keys, and
 
 ## Build
 
-This folder is the ZMK config for split v2. Another keyboard gets the same layout under its own directory, and a job in `.github/workflows/build.yml` pointing at that directory.
+This folder is the ZMK config for split v2. Another keyboard gets the same files under its own directory, plus a job in `.github/workflows/build.yml`.
 
-The root workflow is only there because GitHub Actions will not run a workflow stored deeper in the repo. It calls ZMK's build with `build_matrix_path` and `config_path` set to this folder. `config/west.yml` is what `west init` reads, and its `self.path` is `split/v2/zmk/config` so that init works from the repository root. The shield in `boards/` is passed in with `ZMK_EXTRA_MODULES`, because ZMK only auto-loads a `zephyr/module.yml` that sits at the repository root.
+GitHub only runs workflow files stored at the repository root, so `.github/workflows/build.yml` stays there and calls `.github/workflows/zmk.yml` with `keyboard_dir: split/v2/zmk`. That job copies `config/` into its own west workspace. ZMK's shared workflow cannot do that for a nested folder: `west init -l split/v2/zmk/config` creates the workspace inside `split/v2/zmk`, and the next step runs `west update` from the repository root, where no workspace exists.
 
 The workflow builds four UF2 files:
 
