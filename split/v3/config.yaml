@@ -30,408 +30,512 @@ points:
           key:
             shift: [0.15, 0.45]
             rotate: 0
-            column_net: COL_MACRO
+            column_net: L_COL_MACRO
             name: matrix_macro_bottom
+            mirror:
+              column_net: R_COL_MACRO
+              row_net: R_ROW_BOT
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: L_ROW_BOT
         matrix_pinky_bottom:
           key:
             shift: [19.72, 3.4]
             rotate: 0
-            column_net: COL_PINKY
+            column_net: L_COL_PINKY
             name: matrix_pinky_bottom
+            mirror:
+              column_net: R_COL_PINKY
+              row_net: R_ROW_BOT
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: L_ROW_BOT
         matrix_ring_bottom:
           key:
             shift: [39.37, 5.75]
             rotate: 0
-            column_net: COL_RING
+            column_net: L_COL_RING
             name: matrix_ring_bottom
+            mirror:
+              column_net: R_COL_RING
+              row_net: R_ROW_BOT
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: L_ROW_BOT
         matrix_middle_bottom:
           key:
             shift: [59.14, 5.78]
             rotate: 0
-            column_net: COL_MIDDLE
+            column_net: L_COL_MIDDLE
             name: matrix_middle_bottom
+            mirror:
+              column_net: R_COL_MIDDLE
+              row_net: R_ROW_BOT
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: L_ROW_BOT
         matrix_index_bottom:
           key:
             shift: [78.76, 3.27]
             rotate: 0
-            column_net: COL_INDEX
+            column_net: L_COL_INDEX
             name: matrix_index_bottom
+            mirror:
+              column_net: R_COL_INDEX
+              row_net: R_ROW_BOT
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: L_ROW_BOT
         matrix_inner_bottom:
           key:
             shift: [98.23, -0.27]
             rotate: 0
-            column_net: COL_INNER
+            column_net: L_COL_INNER
             name: matrix_inner_bottom
+            mirror:
+              column_net: R_COL_INNER
+              row_net: R_ROW_BOT
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: L_ROW_BOT
         matrix_macro_home:
           key:
             shift: [0, 19]
             rotate: 0
-            column_net: COL_MACRO
+            column_net: L_COL_MACRO
             name: matrix_macro_home
+            mirror:
+              column_net: R_COL_MACRO
+              row_net: R_ROW_HOME
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: L_ROW_HOME
         matrix_pinky_home:
           key:
             shift: [19.57, 21.95]
             rotate: 0
-            column_net: COL_PINKY
+            column_net: L_COL_PINKY
             name: matrix_pinky_home
+            mirror:
+              column_net: R_COL_PINKY
+              row_net: R_ROW_HOME
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: L_ROW_HOME
         matrix_ring_home:
           key:
             shift: [39.22, 24.31]
             rotate: 0
-            column_net: COL_RING
+            column_net: L_COL_RING
             name: matrix_ring_home
+            mirror:
+              column_net: R_COL_RING
+              row_net: R_ROW_HOME
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: L_ROW_HOME
         matrix_middle_home:
           key:
             shift: [58.99, 24.34]
             rotate: 0
-            column_net: COL_MIDDLE
+            column_net: L_COL_MIDDLE
             name: matrix_middle_home
+            mirror:
+              column_net: R_COL_MIDDLE
+              row_net: R_ROW_HOME
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: L_ROW_HOME
         matrix_index_home:
           key:
             shift: [78.61, 21.83]
             rotate: 0
-            column_net: COL_INDEX
+            column_net: L_COL_INDEX
             name: matrix_index_home
+            mirror:
+              column_net: R_COL_INDEX
+              row_net: R_ROW_HOME
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: L_ROW_HOME
         matrix_inner_home:
           key:
             shift: [98.08, 18.28]
             rotate: 0
-            column_net: COL_INNER
+            column_net: L_COL_INNER
             name: matrix_inner_home
+            mirror:
+              column_net: R_COL_INNER
+              row_net: R_ROW_HOME
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: L_ROW_HOME
         matrix_macro_top:
           key:
             shift: [0, 38]
             rotate: 0
-            column_net: COL_MACRO
+            column_net: L_COL_MACRO
             name: matrix_macro_top
+            mirror:
+              column_net: R_COL_MACRO
+              row_net: R_ROW_TOP
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: L_ROW_TOP
         matrix_pinky_top:
           key:
             shift: [19.57, 40.95]
             rotate: 0
-            column_net: COL_PINKY
+            column_net: L_COL_PINKY
             name: matrix_pinky_top
+            mirror:
+              column_net: R_COL_PINKY
+              row_net: R_ROW_TOP
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: L_ROW_TOP
         matrix_ring_top:
           key:
             shift: [39.22, 43.31]
             rotate: 0
-            column_net: COL_RING
+            column_net: L_COL_RING
             name: matrix_ring_top
+            mirror:
+              column_net: R_COL_RING
+              row_net: R_ROW_TOP
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: L_ROW_TOP
         matrix_middle_top:
           key:
             shift: [58.99, 43.34]
             rotate: 0
-            column_net: COL_MIDDLE
+            column_net: L_COL_MIDDLE
             name: matrix_middle_top
+            mirror:
+              column_net: R_COL_MIDDLE
+              row_net: R_ROW_TOP
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: L_ROW_TOP
         matrix_index_top:
           key:
             shift: [78.61, 40.83]
             rotate: 0
-            column_net: COL_INDEX
+            column_net: L_COL_INDEX
             name: matrix_index_top
+            mirror:
+              column_net: R_COL_INDEX
+              row_net: R_ROW_TOP
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: L_ROW_TOP
         matrix_inner_top:
           key:
             shift: [98.08, 37.28]
             rotate: 0
-            column_net: COL_INNER
+            column_net: L_COL_INNER
             name: matrix_inner_top
+            mirror:
+              column_net: R_COL_INNER
+              row_net: R_ROW_TOP
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: L_ROW_TOP
         matrix_macro_nums:
           key:
             shift: [0, 57]
             rotate: 0
-            column_net: COL_MACRO
+            column_net: L_COL_MACRO
             name: matrix_macro_nums
+            mirror:
+              column_net: R_COL_MACRO
+              row_net: R_ROW_NUMS
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: L_ROW_NUMS
         matrix_pinky_nums:
           key:
             shift: [19.57, 59.95]
             rotate: 0
-            column_net: COL_PINKY
+            column_net: L_COL_PINKY
             name: matrix_pinky_nums
+            mirror:
+              column_net: R_COL_PINKY
+              row_net: R_ROW_NUMS
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: L_ROW_NUMS
         matrix_ring_nums:
           key:
             shift: [39.22, 62.31]
             rotate: 0
-            column_net: COL_RING
+            column_net: L_COL_RING
             name: matrix_ring_nums
+            mirror:
+              column_net: R_COL_RING
+              row_net: R_ROW_NUMS
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: L_ROW_NUMS
         matrix_middle_nums:
           key:
             shift: [58.99, 62.34]
             rotate: 0
-            column_net: COL_MIDDLE
+            column_net: L_COL_MIDDLE
             name: matrix_middle_nums
+            mirror:
+              column_net: R_COL_MIDDLE
+              row_net: R_ROW_NUMS
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: L_ROW_NUMS
         matrix_index_nums:
           key:
             shift: [78.61, 59.83]
             rotate: 0
-            column_net: COL_INDEX
+            column_net: L_COL_INDEX
             name: matrix_index_nums
+            mirror:
+              column_net: R_COL_INDEX
+              row_net: R_ROW_NUMS
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: L_ROW_NUMS
         matrix_inner_nums:
           key:
             shift: [98.08, 56.28]
             rotate: 0
-            column_net: COL_INNER
+            column_net: L_COL_INNER
             name: matrix_inner_nums
+            mirror:
+              column_net: R_COL_INNER
+              row_net: R_ROW_NUMS
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: L_ROW_NUMS
         matrix_macro_fn:
           key:
             shift: [0, 76]
             rotate: 0
-            column_net: COL_MACRO
+            column_net: L_COL_MACRO
             name: matrix_macro_fn
+            mirror:
+              column_net: R_COL_MACRO
+              row_net: R_ROW_FN
           rows:
             at:
-              row_net: ROW_FN
+              row_net: L_ROW_FN
         matrix_pinky_fn:
           key:
             shift: [19.57, 78.95]
             rotate: 0
-            column_net: COL_PINKY
+            column_net: L_COL_PINKY
             name: matrix_pinky_fn
+            mirror:
+              column_net: R_COL_PINKY
+              row_net: R_ROW_FN
           rows:
             at:
-              row_net: ROW_FN
+              row_net: L_ROW_FN
         matrix_ring_fn:
           key:
             shift: [39.22, 81.31]
             rotate: 0
-            column_net: COL_RING
+            column_net: L_COL_RING
             name: matrix_ring_fn
+            mirror:
+              column_net: R_COL_RING
+              row_net: R_ROW_FN
           rows:
             at:
-              row_net: ROW_FN
+              row_net: L_ROW_FN
         matrix_middle_fn:
           key:
             shift: [58.99, 81.34]
             rotate: 0
-            column_net: COL_MIDDLE
+            column_net: L_COL_MIDDLE
             name: matrix_middle_fn
+            mirror:
+              column_net: R_COL_MIDDLE
+              row_net: R_ROW_FN
           rows:
             at:
-              row_net: ROW_FN
+              row_net: L_ROW_FN
         matrix_index_fn:
           key:
             shift: [78.61, 78.83]
             rotate: 0
-            column_net: COL_INDEX
+            column_net: L_COL_INDEX
             name: matrix_index_fn
+            mirror:
+              column_net: R_COL_INDEX
+              row_net: R_ROW_FN
           rows:
             at:
-              row_net: ROW_FN
+              row_net: L_ROW_FN
         matrix_inner_fn:
           key:
             shift: [98.08, 75.28]
             rotate: 0
-            column_net: COL_INNER
+            column_net: L_COL_INNER
             name: matrix_inner_fn
+            mirror:
+              column_net: R_COL_INNER
+              row_net: R_ROW_FN
           rows:
             at:
-              row_net: ROW_FN
+              row_net: L_ROW_FN
         thumbs_ring_thumb:
           key:
             shift: [59.21, -12.11]
             rotate: 0
-            column_net: COL_RING
+            column_net: L_COL_RING
             name: thumbs_ring_thumb
+            mirror:
+              column_net: R_COL_RING
+              row_net: R_ROW_THUMB
           rows:
             at:
-              row_net: ROW_THUMB
+              row_net: L_ROW_THUMB
         thumbs_middle_thumb:
           key:
             shift: [78.82, -15.41]
             rotate: 0
-            column_net: COL_MIDDLE
+            column_net: L_COL_MIDDLE
             name: thumbs_middle_thumb
+            mirror:
+              column_net: R_COL_MIDDLE
+              row_net: R_ROW_THUMB
           rows:
             at:
-              row_net: ROW_THUMB
+              row_net: L_ROW_THUMB
         thumbs_index_thumb:
           key:
             shift: [107.76, -27.6]
             rotate: -36.19
-            column_net: COL_INDEX
+            column_net: L_COL_INDEX
             name: thumbs_index_thumb
+            width: 36
+            height: 16
+            mirror:
+              column_net: R_COL_INDEX
+              row_net: R_ROW_THUMB
           rows:
             at:
-              row_net: ROW_THUMB
+              row_net: L_ROW_THUMB
         thumbs_thumb5_thumb:
           key:
             shift: [128.36, -51.01]
             rotate: 23
-            column_net: COL_THUMB5
+            column_net: L_COL_INNER
             name: thumbs_thumb5_thumb
+            mirror:
+              column_net: R_COL_INNER
+              row_net: R_ROW_THUMB
           rows:
             at:
-              row_net: ROW_THUMB
+              row_net: L_ROW_THUMB
         matrix_bracket_bottom:
           key:
             shift: [320.7, 0.45]
             rotate: 0
-            column_net: COL_BRACKET
+            column_net: R_COL_BRACKET
             name: matrix_bracket_bottom
             asym: source
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: R_ROW_BOT
         matrix_bracket_home:
           key:
             shift: [320.7, 19.33]
             rotate: 0
-            column_net: COL_BRACKET
+            column_net: R_COL_BRACKET
             name: matrix_bracket_home
             asym: source
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: R_ROW_HOME
         matrix_bracket_top:
           key:
             shift: [320.7, 38.22]
             rotate: 0
-            column_net: COL_BRACKET
+            column_net: R_COL_BRACKET
             name: matrix_bracket_top
             asym: source
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: R_ROW_TOP
         matrix_bracket_nums:
           key:
             shift: [320.7, 57.11]
             rotate: 0
-            column_net: COL_BRACKET
+            column_net: R_COL_BRACKET
             name: matrix_bracket_nums
             asym: source
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: R_ROW_NUMS
         matrix_bracket_fn:
           key:
             shift: [320.7, 76]
             rotate: 0
-            column_net: COL_BRACKET
+            column_net: R_COL_BRACKET
             name: matrix_bracket_fn
             asym: source
           rows:
             at:
-              row_net: ROW_FN
+              row_net: R_ROW_FN
         matrix_nav_bottom:
           key:
             shift: [339.7, 0.45]
             rotate: 0
-            column_net: COL_NAV
+            column_net: R_COL_NAV
             name: matrix_nav_bottom
             asym: source
           rows:
             at:
-              row_net: ROW_BOT
+              row_net: R_ROW_BOT
         matrix_nav_home:
           key:
             shift: [339.7, 19.33]
             rotate: 0
-            column_net: COL_NAV
+            column_net: R_COL_NAV
             name: matrix_nav_home
             asym: source
           rows:
             at:
-              row_net: ROW_HOME
+              row_net: R_ROW_HOME
         matrix_nav_top:
           key:
             shift: [339.7, 38.22]
             rotate: 0
-            column_net: COL_NAV
+            column_net: R_COL_NAV
             name: matrix_nav_top
             asym: source
           rows:
             at:
-              row_net: ROW_TOP
+              row_net: R_ROW_TOP
         matrix_nav_nums:
           key:
             shift: [339.7, 57.11]
             rotate: 0
-            column_net: COL_NAV
+            column_net: R_COL_NAV
             name: matrix_nav_nums
             asym: source
           rows:
             at:
-              row_net: ROW_NUMS
+              row_net: R_ROW_NUMS
         matrix_nav_fn:
           key:
             shift: [339.7, 76]
             rotate: 0
-            column_net: COL_NAV
+            column_net: R_COL_NAV
             name: matrix_nav_fn
             asym: source
           rows:
             at:
-              row_net: ROW_FN
+              row_net: R_ROW_FN
     mcu:
       # Outside the outer column. USB points off that edge.
       anchor:
@@ -439,7 +543,10 @@ points:
         shift: [-30, 0]
       columns:
         board:
-          key.name: mcu
+          key:
+            name: mcu
+            width: 40
+            height: 24
       rows:
         one: {}
     hardware:
@@ -483,26 +590,104 @@ outlines:
       where: /^thumbs_index_thumb$/
       asym: both
       size: [35.41, cap]
+  # One convex blob per half. Refine the edge in KiCad.
   board:
-    - what: rectangle
-      where: /^matrix_|^thumbs_/
-      asym: both
-      size: [23, 21]
-    - what: rectangle
-      where: /^mcu$/
-      asym: both
-      size: [38, 22]
-      adjust:
-        shift: [2, 0]
-    # Ears so the mounting holes and the encoder sit on the board.
-    - what: circle
-      where: /^m3_/
-      asym: both
-      radius: 7
-    - what: rectangle
-      where: /^encoder$/
-      asym: both
-      size: [22, 18]
+    - what: hull
+      concavity: 1000
+      expand: 4
+      points:
+        - ref: matrix_macro_bottom
+        - ref: matrix_pinky_bottom
+        - ref: matrix_ring_bottom
+        - ref: matrix_middle_bottom
+        - ref: matrix_index_bottom
+        - ref: matrix_inner_bottom
+        - ref: matrix_macro_home
+        - ref: matrix_pinky_home
+        - ref: matrix_ring_home
+        - ref: matrix_middle_home
+        - ref: matrix_index_home
+        - ref: matrix_inner_home
+        - ref: matrix_macro_top
+        - ref: matrix_pinky_top
+        - ref: matrix_ring_top
+        - ref: matrix_middle_top
+        - ref: matrix_index_top
+        - ref: matrix_inner_top
+        - ref: matrix_macro_nums
+        - ref: matrix_pinky_nums
+        - ref: matrix_ring_nums
+        - ref: matrix_middle_nums
+        - ref: matrix_index_nums
+        - ref: matrix_inner_nums
+        - ref: matrix_macro_fn
+        - ref: matrix_pinky_fn
+        - ref: matrix_ring_fn
+        - ref: matrix_middle_fn
+        - ref: matrix_index_fn
+        - ref: matrix_inner_fn
+        - ref: thumbs_ring_thumb
+        - ref: thumbs_middle_thumb
+        - ref: thumbs_index_thumb
+        - ref: thumbs_thumb5_thumb
+        - ref: mcu
+        - ref: m3_outer_top
+        - ref: m3_outer_bottom
+        - ref: m3_thumb
+        - ref: encoder
+    - what: hull
+      concavity: 1000
+      expand: 4
+      points:
+        - ref: mirror_matrix_macro_bottom
+        - ref: mirror_matrix_pinky_bottom
+        - ref: mirror_matrix_ring_bottom
+        - ref: mirror_matrix_middle_bottom
+        - ref: mirror_matrix_index_bottom
+        - ref: mirror_matrix_inner_bottom
+        - ref: mirror_matrix_macro_home
+        - ref: mirror_matrix_pinky_home
+        - ref: mirror_matrix_ring_home
+        - ref: mirror_matrix_middle_home
+        - ref: mirror_matrix_index_home
+        - ref: mirror_matrix_inner_home
+        - ref: mirror_matrix_macro_top
+        - ref: mirror_matrix_pinky_top
+        - ref: mirror_matrix_ring_top
+        - ref: mirror_matrix_middle_top
+        - ref: mirror_matrix_index_top
+        - ref: mirror_matrix_inner_top
+        - ref: mirror_matrix_macro_nums
+        - ref: mirror_matrix_pinky_nums
+        - ref: mirror_matrix_ring_nums
+        - ref: mirror_matrix_middle_nums
+        - ref: mirror_matrix_index_nums
+        - ref: mirror_matrix_inner_nums
+        - ref: mirror_matrix_macro_fn
+        - ref: mirror_matrix_pinky_fn
+        - ref: mirror_matrix_ring_fn
+        - ref: mirror_matrix_middle_fn
+        - ref: mirror_matrix_index_fn
+        - ref: mirror_matrix_inner_fn
+        - ref: mirror_thumbs_ring_thumb
+        - ref: mirror_thumbs_middle_thumb
+        - ref: mirror_thumbs_index_thumb
+        - ref: mirror_thumbs_thumb5_thumb
+        - ref: matrix_bracket_bottom
+        - ref: matrix_bracket_home
+        - ref: matrix_bracket_top
+        - ref: matrix_bracket_nums
+        - ref: matrix_bracket_fn
+        - ref: matrix_nav_bottom
+        - ref: matrix_nav_home
+        - ref: matrix_nav_top
+        - ref: matrix_nav_nums
+        - ref: matrix_nav_fn
+        - ref: mirror_mcu
+        - ref: mirror_m3_outer_top
+        - ref: mirror_m3_outer_bottom
+        - ref: mirror_m3_thumb
+        - ref: mirror_encoder
 
 pcbs:
   keyboard:
@@ -533,21 +718,51 @@ pcbs:
         where: /^mcu$/
         asym: both
         params:
-          P19: ROW_FN
-          P18: ROW_NUMS
-          P15: ROW_TOP
-          P14: ROW_HOME
-          P10: ROW_BOT
-          P3: ROW_THUMB
-          P16: COL_PINKY
-          P7: COL_MACRO
-          P6: COL_RING
-          P5: COL_MIDDLE
-          P4: COL_INDEX
-          P2: COL_INNER
-          P0: COL_THUMB5  # from layout
-          P1: COL_BRACKET  # from layout
-          P21: COL_NAV  # from layout
+          RAW: L_RAW
+          GND: L_GND
+          RST: L_RST
+          VCC: L_VCC
+          P19: L_ROW_FN
+          P18: L_ROW_NUMS
+          P15: L_ROW_TOP
+          P14: L_ROW_HOME
+          P10: L_ROW_BOT
+          P3: L_ROW_THUMB
+          P16: L_COL_PINKY
+          P7: L_COL_MACRO
+          P6: L_COL_RING
+          P5: L_COL_MIDDLE
+          P4: L_COL_INDEX
+          P2: L_COL_INNER
+          P20: L_P20
+          P8: L_P8
+          P9: L_P9
+          P0: L_P0
+          P1: L_P1
+          P21: L_P21
+          mirror:
+            RAW: R_RAW
+            GND: R_GND
+            RST: R_RST
+            VCC: R_VCC
+            P19: R_ROW_FN
+            P18: R_ROW_NUMS
+            P15: R_ROW_TOP
+            P14: R_ROW_HOME
+            P10: R_ROW_BOT
+            P3: R_ROW_THUMB
+            P16: R_COL_PINKY
+            P7: R_COL_MACRO
+            P6: R_COL_RING
+            P5: R_COL_MIDDLE
+            P4: R_COL_INDEX
+            P2: R_COL_INNER
+            P20: R_P20
+            P8: R_P8
+            P9: R_P9
+            P0: R_P0
+            P1: R_COL_BRACKET
+            P21: R_COL_NAV
       m3:
         # Non-plated 3.2 mm hole for an M3 screw. Three per half.
         what: m3
@@ -560,11 +775,17 @@ pcbs:
         where: /^encoder$/
         asym: both
         params:
-          A: P20
-          B: P8
-          C: GND
-          from: P9
-          to: GND
+          A: L_P20
+          B: L_P8
+          C: L_GND
+          from: L_P9
+          to: L_GND
+          mirror:
+            A: R_P20
+            B: R_P8
+            C: R_GND
+            from: R_P9
+            to: R_GND
       diode:
         # Back-side SOD-123. See footprints/diode.js. Cathode (pad 1) faces the row.
         what: diode

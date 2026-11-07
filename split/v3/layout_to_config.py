@@ -12,8 +12,9 @@ CONFIG_PATH = HERE / "config.yaml"
 WIRED = {
     "COL_MACRO", "COL_PINKY", "COL_RING", "COL_MIDDLE", "COL_INDEX", "COL_INNER",
     "ROW_BOT", "ROW_HOME", "ROW_TOP", "ROW_NUMS", "ROW_FN", "ROW_THUMB",
+    # Right half only. Pinned on the mirrored controller, not the left one.
+    "COL_BRACKET", "COL_NAV",
 }
-SPARE_PINS = ["P0", "P1", "P21", "P20", "P8", "P9"]
 
 
 def num(value):
@@ -37,6 +38,14 @@ def save_layout(layout):
         raise ValueError("layout json needs a keys list")
     LAYOUT_PATH.write_text(json.dumps(layout, indent=2) + "\n")
     return save_keymap(layout)
+
+
+def side_of(key, layout):
+    # Mirrored keys are drawn on the left. The copy across the axis is the right.
+    if key.get("mirror", True):
+        return "L"
+    axis = float(layout.get("mirrorX") or 0)
+    return "R" if float(key["x"]) >= axis else "L"
 
 
 def anchor_name(keys):
@@ -81,13 +90,21 @@ def render_points(layout):
         lines.append("          key:")
         lines.append(f"            shift: [{num(key['x'])}, {num(key['y'])}]")
         lines.append(f"            rotate: {num(key.get('r', 0))}")
-        lines.append(f"            column_net: {key['column_net']}")
+        side = side_of(key, layout)
+        lines.append(f"            column_net: {side}_{key['column_net']}")
         lines.append(f"            name: {name}")
-        if not key.get("mirror", True):
+        if float(key.get("u") or 1) >= 2:
+            lines.append("            width: 36")
+            lines.append("            height: 16")
+        if key.get("mirror", True):
+            lines.append("            mirror:")
+            lines.append(f"              column_net: R_{key['column_net']}")
+            lines.append(f"              row_net: R_{key['row_net']}")
+        else:
             lines.append("            asym: source")
         lines.append("          rows:")
         lines.append("            at:")
-        lines.append(f"              row_net: {key['row_net']}")
+        lines.append(f"              row_net: {side}_{key['row_net']}")
     ref = anchor_name(keys)
     lines += [
         "    mcu:",
@@ -97,7 +114,10 @@ def render_points(layout):
         "        shift: [-30, 0]",
         "      columns:",
         "        board:",
-        "          key.name: mcu",
+        "          key:",
+        "            name: mcu",
+        "            width: 40",
+        "            height: 24",
         "      rows:",
         "        one: {}",
         "    hardware:",
@@ -141,24 +161,7 @@ def extra_pins(keys):
         for net in (key.get("column_net"), key.get("row_net")):
             if net and net not in WIRED and net not in seen:
                 seen.append(net)
-    assigned = []
-    unassigned = []
-    for index, net in enumerate(seen):
-        if index < len(SPARE_PINS):
-            assigned.append((SPARE_PINS[index], net))
-        else:
-            unassigned.append(net)
-    return assigned, unassigned
-
-
-def update_pins(text, assigned):
-    kept = [line for line in text.splitlines(keepends=True) if "# from layout" not in line]
-    text = "".join(kept)
-    needle = "          P2: COL_INNER\n"
-    if needle not in text:
-        raise ValueError("could not find the nice!nano column pins in config.yaml")
-    extra = "".join(f"          {pin}: {net}  # from layout\n" for pin, net in assigned)
-    return text.replace(needle, needle + extra, 1)
+    return seen
 
 
 def apply_config(layout):
@@ -170,8 +173,9 @@ def apply_config(layout):
     if start < 0 or end < 0:
         raise ValueError("config.yaml is missing its points or outlines section")
     updated = existing[: start + 1] + points + existing[end + 1 :]
-    assigned, unassigned = extra_pins(layout.get("keys") or [])
-    updated = update_pins(updated, assigned)
+    kept = [line for line in updated.splitlines(keepends=True) if "# from layout" not in line]
+    updated = "".join(kept)
+    unassigned = extra_pins(layout.get("keys") or [])
     CONFIG_PATH.write_text(updated)
     count = len(layout.get("keys") or [])
     message = f"Updated config.yaml from layout.json ({count} keys)."

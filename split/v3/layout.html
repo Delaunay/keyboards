@@ -1268,7 +1268,7 @@ function layoutDocument() {
           name: "thumbs_" + column + "_thumb",
           column,
           row: "thumb",
-          column_net: netName("COL", column),
+          column_net: column === "thumb5" ? "COL_INNER" : netName("COL", column),
           row_net: "ROW_THUMB",
           x, y, r, u,
           mirror: !!state.mirror,
