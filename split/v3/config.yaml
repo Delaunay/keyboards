@@ -442,6 +442,34 @@ points:
           key.name: mcu
       rows:
         one: {}
+    hardware:
+      # Three M3 holes and one encoder per half. A layout update keeps these.
+      anchor:
+        rotate: 0
+      key:
+        spread: 0
+        stagger: 0
+        padding: 0
+        splay: 0
+      columns:
+        m3_outer_top:
+          key:
+            shift: [-40, 92]
+            name: m3_outer_top
+        m3_outer_bottom:
+          key:
+            shift: [-8, -14]
+            name: m3_outer_bottom
+        m3_thumb:
+          key:
+            shift: [140, -62]
+            name: m3_thumb
+        encoder:
+          key:
+            shift: [116, 90]
+            name: encoder
+      rows:
+        one: {}
   mirror: 150.85
 outlines:
   caps:

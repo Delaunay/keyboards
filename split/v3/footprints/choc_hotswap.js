@@ -23,11 +23,9 @@ module.exports = {
       (pad 1 smd rect (at -3.275 -5.95 ${p.r}) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) ${p.from})
       (pad 2 smd rect (at 8.275 -3.75 ${p.r}) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) ${p.to})
 
-      ${''/* column via on the key centerline, just clear of the stem */}
-      (pad 1 thru_hole circle (at 0 -3.2) (size 0.6 0.6) (drill 0.3) (layers *.Cu) ${p.from})
-      ${''/* back-side link from the column pad to that via */}
-      (pad 1 smd rect (at -3.275 -4.575 ${p.r}) (size 0.5 2.75) (layers B.Cu) ${p.from})
-      (pad 1 smd rect (at -1.6375 -3.2 ${p.r}) (size 3.275 0.5) (layers B.Cu) ${p.from})
+      ${''/* column via just below the solder pad, on the line to the next row */}
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) ${p.from})
+      (pad 1 smd rect (at -3.275 -5.15 ${p.r}) (size 0.5 1.6) (layers B.Cu) ${p.from})
       )
     `
 }
