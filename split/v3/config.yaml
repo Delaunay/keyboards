@@ -427,18 +427,18 @@ points:
         thumbs_thumb5_thumb:
           key:
             shift: [128.36, -51.01]
-            rotate: 23
-            column_net: L_COL_INNER
+            rotate: -66
+            column_net: L_COL_THUMB5
             name: thumbs_thumb5_thumb
             mirror:
-              column_net: R_COL_INNER
+              column_net: R_COL_THUMB5
               row_net: R_ROW_THUMB
           rows:
             at:
               row_net: L_ROW_THUMB
         matrix_bracket_bottom:
           key:
-            shift: [320.7, 0.45]
+            shift: [320.84, 0.45]
             rotate: 0
             column_net: R_COL_BRACKET
             name: matrix_bracket_bottom
@@ -448,7 +448,7 @@ points:
               row_net: R_ROW_BOT
         matrix_bracket_home:
           key:
-            shift: [320.7, 19.33]
+            shift: [320.84, 19.33]
             rotate: 0
             column_net: R_COL_BRACKET
             name: matrix_bracket_home
@@ -458,7 +458,7 @@ points:
               row_net: R_ROW_HOME
         matrix_bracket_top:
           key:
-            shift: [320.7, 38.22]
+            shift: [320.84, 38.22]
             rotate: 0
             column_net: R_COL_BRACKET
             name: matrix_bracket_top
@@ -468,7 +468,7 @@ points:
               row_net: R_ROW_TOP
         matrix_bracket_nums:
           key:
-            shift: [320.7, 57.11]
+            shift: [320.84, 57.11]
             rotate: 0
             column_net: R_COL_BRACKET
             name: matrix_bracket_nums
@@ -478,7 +478,7 @@ points:
               row_net: R_ROW_NUMS
         matrix_bracket_fn:
           key:
-            shift: [320.7, 76]
+            shift: [320.84, 76]
             rotate: 0
             column_net: R_COL_BRACKET
             name: matrix_bracket_fn
@@ -488,7 +488,7 @@ points:
               row_net: R_ROW_FN
         matrix_nav_bottom:
           key:
-            shift: [339.7, 0.45]
+            shift: [339.84, 0.45]
             rotate: 0
             column_net: R_COL_NAV
             name: matrix_nav_bottom
@@ -498,7 +498,7 @@ points:
               row_net: R_ROW_BOT
         matrix_nav_home:
           key:
-            shift: [339.7, 19.33]
+            shift: [339.84, 19.33]
             rotate: 0
             column_net: R_COL_NAV
             name: matrix_nav_home
@@ -508,7 +508,7 @@ points:
               row_net: R_ROW_HOME
         matrix_nav_top:
           key:
-            shift: [339.7, 38.22]
+            shift: [339.84, 38.22]
             rotate: 0
             column_net: R_COL_NAV
             name: matrix_nav_top
@@ -518,7 +518,7 @@ points:
               row_net: R_ROW_TOP
         matrix_nav_nums:
           key:
-            shift: [339.7, 57.11]
+            shift: [339.84, 57.11]
             rotate: 0
             column_net: R_COL_NAV
             name: matrix_nav_nums
@@ -528,7 +528,7 @@ points:
               row_net: R_ROW_NUMS
         matrix_nav_fn:
           key:
-            shift: [339.7, 76]
+            shift: [339.84, 76]
             rotate: 0
             column_net: R_COL_NAV
             name: matrix_nav_fn
@@ -577,7 +577,7 @@ points:
             name: encoder
       rows:
         one: {}
-  mirror: 150.85
+  mirror: 150.92
 outlines:
   caps:
     - what: rectangle

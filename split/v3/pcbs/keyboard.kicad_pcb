@@ -121,89 +121,91 @@
 (net 37 "thumbs_ring_thumb_at")
 (net 38 "thumbs_middle_thumb_at")
 (net 39 "thumbs_index_thumb_at")
-(net 40 "thumbs_thumb5_thumb_at")
-(net 41 "R_COL_BRACKET")
-(net 42 "matrix_bracket_bottom_at")
-(net 43 "matrix_bracket_home_at")
-(net 44 "matrix_bracket_top_at")
-(net 45 "matrix_bracket_nums_at")
-(net 46 "matrix_bracket_fn_at")
-(net 47 "R_COL_NAV")
-(net 48 "matrix_nav_bottom_at")
-(net 49 "matrix_nav_home_at")
-(net 50 "matrix_nav_top_at")
-(net 51 "matrix_nav_nums_at")
-(net 52 "matrix_nav_fn_at")
-(net 53 "R_COL_MACRO")
-(net 54 "mirror_matrix_macro_bottom_at")
-(net 55 "R_COL_PINKY")
-(net 56 "mirror_matrix_pinky_bottom_at")
-(net 57 "R_COL_RING")
-(net 58 "mirror_matrix_ring_bottom_at")
-(net 59 "R_COL_MIDDLE")
-(net 60 "mirror_matrix_middle_bottom_at")
-(net 61 "R_COL_INDEX")
-(net 62 "mirror_matrix_index_bottom_at")
-(net 63 "R_COL_INNER")
-(net 64 "mirror_matrix_inner_bottom_at")
-(net 65 "mirror_matrix_macro_home_at")
-(net 66 "mirror_matrix_pinky_home_at")
-(net 67 "mirror_matrix_ring_home_at")
-(net 68 "mirror_matrix_middle_home_at")
-(net 69 "mirror_matrix_index_home_at")
-(net 70 "mirror_matrix_inner_home_at")
-(net 71 "mirror_matrix_macro_top_at")
-(net 72 "mirror_matrix_pinky_top_at")
-(net 73 "mirror_matrix_ring_top_at")
-(net 74 "mirror_matrix_middle_top_at")
-(net 75 "mirror_matrix_index_top_at")
-(net 76 "mirror_matrix_inner_top_at")
-(net 77 "mirror_matrix_macro_nums_at")
-(net 78 "mirror_matrix_pinky_nums_at")
-(net 79 "mirror_matrix_ring_nums_at")
-(net 80 "mirror_matrix_middle_nums_at")
-(net 81 "mirror_matrix_index_nums_at")
-(net 82 "mirror_matrix_inner_nums_at")
-(net 83 "mirror_matrix_macro_fn_at")
-(net 84 "mirror_matrix_pinky_fn_at")
-(net 85 "mirror_matrix_ring_fn_at")
-(net 86 "mirror_matrix_middle_fn_at")
-(net 87 "mirror_matrix_index_fn_at")
-(net 88 "mirror_matrix_inner_fn_at")
-(net 89 "mirror_thumbs_ring_thumb_at")
-(net 90 "mirror_thumbs_middle_thumb_at")
-(net 91 "mirror_thumbs_index_thumb_at")
-(net 92 "mirror_thumbs_thumb5_thumb_at")
-(net 93 "L_RAW")
-(net 94 "L_GND")
-(net 95 "L_RST")
-(net 96 "L_VCC")
-(net 97 "L_P21")
-(net 98 "L_P20")
-(net 99 "L_ROW_FN")
-(net 100 "L_ROW_NUMS")
-(net 101 "L_ROW_TOP")
-(net 102 "L_ROW_HOME")
-(net 103 "L_ROW_BOT")
-(net 104 "L_P1")
-(net 105 "L_P0")
-(net 106 "L_ROW_THUMB")
-(net 107 "L_P8")
-(net 108 "L_P9")
-(net 109 "R_RAW")
-(net 110 "R_GND")
-(net 111 "R_RST")
-(net 112 "R_VCC")
-(net 113 "R_P20")
-(net 114 "R_ROW_FN")
-(net 115 "R_ROW_NUMS")
-(net 116 "R_ROW_TOP")
-(net 117 "R_ROW_HOME")
-(net 118 "R_ROW_BOT")
-(net 119 "R_P0")
-(net 120 "R_ROW_THUMB")
-(net 121 "R_P8")
-(net 122 "R_P9")
+(net 40 "L_COL_THUMB5")
+(net 41 "thumbs_thumb5_thumb_at")
+(net 42 "R_COL_BRACKET")
+(net 43 "matrix_bracket_bottom_at")
+(net 44 "matrix_bracket_home_at")
+(net 45 "matrix_bracket_top_at")
+(net 46 "matrix_bracket_nums_at")
+(net 47 "matrix_bracket_fn_at")
+(net 48 "R_COL_NAV")
+(net 49 "matrix_nav_bottom_at")
+(net 50 "matrix_nav_home_at")
+(net 51 "matrix_nav_top_at")
+(net 52 "matrix_nav_nums_at")
+(net 53 "matrix_nav_fn_at")
+(net 54 "R_COL_MACRO")
+(net 55 "mirror_matrix_macro_bottom_at")
+(net 56 "R_COL_PINKY")
+(net 57 "mirror_matrix_pinky_bottom_at")
+(net 58 "R_COL_RING")
+(net 59 "mirror_matrix_ring_bottom_at")
+(net 60 "R_COL_MIDDLE")
+(net 61 "mirror_matrix_middle_bottom_at")
+(net 62 "R_COL_INDEX")
+(net 63 "mirror_matrix_index_bottom_at")
+(net 64 "R_COL_INNER")
+(net 65 "mirror_matrix_inner_bottom_at")
+(net 66 "mirror_matrix_macro_home_at")
+(net 67 "mirror_matrix_pinky_home_at")
+(net 68 "mirror_matrix_ring_home_at")
+(net 69 "mirror_matrix_middle_home_at")
+(net 70 "mirror_matrix_index_home_at")
+(net 71 "mirror_matrix_inner_home_at")
+(net 72 "mirror_matrix_macro_top_at")
+(net 73 "mirror_matrix_pinky_top_at")
+(net 74 "mirror_matrix_ring_top_at")
+(net 75 "mirror_matrix_middle_top_at")
+(net 76 "mirror_matrix_index_top_at")
+(net 77 "mirror_matrix_inner_top_at")
+(net 78 "mirror_matrix_macro_nums_at")
+(net 79 "mirror_matrix_pinky_nums_at")
+(net 80 "mirror_matrix_ring_nums_at")
+(net 81 "mirror_matrix_middle_nums_at")
+(net 82 "mirror_matrix_index_nums_at")
+(net 83 "mirror_matrix_inner_nums_at")
+(net 84 "mirror_matrix_macro_fn_at")
+(net 85 "mirror_matrix_pinky_fn_at")
+(net 86 "mirror_matrix_ring_fn_at")
+(net 87 "mirror_matrix_middle_fn_at")
+(net 88 "mirror_matrix_index_fn_at")
+(net 89 "mirror_matrix_inner_fn_at")
+(net 90 "mirror_thumbs_ring_thumb_at")
+(net 91 "mirror_thumbs_middle_thumb_at")
+(net 92 "mirror_thumbs_index_thumb_at")
+(net 93 "R_COL_THUMB5")
+(net 94 "mirror_thumbs_thumb5_thumb_at")
+(net 95 "L_RAW")
+(net 96 "L_GND")
+(net 97 "L_RST")
+(net 98 "L_VCC")
+(net 99 "L_P21")
+(net 100 "L_P20")
+(net 101 "L_ROW_FN")
+(net 102 "L_ROW_NUMS")
+(net 103 "L_ROW_TOP")
+(net 104 "L_ROW_HOME")
+(net 105 "L_ROW_BOT")
+(net 106 "L_P1")
+(net 107 "L_P0")
+(net 108 "L_ROW_THUMB")
+(net 109 "L_P8")
+(net 110 "L_P9")
+(net 111 "R_RAW")
+(net 112 "R_GND")
+(net 113 "R_RST")
+(net 114 "R_VCC")
+(net 115 "R_P20")
+(net 116 "R_ROW_FN")
+(net 117 "R_ROW_NUMS")
+(net 118 "R_ROW_TOP")
+(net 119 "R_ROW_HOME")
+(net 120 "R_ROW_BOT")
+(net 121 "R_P0")
+(net 122 "R_ROW_THUMB")
+(net 123 "R_P8")
+(net 124 "R_P9")
 
   
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
@@ -900,7 +902,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 128.36 51.01 23)
+      (at 128.36 51.01 -66)
 
       (fp_text reference "S34" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -921,7 +923,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 320.7 -0.45 0)
+      (at 320.84 -0.45 0)
 
       (fp_text reference "S35" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -942,7 +944,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 320.7 -19.33 0)
+      (at 320.84 -19.33 0)
 
       (fp_text reference "S36" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -963,7 +965,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 320.7 -38.22 0)
+      (at 320.84 -38.22 0)
 
       (fp_text reference "S37" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -984,7 +986,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 320.7 -57.11 0)
+      (at 320.84 -57.11 0)
 
       (fp_text reference "S38" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1005,7 +1007,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 320.7 -76 0)
+      (at 320.84 -76 0)
 
       (fp_text reference "S39" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1026,7 +1028,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 339.7 -0.45 0)
+      (at 339.84 -0.45 0)
 
       (fp_text reference "S40" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1047,7 +1049,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 339.7 -19.33 0)
+      (at 339.84 -19.33 0)
 
       (fp_text reference "S41" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1068,7 +1070,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 339.7 -38.22 0)
+      (at 339.84 -38.22 0)
 
       (fp_text reference "S42" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1089,7 +1091,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 339.7 -57.11 0)
+      (at 339.84 -57.11 0)
 
       (fp_text reference "S43" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1110,7 +1112,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 339.7 -76 0)
+      (at 339.84 -76 0)
 
       (fp_text reference "S44" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1131,7 +1133,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 301.55 -0.45 0)
+      (at 301.69 -0.45 0)
 
       (fp_text reference "S45" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1152,7 +1154,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 281.98 -3.4 0)
+      (at 282.12 -3.4 0)
 
       (fp_text reference "S46" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1173,7 +1175,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 262.33 -5.75 0)
+      (at 262.46999999999997 -5.75 0)
 
       (fp_text reference "S47" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1194,7 +1196,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 242.56 -5.78 0)
+      (at 242.7 -5.78 0)
 
       (fp_text reference "S48" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1215,7 +1217,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 222.94 -3.27 0)
+      (at 223.07999999999998 -3.27 0)
 
       (fp_text reference "S49" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1236,7 +1238,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 203.46999999999997 0.27 0)
+      (at 203.60999999999996 0.27 0)
 
       (fp_text reference "S50" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1257,7 +1259,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 301.7 -19 0)
+      (at 301.84 -19 0)
 
       (fp_text reference "S51" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1278,7 +1280,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 282.13 -21.95 0)
+      (at 282.27 -21.95 0)
 
       (fp_text reference "S52" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1299,7 +1301,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 262.48 -24.31 0)
+      (at 262.62 -24.31 0)
 
       (fp_text reference "S53" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1320,7 +1322,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -24.34 0)
+      (at 242.84999999999997 -24.34 0)
 
       (fp_text reference "S54" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1341,7 +1343,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -21.83 0)
+      (at 223.22999999999996 -21.83 0)
 
       (fp_text reference "S55" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1362,7 +1364,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 203.62 -18.28 0)
+      (at 203.76 -18.28 0)
 
       (fp_text reference "S56" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1383,7 +1385,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 301.7 -38 0)
+      (at 301.84 -38 0)
 
       (fp_text reference "S57" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1404,7 +1406,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 282.13 -40.95 0)
+      (at 282.27 -40.95 0)
 
       (fp_text reference "S58" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1425,7 +1427,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 262.48 -43.31 0)
+      (at 262.62 -43.31 0)
 
       (fp_text reference "S59" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1446,7 +1448,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -43.34 0)
+      (at 242.84999999999997 -43.34 0)
 
       (fp_text reference "S60" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1467,7 +1469,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -40.83 0)
+      (at 223.22999999999996 -40.83 0)
 
       (fp_text reference "S61" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1488,7 +1490,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 203.62 -37.28 0)
+      (at 203.76 -37.28 0)
 
       (fp_text reference "S62" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1509,7 +1511,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 301.7 -57 0)
+      (at 301.84 -57 0)
 
       (fp_text reference "S63" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1530,7 +1532,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 282.13 -59.95 0)
+      (at 282.27 -59.95 0)
 
       (fp_text reference "S64" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1551,7 +1553,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 262.48 -62.31 0)
+      (at 262.62 -62.31 0)
 
       (fp_text reference "S65" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1572,7 +1574,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -62.34 0)
+      (at 242.84999999999997 -62.34 0)
 
       (fp_text reference "S66" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1593,7 +1595,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -59.83 0)
+      (at 223.22999999999996 -59.83 0)
 
       (fp_text reference "S67" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1614,7 +1616,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 203.62 -56.28 0)
+      (at 203.76 -56.28 0)
 
       (fp_text reference "S68" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1635,7 +1637,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 301.7 -76 0)
+      (at 301.84 -76 0)
 
       (fp_text reference "S69" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1656,7 +1658,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 282.13 -78.95 0)
+      (at 282.27 -78.95 0)
 
       (fp_text reference "S70" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1677,7 +1679,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 262.48 -81.31 0)
+      (at 262.62 -81.31 0)
 
       (fp_text reference "S71" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1698,7 +1700,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -81.34 0)
+      (at 242.84999999999997 -81.34 0)
 
       (fp_text reference "S72" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1719,7 +1721,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -78.83 0)
+      (at 223.22999999999996 -78.83 0)
 
       (fp_text reference "S73" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1740,7 +1742,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 203.62 -75.28 0)
+      (at 203.76 -75.28 0)
 
       (fp_text reference "S74" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1761,7 +1763,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 242.48999999999998 12.11 0)
+      (at 242.62999999999997 12.11 0)
 
       (fp_text reference "S75" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1782,7 +1784,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 222.88 15.41 0)
+      (at 223.01999999999998 15.41 0)
 
       (fp_text reference "S76" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1803,7 +1805,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 193.94 27.6 36.19)
+      (at 194.07999999999998 27.6 36.19)
 
       (fp_text reference "S77" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -1824,7 +1826,7 @@
     
 
       (module PG1350 (layer F.Cu) (tedit 5DD50112)
-      (at 173.33999999999997 51.01 -23)
+      (at 173.47999999999996 51.01 66)
 
       (fp_text reference "S78" (at 0 0) (layer F.SilkS) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
       (fp_text value "Kailh_PG1350" (at 0 0) (layer F.Fab) hide (effects (font (size 1.27 1.27) (thickness 0.15))))
@@ -2571,10 +2573,10 @@
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 128.36 51.01 23)
+      (at 128.36 51.01 -66)
 
-      (fp_text reference "HS34" (at 2.5 -9.2 23) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
-      (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 23) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+      (fp_text reference "HS34" (at 2.5 -9.2 -66) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+      (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 -66) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
 
       (fp_line (start -4.8 -7.5) (end 9.8 -7.5) (layer B.SilkS) (width 0.12))
       (fp_line (start 9.8 -7.5) (end 9.8 -2.2) (layer B.SilkS) (width 0.12))
@@ -2583,17 +2585,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 23) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 11 "L_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 23) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 40 "thumbs_thumb5_thumb_at"))
+      (pad 1 smd rect (at -3.275 -5.95 -66) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 40 "L_COL_THUMB5"))
+      (pad 2 smd rect (at 8.275 -3.75 -66) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 41 "thumbs_thumb5_thumb_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 11 "L_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 23) (size 0.5 1.6) (layers B.Cu) (net 11 "L_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 40 "L_COL_THUMB5"))
+      (pad 1 smd rect (at -3.275 -5.15 -66) (size 0.5 1.6) (layers B.Cu) (net 40 "L_COL_THUMB5"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 320.7 -0.45 0)
+      (at 320.84 -0.45 0)
 
       (fp_text reference "HS35" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2605,17 +2607,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 41 "R_COL_BRACKET"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 42 "matrix_bracket_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 42 "R_COL_BRACKET"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 43 "matrix_bracket_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 41 "R_COL_BRACKET"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 41 "R_COL_BRACKET"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 42 "R_COL_BRACKET"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 42 "R_COL_BRACKET"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 320.7 -19.33 0)
+      (at 320.84 -19.33 0)
 
       (fp_text reference "HS36" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2627,17 +2629,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 41 "R_COL_BRACKET"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 43 "matrix_bracket_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 42 "R_COL_BRACKET"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 44 "matrix_bracket_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 41 "R_COL_BRACKET"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 41 "R_COL_BRACKET"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 42 "R_COL_BRACKET"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 42 "R_COL_BRACKET"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 320.7 -38.22 0)
+      (at 320.84 -38.22 0)
 
       (fp_text reference "HS37" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2649,17 +2651,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 41 "R_COL_BRACKET"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 44 "matrix_bracket_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 42 "R_COL_BRACKET"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 45 "matrix_bracket_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 41 "R_COL_BRACKET"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 41 "R_COL_BRACKET"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 42 "R_COL_BRACKET"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 42 "R_COL_BRACKET"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 320.7 -57.11 0)
+      (at 320.84 -57.11 0)
 
       (fp_text reference "HS38" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2671,17 +2673,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 41 "R_COL_BRACKET"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 45 "matrix_bracket_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 42 "R_COL_BRACKET"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 46 "matrix_bracket_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 41 "R_COL_BRACKET"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 41 "R_COL_BRACKET"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 42 "R_COL_BRACKET"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 42 "R_COL_BRACKET"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 320.7 -76 0)
+      (at 320.84 -76 0)
 
       (fp_text reference "HS39" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2693,17 +2695,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 41 "R_COL_BRACKET"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 46 "matrix_bracket_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 42 "R_COL_BRACKET"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 47 "matrix_bracket_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 41 "R_COL_BRACKET"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 41 "R_COL_BRACKET"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 42 "R_COL_BRACKET"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 42 "R_COL_BRACKET"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 339.7 -0.45 0)
+      (at 339.84 -0.45 0)
 
       (fp_text reference "HS40" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2715,17 +2717,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 47 "R_COL_NAV"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 48 "matrix_nav_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 48 "R_COL_NAV"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 49 "matrix_nav_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 47 "R_COL_NAV"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 47 "R_COL_NAV"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 48 "R_COL_NAV"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 48 "R_COL_NAV"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 339.7 -19.33 0)
+      (at 339.84 -19.33 0)
 
       (fp_text reference "HS41" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2737,17 +2739,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 47 "R_COL_NAV"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 49 "matrix_nav_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 48 "R_COL_NAV"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 50 "matrix_nav_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 47 "R_COL_NAV"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 47 "R_COL_NAV"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 48 "R_COL_NAV"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 48 "R_COL_NAV"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 339.7 -38.22 0)
+      (at 339.84 -38.22 0)
 
       (fp_text reference "HS42" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2759,17 +2761,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 47 "R_COL_NAV"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 50 "matrix_nav_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 48 "R_COL_NAV"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 51 "matrix_nav_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 47 "R_COL_NAV"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 47 "R_COL_NAV"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 48 "R_COL_NAV"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 48 "R_COL_NAV"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 339.7 -57.11 0)
+      (at 339.84 -57.11 0)
 
       (fp_text reference "HS43" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2781,17 +2783,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 47 "R_COL_NAV"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 51 "matrix_nav_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 48 "R_COL_NAV"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 52 "matrix_nav_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 47 "R_COL_NAV"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 47 "R_COL_NAV"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 48 "R_COL_NAV"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 48 "R_COL_NAV"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 339.7 -76 0)
+      (at 339.84 -76 0)
 
       (fp_text reference "HS44" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2803,17 +2805,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 47 "R_COL_NAV"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 52 "matrix_nav_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 48 "R_COL_NAV"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 53 "matrix_nav_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 47 "R_COL_NAV"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 47 "R_COL_NAV"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 48 "R_COL_NAV"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 48 "R_COL_NAV"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 301.55 -0.45 0)
+      (at 301.69 -0.45 0)
 
       (fp_text reference "HS45" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2825,17 +2827,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 53 "R_COL_MACRO"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 54 "mirror_matrix_macro_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 54 "R_COL_MACRO"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 55 "mirror_matrix_macro_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 53 "R_COL_MACRO"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 53 "R_COL_MACRO"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 54 "R_COL_MACRO"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 54 "R_COL_MACRO"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 281.98 -3.4 0)
+      (at 282.12 -3.4 0)
 
       (fp_text reference "HS46" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2847,17 +2849,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 55 "R_COL_PINKY"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 56 "mirror_matrix_pinky_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 56 "R_COL_PINKY"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "mirror_matrix_pinky_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 55 "R_COL_PINKY"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 55 "R_COL_PINKY"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 56 "R_COL_PINKY"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 56 "R_COL_PINKY"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 262.33 -5.75 0)
+      (at 262.46999999999997 -5.75 0)
 
       (fp_text reference "HS47" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2869,17 +2871,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "R_COL_RING"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "mirror_matrix_ring_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "R_COL_RING"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "mirror_matrix_ring_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 57 "R_COL_RING"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 57 "R_COL_RING"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 58 "R_COL_RING"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 58 "R_COL_RING"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 242.56 -5.78 0)
+      (at 242.7 -5.78 0)
 
       (fp_text reference "HS48" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2891,17 +2893,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "mirror_matrix_middle_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "mirror_matrix_middle_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 59 "R_COL_MIDDLE"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 59 "R_COL_MIDDLE"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 60 "R_COL_MIDDLE"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 60 "R_COL_MIDDLE"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 222.94 -3.27 0)
+      (at 223.07999999999998 -3.27 0)
 
       (fp_text reference "HS49" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2913,17 +2915,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "R_COL_INDEX"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "mirror_matrix_index_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "R_COL_INDEX"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "mirror_matrix_index_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 61 "R_COL_INDEX"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 61 "R_COL_INDEX"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 62 "R_COL_INDEX"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 62 "R_COL_INDEX"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 203.46999999999997 0.27 0)
+      (at 203.60999999999996 0.27 0)
 
       (fp_text reference "HS50" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2935,17 +2937,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "R_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 64 "mirror_matrix_inner_bottom_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 64 "R_COL_INNER"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 65 "mirror_matrix_inner_bottom_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 63 "R_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 63 "R_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 64 "R_COL_INNER"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 64 "R_COL_INNER"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 301.7 -19 0)
+      (at 301.84 -19 0)
 
       (fp_text reference "HS51" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2957,17 +2959,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 53 "R_COL_MACRO"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 65 "mirror_matrix_macro_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 54 "R_COL_MACRO"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 66 "mirror_matrix_macro_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 53 "R_COL_MACRO"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 53 "R_COL_MACRO"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 54 "R_COL_MACRO"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 54 "R_COL_MACRO"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 282.13 -21.95 0)
+      (at 282.27 -21.95 0)
 
       (fp_text reference "HS52" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -2979,17 +2981,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 55 "R_COL_PINKY"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 66 "mirror_matrix_pinky_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 56 "R_COL_PINKY"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 67 "mirror_matrix_pinky_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 55 "R_COL_PINKY"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 55 "R_COL_PINKY"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 56 "R_COL_PINKY"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 56 "R_COL_PINKY"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 262.48 -24.31 0)
+      (at 262.62 -24.31 0)
 
       (fp_text reference "HS53" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3001,17 +3003,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "R_COL_RING"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 67 "mirror_matrix_ring_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "R_COL_RING"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 68 "mirror_matrix_ring_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 57 "R_COL_RING"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 57 "R_COL_RING"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 58 "R_COL_RING"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 58 "R_COL_RING"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -24.34 0)
+      (at 242.84999999999997 -24.34 0)
 
       (fp_text reference "HS54" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3023,17 +3025,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 68 "mirror_matrix_middle_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 69 "mirror_matrix_middle_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 59 "R_COL_MIDDLE"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 59 "R_COL_MIDDLE"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 60 "R_COL_MIDDLE"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 60 "R_COL_MIDDLE"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -21.83 0)
+      (at 223.22999999999996 -21.83 0)
 
       (fp_text reference "HS55" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3045,17 +3047,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "R_COL_INDEX"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 69 "mirror_matrix_index_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "R_COL_INDEX"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 70 "mirror_matrix_index_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 61 "R_COL_INDEX"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 61 "R_COL_INDEX"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 62 "R_COL_INDEX"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 62 "R_COL_INDEX"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 203.62 -18.28 0)
+      (at 203.76 -18.28 0)
 
       (fp_text reference "HS56" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3067,17 +3069,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "R_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 70 "mirror_matrix_inner_home_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 64 "R_COL_INNER"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 71 "mirror_matrix_inner_home_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 63 "R_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 63 "R_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 64 "R_COL_INNER"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 64 "R_COL_INNER"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 301.7 -38 0)
+      (at 301.84 -38 0)
 
       (fp_text reference "HS57" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3089,17 +3091,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 53 "R_COL_MACRO"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 71 "mirror_matrix_macro_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 54 "R_COL_MACRO"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 72 "mirror_matrix_macro_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 53 "R_COL_MACRO"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 53 "R_COL_MACRO"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 54 "R_COL_MACRO"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 54 "R_COL_MACRO"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 282.13 -40.95 0)
+      (at 282.27 -40.95 0)
 
       (fp_text reference "HS58" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3111,17 +3113,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 55 "R_COL_PINKY"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 72 "mirror_matrix_pinky_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 56 "R_COL_PINKY"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 73 "mirror_matrix_pinky_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 55 "R_COL_PINKY"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 55 "R_COL_PINKY"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 56 "R_COL_PINKY"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 56 "R_COL_PINKY"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 262.48 -43.31 0)
+      (at 262.62 -43.31 0)
 
       (fp_text reference "HS59" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3133,17 +3135,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "R_COL_RING"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 73 "mirror_matrix_ring_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "R_COL_RING"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 74 "mirror_matrix_ring_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 57 "R_COL_RING"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 57 "R_COL_RING"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 58 "R_COL_RING"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 58 "R_COL_RING"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -43.34 0)
+      (at 242.84999999999997 -43.34 0)
 
       (fp_text reference "HS60" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3155,17 +3157,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 74 "mirror_matrix_middle_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 75 "mirror_matrix_middle_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 59 "R_COL_MIDDLE"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 59 "R_COL_MIDDLE"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 60 "R_COL_MIDDLE"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 60 "R_COL_MIDDLE"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -40.83 0)
+      (at 223.22999999999996 -40.83 0)
 
       (fp_text reference "HS61" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3177,17 +3179,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "R_COL_INDEX"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 75 "mirror_matrix_index_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "R_COL_INDEX"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 76 "mirror_matrix_index_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 61 "R_COL_INDEX"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 61 "R_COL_INDEX"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 62 "R_COL_INDEX"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 62 "R_COL_INDEX"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 203.62 -37.28 0)
+      (at 203.76 -37.28 0)
 
       (fp_text reference "HS62" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3199,17 +3201,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "R_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 76 "mirror_matrix_inner_top_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 64 "R_COL_INNER"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 77 "mirror_matrix_inner_top_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 63 "R_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 63 "R_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 64 "R_COL_INNER"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 64 "R_COL_INNER"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 301.7 -57 0)
+      (at 301.84 -57 0)
 
       (fp_text reference "HS63" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3221,17 +3223,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 53 "R_COL_MACRO"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 77 "mirror_matrix_macro_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 54 "R_COL_MACRO"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 78 "mirror_matrix_macro_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 53 "R_COL_MACRO"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 53 "R_COL_MACRO"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 54 "R_COL_MACRO"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 54 "R_COL_MACRO"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 282.13 -59.95 0)
+      (at 282.27 -59.95 0)
 
       (fp_text reference "HS64" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3243,17 +3245,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 55 "R_COL_PINKY"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 78 "mirror_matrix_pinky_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 56 "R_COL_PINKY"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 79 "mirror_matrix_pinky_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 55 "R_COL_PINKY"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 55 "R_COL_PINKY"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 56 "R_COL_PINKY"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 56 "R_COL_PINKY"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 262.48 -62.31 0)
+      (at 262.62 -62.31 0)
 
       (fp_text reference "HS65" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3265,17 +3267,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "R_COL_RING"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 79 "mirror_matrix_ring_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "R_COL_RING"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 80 "mirror_matrix_ring_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 57 "R_COL_RING"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 57 "R_COL_RING"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 58 "R_COL_RING"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 58 "R_COL_RING"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -62.34 0)
+      (at 242.84999999999997 -62.34 0)
 
       (fp_text reference "HS66" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3287,17 +3289,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 80 "mirror_matrix_middle_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 81 "mirror_matrix_middle_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 59 "R_COL_MIDDLE"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 59 "R_COL_MIDDLE"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 60 "R_COL_MIDDLE"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 60 "R_COL_MIDDLE"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -59.83 0)
+      (at 223.22999999999996 -59.83 0)
 
       (fp_text reference "HS67" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3309,17 +3311,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "R_COL_INDEX"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 81 "mirror_matrix_index_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "R_COL_INDEX"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 82 "mirror_matrix_index_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 61 "R_COL_INDEX"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 61 "R_COL_INDEX"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 62 "R_COL_INDEX"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 62 "R_COL_INDEX"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 203.62 -56.28 0)
+      (at 203.76 -56.28 0)
 
       (fp_text reference "HS68" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3331,17 +3333,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "R_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 82 "mirror_matrix_inner_nums_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 64 "R_COL_INNER"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 83 "mirror_matrix_inner_nums_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 63 "R_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 63 "R_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 64 "R_COL_INNER"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 64 "R_COL_INNER"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 301.7 -76 0)
+      (at 301.84 -76 0)
 
       (fp_text reference "HS69" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3353,17 +3355,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 53 "R_COL_MACRO"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 83 "mirror_matrix_macro_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 54 "R_COL_MACRO"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 84 "mirror_matrix_macro_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 53 "R_COL_MACRO"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 53 "R_COL_MACRO"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 54 "R_COL_MACRO"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 54 "R_COL_MACRO"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 282.13 -78.95 0)
+      (at 282.27 -78.95 0)
 
       (fp_text reference "HS70" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3375,17 +3377,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 55 "R_COL_PINKY"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 84 "mirror_matrix_pinky_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 56 "R_COL_PINKY"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 85 "mirror_matrix_pinky_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 55 "R_COL_PINKY"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 55 "R_COL_PINKY"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 56 "R_COL_PINKY"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 56 "R_COL_PINKY"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 262.48 -81.31 0)
+      (at 262.62 -81.31 0)
 
       (fp_text reference "HS71" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3397,17 +3399,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "R_COL_RING"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 85 "mirror_matrix_ring_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "R_COL_RING"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 86 "mirror_matrix_ring_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 57 "R_COL_RING"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 57 "R_COL_RING"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 58 "R_COL_RING"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 58 "R_COL_RING"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 242.70999999999998 -81.34 0)
+      (at 242.84999999999997 -81.34 0)
 
       (fp_text reference "HS72" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3419,17 +3421,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 86 "mirror_matrix_middle_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 87 "mirror_matrix_middle_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 59 "R_COL_MIDDLE"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 59 "R_COL_MIDDLE"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 60 "R_COL_MIDDLE"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 60 "R_COL_MIDDLE"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 223.08999999999997 -78.83 0)
+      (at 223.22999999999996 -78.83 0)
 
       (fp_text reference "HS73" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3441,17 +3443,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "R_COL_INDEX"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 87 "mirror_matrix_index_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "R_COL_INDEX"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 88 "mirror_matrix_index_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 61 "R_COL_INDEX"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 61 "R_COL_INDEX"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 62 "R_COL_INDEX"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 62 "R_COL_INDEX"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 203.62 -75.28 0)
+      (at 203.76 -75.28 0)
 
       (fp_text reference "HS74" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3463,17 +3465,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "R_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 88 "mirror_matrix_inner_fn_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 64 "R_COL_INNER"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 89 "mirror_matrix_inner_fn_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 63 "R_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 63 "R_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 64 "R_COL_INNER"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 64 "R_COL_INNER"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 242.48999999999998 12.11 0)
+      (at 242.62999999999997 12.11 0)
 
       (fp_text reference "HS75" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3485,17 +3487,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 57 "R_COL_RING"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 89 "mirror_thumbs_ring_thumb_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 58 "R_COL_RING"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 90 "mirror_thumbs_ring_thumb_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 57 "R_COL_RING"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 57 "R_COL_RING"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 58 "R_COL_RING"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 58 "R_COL_RING"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 222.88 15.41 0)
+      (at 223.01999999999998 15.41 0)
 
       (fp_text reference "HS76" (at 2.5 -9.2 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 0) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3507,17 +3509,17 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 90 "mirror_thumbs_middle_thumb_at"))
+      (pad 1 smd rect (at -3.275 -5.95 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 2 smd rect (at 8.275 -3.75 0) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 91 "mirror_thumbs_middle_thumb_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 59 "R_COL_MIDDLE"))
-      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 59 "R_COL_MIDDLE"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 60 "R_COL_MIDDLE"))
+      (pad 1 smd rect (at -3.275 -5.15 0) (size 0.5 1.6) (layers B.Cu) (net 60 "R_COL_MIDDLE"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 193.94 27.6 36.19)
+      (at 194.07999999999998 27.6 36.19)
 
       (fp_text reference "HS77" (at 2.5 -9.2 36.19) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
       (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 36.19) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
@@ -3529,20 +3531,20 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 36.19) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 61 "R_COL_INDEX"))
-      (pad 2 smd rect (at 8.275 -3.75 36.19) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 91 "mirror_thumbs_index_thumb_at"))
+      (pad 1 smd rect (at -3.275 -5.95 36.19) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 62 "R_COL_INDEX"))
+      (pad 2 smd rect (at 8.275 -3.75 36.19) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 92 "mirror_thumbs_index_thumb_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 61 "R_COL_INDEX"))
-      (pad 1 smd rect (at -3.275 -5.15 36.19) (size 0.5 1.6) (layers B.Cu) (net 61 "R_COL_INDEX"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 62 "R_COL_INDEX"))
+      (pad 1 smd rect (at -3.275 -5.15 36.19) (size 0.5 1.6) (layers B.Cu) (net 62 "R_COL_INDEX"))
       )
     
 
       (module Kailh_Choc_Hotswap (layer B.Cu) (tedit 5DD50112)
-      (at 173.33999999999997 51.01 -23)
+      (at 173.47999999999996 51.01 66)
 
-      (fp_text reference "HS78" (at 2.5 -9.2 -23) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
-      (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 -23) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+      (fp_text reference "HS78" (at 2.5 -9.2 66) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+      (fp_text value "Kailh_Choc_Hotswap" (at 2.5 -9.2 66) (layer B.Fab) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
 
       (fp_line (start -4.8 -7.5) (end 9.8 -7.5) (layer B.SilkS) (width 0.12))
       (fp_line (start 9.8 -7.5) (end 9.8 -2.2) (layer B.SilkS) (width 0.12))
@@ -3551,12 +3553,12 @@
 
       (pad "" np_thru_hole circle (at 5 -3.75) (size 3 3) (drill 3) (layers *.Cu *.Mask))
       (pad "" np_thru_hole circle (at 0 -5.95) (size 3 3) (drill 3) (layers *.Cu *.Mask))
-      (pad 1 smd rect (at -3.275 -5.95 -23) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 63 "R_COL_INNER"))
-      (pad 2 smd rect (at 8.275 -3.75 -23) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 92 "mirror_thumbs_thumb5_thumb_at"))
+      (pad 1 smd rect (at -3.275 -5.95 66) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 93 "R_COL_THUMB5"))
+      (pad 2 smd rect (at 8.275 -3.75 66) (size 2.6 2.6) (layers B.Cu B.Paste B.Mask) (net 94 "mirror_thumbs_thumb5_thumb_at"))
 
       
-      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 63 "R_COL_INNER"))
-      (pad 1 smd rect (at -3.275 -5.15 -23) (size 0.5 1.6) (layers B.Cu) (net 63 "R_COL_INNER"))
+      (pad 1 thru_hole circle (at -3.275 -4.35) (size 0.6 0.6) (drill 0.3) (layers *.Cu) (net 93 "R_COL_THUMB5"))
+      (pad 1 smd rect (at -3.275 -5.15 66) (size 0.5 1.6) (layers B.Cu) (net 93 "R_COL_THUMB5"))
       )
     
 
@@ -3587,36 +3589,36 @@
       (fp_text user D8 (at 11.43 5 90) (layer F.SilkS) (effects (font (size 0.7 0.7) (thickness 0.12))))
       (fp_text user D9 (at 13.97 5 90) (layer F.SilkS) (effects (font (size 0.7 0.7) (thickness 0.12))))
 
-      (pad 1 thru_hole rect (at -13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 93 "L_RAW"))
-      (pad 2 thru_hole circle (at -11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 94 "L_GND"))
-      (pad 3 thru_hole circle (at -8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 95 "L_RST"))
-      (pad 4 thru_hole circle (at -6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 96 "L_VCC"))
-      (pad 5 thru_hole circle (at -3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 97 "L_P21"))
-      (pad 6 thru_hole circle (at -1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 98 "L_P20"))
-      (pad 7 thru_hole circle (at 1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 99 "L_ROW_FN"))
-      (pad 8 thru_hole circle (at 3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 100 "L_ROW_NUMS"))
-      (pad 9 thru_hole circle (at 6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 101 "L_ROW_TOP"))
-      (pad 10 thru_hole circle (at 8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 102 "L_ROW_HOME"))
+      (pad 1 thru_hole rect (at -13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 95 "L_RAW"))
+      (pad 2 thru_hole circle (at -11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 96 "L_GND"))
+      (pad 3 thru_hole circle (at -8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 97 "L_RST"))
+      (pad 4 thru_hole circle (at -6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 98 "L_VCC"))
+      (pad 5 thru_hole circle (at -3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 99 "L_P21"))
+      (pad 6 thru_hole circle (at -1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 100 "L_P20"))
+      (pad 7 thru_hole circle (at 1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 101 "L_ROW_FN"))
+      (pad 8 thru_hole circle (at 3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 102 "L_ROW_NUMS"))
+      (pad 9 thru_hole circle (at 6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 103 "L_ROW_TOP"))
+      (pad 10 thru_hole circle (at 8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 104 "L_ROW_HOME"))
       (pad 11 thru_hole circle (at 11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 3 "L_COL_PINKY"))
-      (pad 12 thru_hole circle (at 13.97 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 103 "L_ROW_BOT"))
+      (pad 12 thru_hole circle (at 13.97 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 105 "L_ROW_BOT"))
 
-      (pad 13 thru_hole circle (at -13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 104 "L_P1"))
-      (pad 14 thru_hole circle (at -11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 105 "L_P0"))
-      (pad 15 thru_hole circle (at -8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 94 "L_GND"))
-      (pad 16 thru_hole circle (at -6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 94 "L_GND"))
+      (pad 13 thru_hole circle (at -13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 106 "L_P1"))
+      (pad 14 thru_hole circle (at -11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 107 "L_P0"))
+      (pad 15 thru_hole circle (at -8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 96 "L_GND"))
+      (pad 16 thru_hole circle (at -6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 96 "L_GND"))
       (pad 17 thru_hole circle (at -3.81 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 11 "L_COL_INNER"))
-      (pad 18 thru_hole circle (at -1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 106 "L_ROW_THUMB"))
+      (pad 18 thru_hole circle (at -1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 108 "L_ROW_THUMB"))
       (pad 19 thru_hole circle (at 1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 9 "L_COL_INDEX"))
       (pad 20 thru_hole circle (at 3.81 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 7 "L_COL_MIDDLE"))
       (pad 21 thru_hole circle (at 6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 5 "L_COL_RING"))
       (pad 22 thru_hole circle (at 8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 1 "L_COL_MACRO"))
-      (pad 23 thru_hole circle (at 11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 107 "L_P8"))
-      (pad 24 thru_hole circle (at 13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 108 "L_P9"))
+      (pad 23 thru_hole circle (at 11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 109 "L_P8"))
+      (pad 24 thru_hole circle (at 13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 110 "L_P9"))
       )
     
 
       (module nice_nano_v2 (layer F.Cu) (tedit 5B307E4C)
-      (at 331.7 -76 180)
+      (at 331.84 -76 180)
       (fp_text reference "MCU2" (at 0 0) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value "nice_nano_v2" (at 0 0) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
 
@@ -3642,31 +3644,31 @@
       (fp_text user D8 (at 11.43 5 90) (layer F.SilkS) (effects (font (size 0.7 0.7) (thickness 0.12))))
       (fp_text user D9 (at 13.97 5 90) (layer F.SilkS) (effects (font (size 0.7 0.7) (thickness 0.12))))
 
-      (pad 1 thru_hole rect (at -13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 109 "R_RAW"))
-      (pad 2 thru_hole circle (at -11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 110 "R_GND"))
-      (pad 3 thru_hole circle (at -8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 111 "R_RST"))
-      (pad 4 thru_hole circle (at -6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 112 "R_VCC"))
-      (pad 5 thru_hole circle (at -3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 47 "R_COL_NAV"))
-      (pad 6 thru_hole circle (at -1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 113 "R_P20"))
-      (pad 7 thru_hole circle (at 1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 114 "R_ROW_FN"))
-      (pad 8 thru_hole circle (at 3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 115 "R_ROW_NUMS"))
-      (pad 9 thru_hole circle (at 6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 116 "R_ROW_TOP"))
-      (pad 10 thru_hole circle (at 8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 117 "R_ROW_HOME"))
-      (pad 11 thru_hole circle (at 11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 55 "R_COL_PINKY"))
-      (pad 12 thru_hole circle (at 13.97 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 118 "R_ROW_BOT"))
+      (pad 1 thru_hole rect (at -13.97 7.62 0) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 111 "R_RAW"))
+      (pad 2 thru_hole circle (at -11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 112 "R_GND"))
+      (pad 3 thru_hole circle (at -8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 113 "R_RST"))
+      (pad 4 thru_hole circle (at -6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 114 "R_VCC"))
+      (pad 5 thru_hole circle (at -3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 48 "R_COL_NAV"))
+      (pad 6 thru_hole circle (at -1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 115 "R_P20"))
+      (pad 7 thru_hole circle (at 1.27 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 116 "R_ROW_FN"))
+      (pad 8 thru_hole circle (at 3.81 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 117 "R_ROW_NUMS"))
+      (pad 9 thru_hole circle (at 6.35 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 118 "R_ROW_TOP"))
+      (pad 10 thru_hole circle (at 8.89 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 119 "R_ROW_HOME"))
+      (pad 11 thru_hole circle (at 11.43 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 56 "R_COL_PINKY"))
+      (pad 12 thru_hole circle (at 13.97 7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 120 "R_ROW_BOT"))
 
-      (pad 13 thru_hole circle (at -13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 41 "R_COL_BRACKET"))
-      (pad 14 thru_hole circle (at -11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 119 "R_P0"))
-      (pad 15 thru_hole circle (at -8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 110 "R_GND"))
-      (pad 16 thru_hole circle (at -6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 110 "R_GND"))
-      (pad 17 thru_hole circle (at -3.81 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 63 "R_COL_INNER"))
-      (pad 18 thru_hole circle (at -1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 120 "R_ROW_THUMB"))
-      (pad 19 thru_hole circle (at 1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 61 "R_COL_INDEX"))
-      (pad 20 thru_hole circle (at 3.81 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 59 "R_COL_MIDDLE"))
-      (pad 21 thru_hole circle (at 6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 57 "R_COL_RING"))
-      (pad 22 thru_hole circle (at 8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 53 "R_COL_MACRO"))
-      (pad 23 thru_hole circle (at 11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 121 "R_P8"))
-      (pad 24 thru_hole circle (at 13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 122 "R_P9"))
+      (pad 13 thru_hole circle (at -13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 42 "R_COL_BRACKET"))
+      (pad 14 thru_hole circle (at -11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 121 "R_P0"))
+      (pad 15 thru_hole circle (at -8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 112 "R_GND"))
+      (pad 16 thru_hole circle (at -6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 112 "R_GND"))
+      (pad 17 thru_hole circle (at -3.81 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 64 "R_COL_INNER"))
+      (pad 18 thru_hole circle (at -1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 122 "R_ROW_THUMB"))
+      (pad 19 thru_hole circle (at 1.27 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 62 "R_COL_INDEX"))
+      (pad 20 thru_hole circle (at 3.81 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 60 "R_COL_MIDDLE"))
+      (pad 21 thru_hole circle (at 6.35 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 58 "R_COL_RING"))
+      (pad 22 thru_hole circle (at 8.89 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 54 "R_COL_MACRO"))
+      (pad 23 thru_hole circle (at 11.43 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 123 "R_P8"))
+      (pad 24 thru_hole circle (at 13.97 -7.62) (size 1.7526 1.7526) (drill 1.0922) (layers *.Cu *.Mask) (net 124 "R_P9"))
       )
     
 
@@ -3701,7 +3703,7 @@
     
 
     (module M3 (layer F.Cu) (tedit 5B24D78E)
-      (at 341.7 -92 0)
+      (at 341.84 -92 0)
       (fp_text reference "H4" (at 0 -4.2) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value "M3" (at 0 0) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_circle (center 0 0) (end 3 0) (layer F.SilkS) (width 0.12))
@@ -3711,7 +3713,7 @@
     
 
     (module M3 (layer F.Cu) (tedit 5B24D78E)
-      (at 309.7 14 0)
+      (at 309.84 14 0)
       (fp_text reference "H5" (at 0 -4.2) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value "M3" (at 0 0) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_circle (center 0 0) (end 3 0) (layer F.SilkS) (width 0.12))
@@ -3721,7 +3723,7 @@
     
 
     (module M3 (layer F.Cu) (tedit 5B24D78E)
-      (at 161.7 62 0)
+      (at 161.83999999999997 62 0)
       (fp_text reference "H6" (at 0 -4.2) (layer F.SilkS) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_text value "M3" (at 0 0) (layer F.Fab) hide (effects (font (size 1 1) (thickness 0.15))))
       (fp_circle (center 0 0) (end 3 0) (layer F.SilkS) (width 0.12))
@@ -3769,11 +3771,11 @@
             (fp_circle (center -0.12 -0.04) (end 2.88 -0.04) (layer F.Fab) (width 0.12))
 
             
-            (pad A thru_hole rect (at -7.62 -2.54 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 98 "L_P20"))
-            (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 94 "L_GND"))
-            (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 107 "L_P8"))
-            (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 108 "L_P9"))
-            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 94 "L_GND"))
+            (pad A thru_hole rect (at -7.62 -2.54 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 100 "L_P20"))
+            (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 96 "L_GND"))
+            (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 109 "L_P8"))
+            (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 110 "L_P9"))
+            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 96 "L_GND"))
 
             
             (pad "" thru_hole rect (at -0.12 -5.64 0) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
@@ -3783,7 +3785,7 @@
 
         (module rotary_encoder (layer F.Cu) (tedit 603326DE)
 
-            (at 185.7 -90 180)
+            (at 185.83999999999997 -90 180)
         
             
             (fp_text reference "ROT2" (at 0 0.5) (layer F.SilkS) 
@@ -3820,11 +3822,11 @@
             (fp_circle (center -0.12 -0.04) (end 2.88 -0.04) (layer F.Fab) (width 0.12))
 
             
-            (pad A thru_hole rect (at -7.62 -2.54 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 113 "R_P20"))
-            (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 110 "R_GND"))
-            (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 121 "R_P8"))
-            (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 122 "R_P9"))
-            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 110 "R_GND"))
+            (pad A thru_hole rect (at -7.62 -2.54 0) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 115 "R_P20"))
+            (pad C thru_hole circle (at -7.62 -0.04) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 112 "R_GND"))
+            (pad B thru_hole circle (at -7.62 2.46) (size 2 2) (drill 1) (layers *.Cu *.Mask) (net 123 "R_P8"))
+            (pad 1 thru_hole circle (at 6.88 -2.54) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 124 "R_P9"))
+            (pad 2 thru_hole circle (at 6.88 2.46) (size 1.5 1.5) (drill 1) (layers *.Cu *.Mask) (net 112 "R_GND"))
 
             
             (pad "" thru_hole rect (at -0.12 -5.64 0) (size 3.2 2) (drill oval 2.8 1.5) (layers *.Cu *.Mask))
@@ -3843,7 +3845,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_BOT"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 105 "L_ROW_BOT"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 2 "matrix_macro_bottom_at"))
     )
     
@@ -3859,7 +3861,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_BOT"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 105 "L_ROW_BOT"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 4 "matrix_pinky_bottom_at"))
     )
     
@@ -3875,7 +3877,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_BOT"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 105 "L_ROW_BOT"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 6 "matrix_ring_bottom_at"))
     )
     
@@ -3891,7 +3893,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_BOT"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 105 "L_ROW_BOT"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 8 "matrix_middle_bottom_at"))
     )
     
@@ -3907,7 +3909,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_BOT"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 105 "L_ROW_BOT"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 10 "matrix_index_bottom_at"))
     )
     
@@ -3923,7 +3925,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_BOT"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 105 "L_ROW_BOT"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 12 "matrix_inner_bottom_at"))
     )
     
@@ -3939,7 +3941,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_HOME"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 104 "L_ROW_HOME"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 13 "matrix_macro_home_at"))
     )
     
@@ -3955,7 +3957,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_HOME"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 104 "L_ROW_HOME"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 14 "matrix_pinky_home_at"))
     )
     
@@ -3971,7 +3973,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_HOME"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 104 "L_ROW_HOME"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 15 "matrix_ring_home_at"))
     )
     
@@ -3987,7 +3989,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_HOME"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 104 "L_ROW_HOME"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 16 "matrix_middle_home_at"))
     )
     
@@ -4003,7 +4005,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_HOME"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 104 "L_ROW_HOME"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 17 "matrix_index_home_at"))
     )
     
@@ -4019,7 +4021,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_HOME"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 104 "L_ROW_HOME"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 18 "matrix_inner_home_at"))
     )
     
@@ -4035,7 +4037,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_TOP"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_TOP"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 19 "matrix_macro_top_at"))
     )
     
@@ -4051,7 +4053,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_TOP"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_TOP"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 20 "matrix_pinky_top_at"))
     )
     
@@ -4067,7 +4069,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_TOP"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_TOP"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 21 "matrix_ring_top_at"))
     )
     
@@ -4083,7 +4085,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_TOP"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_TOP"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 22 "matrix_middle_top_at"))
     )
     
@@ -4099,7 +4101,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_TOP"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_TOP"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 23 "matrix_index_top_at"))
     )
     
@@ -4115,7 +4117,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_TOP"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 103 "L_ROW_TOP"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 24 "matrix_inner_top_at"))
     )
     
@@ -4131,7 +4133,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 100 "L_ROW_NUMS"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_NUMS"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 25 "matrix_macro_nums_at"))
     )
     
@@ -4147,7 +4149,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 100 "L_ROW_NUMS"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_NUMS"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 26 "matrix_pinky_nums_at"))
     )
     
@@ -4163,7 +4165,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 100 "L_ROW_NUMS"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_NUMS"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 27 "matrix_ring_nums_at"))
     )
     
@@ -4179,7 +4181,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 100 "L_ROW_NUMS"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_NUMS"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 28 "matrix_middle_nums_at"))
     )
     
@@ -4195,7 +4197,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 100 "L_ROW_NUMS"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_NUMS"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 29 "matrix_index_nums_at"))
     )
     
@@ -4211,7 +4213,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 100 "L_ROW_NUMS"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 102 "L_ROW_NUMS"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 30 "matrix_inner_nums_at"))
     )
     
@@ -4227,7 +4229,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 99 "L_ROW_FN"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_FN"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 31 "matrix_macro_fn_at"))
     )
     
@@ -4243,7 +4245,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 99 "L_ROW_FN"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_FN"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 32 "matrix_pinky_fn_at"))
     )
     
@@ -4259,7 +4261,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 99 "L_ROW_FN"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_FN"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 33 "matrix_ring_fn_at"))
     )
     
@@ -4275,7 +4277,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 99 "L_ROW_FN"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_FN"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 34 "matrix_middle_fn_at"))
     )
     
@@ -4291,7 +4293,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 99 "L_ROW_FN"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_FN"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 35 "matrix_index_fn_at"))
     )
     
@@ -4307,7 +4309,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 99 "L_ROW_FN"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 101 "L_ROW_FN"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 36 "matrix_inner_fn_at"))
     )
     
@@ -4323,7 +4325,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 106 "L_ROW_THUMB"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 108 "L_ROW_THUMB"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 37 "thumbs_ring_thumb_at"))
     )
     
@@ -4339,7 +4341,7 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 106 "L_ROW_THUMB"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 108 "L_ROW_THUMB"))
         (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 38 "thumbs_middle_thumb_at"))
     )
     
@@ -4355,14 +4357,14 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 -36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 106 "L_ROW_THUMB"))
+        (pad 1 smd rect (at -1.65 0 -36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 108 "L_ROW_THUMB"))
         (pad 2 smd rect (at 1.65 0 -36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 39 "thumbs_index_thumb_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 130.3136556 55.6125243 23)
-        (fp_text reference "D34" (at 0 1.8 23) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+        (at 123.79227270000001 53.0436832 -66)
+        (fp_text reference "D34" (at 0 1.8 -66) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
         (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
@@ -4371,13 +4373,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 23) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 106 "L_ROW_THUMB"))
-        (pad 2 smd rect (at 1.65 0 23) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 40 "thumbs_thumb5_thumb_at"))
+        (pad 1 smd rect (at -1.65 0 -66) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 108 "L_ROW_THUMB"))
+        (pad 2 smd rect (at 1.65 0 -66) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 41 "thumbs_thumb5_thumb_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 320.7 4.55 0)
+        (at 320.84 4.55 0)
         (fp_text reference "D35" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4387,13 +4389,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 42 "matrix_bracket_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "matrix_bracket_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 320.7 -14.329999999999998 0)
+        (at 320.84 -14.329999999999998 0)
         (fp_text reference "D36" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4403,13 +4405,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 43 "matrix_bracket_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "matrix_bracket_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 320.7 -33.22 0)
+        (at 320.84 -33.22 0)
         (fp_text reference "D37" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4419,13 +4421,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 44 "matrix_bracket_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "matrix_bracket_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 320.7 -52.11 0)
+        (at 320.84 -52.11 0)
         (fp_text reference "D38" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4435,13 +4437,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 45 "matrix_bracket_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "matrix_bracket_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 320.7 -71 0)
+        (at 320.84 -71 0)
         (fp_text reference "D39" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4451,13 +4453,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 46 "matrix_bracket_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 47 "matrix_bracket_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 339.7 4.55 0)
+        (at 339.84 4.55 0)
         (fp_text reference "D40" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4467,13 +4469,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 48 "matrix_nav_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 49 "matrix_nav_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 339.7 -14.329999999999998 0)
+        (at 339.84 -14.329999999999998 0)
         (fp_text reference "D41" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4483,13 +4485,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 49 "matrix_nav_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 50 "matrix_nav_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 339.7 -33.22 0)
+        (at 339.84 -33.22 0)
         (fp_text reference "D42" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4499,13 +4501,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 50 "matrix_nav_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 51 "matrix_nav_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 339.7 -52.11 0)
+        (at 339.84 -52.11 0)
         (fp_text reference "D43" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4515,13 +4517,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 51 "matrix_nav_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 52 "matrix_nav_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 339.7 -71 0)
+        (at 339.84 -71 0)
         (fp_text reference "D44" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4531,13 +4533,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 52 "matrix_nav_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 53 "matrix_nav_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 301.55 4.55 0)
+        (at 301.69 4.55 0)
         (fp_text reference "D45" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4547,13 +4549,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 54 "mirror_matrix_macro_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 55 "mirror_matrix_macro_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 281.98 1.6 0)
+        (at 282.12 1.6 0)
         (fp_text reference "D46" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4563,13 +4565,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 56 "mirror_matrix_pinky_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 57 "mirror_matrix_pinky_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 262.33 -0.75 0)
+        (at 262.46999999999997 -0.75 0)
         (fp_text reference "D47" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4579,13 +4581,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 58 "mirror_matrix_ring_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 59 "mirror_matrix_ring_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 242.56 -0.7800000000000002 0)
+        (at 242.7 -0.7800000000000002 0)
         (fp_text reference "D48" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4595,13 +4597,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 60 "mirror_matrix_middle_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 61 "mirror_matrix_middle_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 222.94 1.73 0)
+        (at 223.07999999999998 1.73 0)
         (fp_text reference "D49" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4611,13 +4613,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 62 "mirror_matrix_index_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 63 "mirror_matrix_index_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 203.46999999999997 5.27 0)
+        (at 203.60999999999996 5.27 0)
         (fp_text reference "D50" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4627,13 +4629,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_BOT"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 64 "mirror_matrix_inner_bottom_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_BOT"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 65 "mirror_matrix_inner_bottom_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 301.7 -14 0)
+        (at 301.84 -14 0)
         (fp_text reference "D51" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4643,13 +4645,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 65 "mirror_matrix_macro_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 66 "mirror_matrix_macro_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 282.13 -16.95 0)
+        (at 282.27 -16.95 0)
         (fp_text reference "D52" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4659,13 +4661,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 66 "mirror_matrix_pinky_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 67 "mirror_matrix_pinky_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 262.48 -19.31 0)
+        (at 262.62 -19.31 0)
         (fp_text reference "D53" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4675,13 +4677,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 67 "mirror_matrix_ring_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 68 "mirror_matrix_ring_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 242.70999999999998 -19.34 0)
+        (at 242.84999999999997 -19.34 0)
         (fp_text reference "D54" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4691,13 +4693,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 68 "mirror_matrix_middle_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 69 "mirror_matrix_middle_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 223.08999999999997 -16.83 0)
+        (at 223.22999999999996 -16.83 0)
         (fp_text reference "D55" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4707,13 +4709,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 69 "mirror_matrix_index_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 70 "mirror_matrix_index_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 203.62 -13.280000000000001 0)
+        (at 203.76 -13.280000000000001 0)
         (fp_text reference "D56" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4723,13 +4725,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_HOME"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 70 "mirror_matrix_inner_home_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 119 "R_ROW_HOME"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 71 "mirror_matrix_inner_home_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 301.7 -33 0)
+        (at 301.84 -33 0)
         (fp_text reference "D57" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4739,13 +4741,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 71 "mirror_matrix_macro_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 72 "mirror_matrix_macro_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 282.13 -35.95 0)
+        (at 282.27 -35.95 0)
         (fp_text reference "D58" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4755,13 +4757,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 72 "mirror_matrix_pinky_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 73 "mirror_matrix_pinky_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 262.48 -38.31 0)
+        (at 262.62 -38.31 0)
         (fp_text reference "D59" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4771,13 +4773,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 73 "mirror_matrix_ring_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 74 "mirror_matrix_ring_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 242.70999999999998 -38.34 0)
+        (at 242.84999999999997 -38.34 0)
         (fp_text reference "D60" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4787,13 +4789,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 74 "mirror_matrix_middle_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 75 "mirror_matrix_middle_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 223.08999999999997 -35.83 0)
+        (at 223.22999999999996 -35.83 0)
         (fp_text reference "D61" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4803,13 +4805,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 75 "mirror_matrix_index_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 76 "mirror_matrix_index_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 203.62 -32.28 0)
+        (at 203.76 -32.28 0)
         (fp_text reference "D62" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4819,13 +4821,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_TOP"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 76 "mirror_matrix_inner_top_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 118 "R_ROW_TOP"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 77 "mirror_matrix_inner_top_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 301.7 -52 0)
+        (at 301.84 -52 0)
         (fp_text reference "D63" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4835,13 +4837,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 77 "mirror_matrix_macro_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 78 "mirror_matrix_macro_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 282.13 -54.95 0)
+        (at 282.27 -54.95 0)
         (fp_text reference "D64" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4851,13 +4853,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 78 "mirror_matrix_pinky_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 79 "mirror_matrix_pinky_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 262.48 -57.31 0)
+        (at 262.62 -57.31 0)
         (fp_text reference "D65" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4867,13 +4869,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 79 "mirror_matrix_ring_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 80 "mirror_matrix_ring_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 242.70999999999998 -57.34 0)
+        (at 242.84999999999997 -57.34 0)
         (fp_text reference "D66" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4883,13 +4885,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 80 "mirror_matrix_middle_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 81 "mirror_matrix_middle_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 223.08999999999997 -54.83 0)
+        (at 223.22999999999996 -54.83 0)
         (fp_text reference "D67" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4899,13 +4901,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 81 "mirror_matrix_index_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 82 "mirror_matrix_index_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 203.62 -51.28 0)
+        (at 203.76 -51.28 0)
         (fp_text reference "D68" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4915,13 +4917,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 115 "R_ROW_NUMS"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 82 "mirror_matrix_inner_nums_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 117 "R_ROW_NUMS"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 83 "mirror_matrix_inner_nums_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 301.7 -71 0)
+        (at 301.84 -71 0)
         (fp_text reference "D69" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4931,13 +4933,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 83 "mirror_matrix_macro_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 84 "mirror_matrix_macro_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 282.13 -73.95 0)
+        (at 282.27 -73.95 0)
         (fp_text reference "D70" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4947,13 +4949,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 84 "mirror_matrix_pinky_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 85 "mirror_matrix_pinky_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 262.48 -76.31 0)
+        (at 262.62 -76.31 0)
         (fp_text reference "D71" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4963,13 +4965,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 85 "mirror_matrix_ring_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 86 "mirror_matrix_ring_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 242.70999999999998 -76.34 0)
+        (at 242.84999999999997 -76.34 0)
         (fp_text reference "D72" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4979,13 +4981,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 86 "mirror_matrix_middle_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 87 "mirror_matrix_middle_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 223.08999999999997 -73.83 0)
+        (at 223.22999999999996 -73.83 0)
         (fp_text reference "D73" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -4995,13 +4997,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 87 "mirror_matrix_index_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 88 "mirror_matrix_index_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 203.62 -70.28 0)
+        (at 203.76 -70.28 0)
         (fp_text reference "D74" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -5011,13 +5013,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 114 "R_ROW_FN"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 88 "mirror_matrix_inner_fn_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 116 "R_ROW_FN"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 89 "mirror_matrix_inner_fn_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 242.48999999999998 17.11 0)
+        (at 242.62999999999997 17.11 0)
         (fp_text reference "D75" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -5027,13 +5029,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_THUMB"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 89 "mirror_thumbs_ring_thumb_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 122 "R_ROW_THUMB"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 90 "mirror_thumbs_ring_thumb_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 222.88 20.41 0)
+        (at 223.01999999999998 20.41 0)
         (fp_text reference "D76" (at 0 1.8 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -5043,13 +5045,13 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_THUMB"))
-        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 90 "mirror_thumbs_middle_thumb_at"))
+        (pad 1 smd rect (at -1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 122 "R_ROW_THUMB"))
+        (pad 2 smd rect (at 1.65 0 0) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 91 "mirror_thumbs_middle_thumb_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 196.8923241 31.6353169 36.19)
+        (at 197.03232409999998 31.6353169 36.19)
         (fp_text reference "D77" (at 0 1.8 36.19) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
@@ -5059,14 +5061,14 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_THUMB"))
-        (pad 2 smd rect (at 1.65 0 36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 91 "mirror_thumbs_index_thumb_at"))
+        (pad 1 smd rect (at -1.65 0 36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 122 "R_ROW_THUMB"))
+        (pad 2 smd rect (at 1.65 0 36.19) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 92 "mirror_thumbs_index_thumb_at"))
     )
     
 
     (module Diode_SMD_B (layer B.Cu) (tedit 5B24D78E)
-        (at 171.38634439999998 55.6125243 -23)
-        (fp_text reference "D78" (at 0 1.8 -23) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
+        (at 178.04772729999996 53.0436832 66)
+        (fp_text reference "D78" (at 0 1.8 66) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_text value "" (at 0 0) (layer B.SilkS) hide (effects (font (size 0.8 0.8) (thickness 0.12)) (justify mirror)))
         (fp_line (start 0.25 0) (end 0.75 0) (layer B.SilkS) (width 0.1))
         (fp_line (start 0.25 0.4) (end -0.35 0) (layer B.SilkS) (width 0.1))
@@ -5075,11 +5077,11 @@
         (fp_line (start -0.35 0) (end -0.35 0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.35 0) (end -0.35 -0.55) (layer B.SilkS) (width 0.1))
         (fp_line (start -0.75 0) (end -0.35 0) (layer B.SilkS) (width 0.1))
-        (pad 1 smd rect (at -1.65 0 -23) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 120 "R_ROW_THUMB"))
-        (pad 2 smd rect (at 1.65 0 -23) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 92 "mirror_thumbs_thumb5_thumb_at"))
+        (pad 1 smd rect (at -1.65 0 66) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 122 "R_ROW_THUMB"))
+        (pad 2 smd rect (at 1.65 0 66) (size 0.9 1.2) (layers B.Cu B.Paste B.Mask) (net 94 "mirror_thumbs_thumb5_thumb_at"))
     )
     
-  (gr_line (start 152.87477728947368 33.579231499999764) (end 131.90210380000002 -99.24770059999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+  (gr_line (start 152.94477728947368 34.02256483333315) (end 131.90210380000002 -99.24770059999999) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 131.9021037 -99.2477006) (mid 129.2359154 -104.0485692) (end 124.1025556 -105.9993426) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 124.10255559999999 -105.9993426) (end -31.897444399999998 -107.9993426) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start -31.8974443 -107.9993426) (mid -31.9487211 -107.9998356) (end -32 -108) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
@@ -5095,23 +5097,23 @@
 (gr_arc (start 129.5319624 77.6097826) (mid 130.7506522 77.9018435) (end 132 78.0000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_line (start 132 78) (end 148 78) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 (gr_arc (start 148 78) (mid 152 76.9282032) (end 154.9282032 74) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 154.9282032 74) (end 169.7 74) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 169.7 74) (mid 170.3246739 73.9509217) (end 170.9340188 73.8048913) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 170.9340188 73.8048913) (end 318.9340188 25.8048913) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 318.9340188 25.8048913) (mid 319.1883135 25.7128053) (end 319.4358042 25.6037458) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 319.4358042 25.6037458) (end 349.4358042 11.1537458) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 349.4358042 11.153745800000001) (mid 351.0262426 9.771735900000001) (end 351.69376389999996 7.773271200000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 351.69376389999996 7.7732712) (end 355.69376389999996 -63.7767288) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 355.69376389999996 -63.7767288) (mid 355.6984407 -63.8883209) (end 355.7 -64) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 355.7 -64) (end 355.7 -88) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 355.7 -88) (mid 355.6863707 -88.3299221) (end 355.6455757 -88.6575959) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 355.6455757 -88.6575959) (end 353.6455757 -100.6575959) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 353.6455757 -100.6575959) (mid 352.2854996 -103.0520799) (end 349.7 -104) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 349.7 -104) (end 333.7 -104) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 333.7 -104) (mid 333.6743606 -103.9999178) (end 333.6487222 -103.9996713) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 333.6487222 -103.9996713) (end 177.64872219999998 -101.9996713) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_arc (start 177.64872219999998 -101.9996713) (mid 175.08204229999998 -101.0242846) (end 173.7489482 -98.6238503) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
-(gr_line (start 173.74894809999998 -98.6238503) (end 152.87477728947368 33.57923149999988) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 154.9282032 74) (end 169.83999999999997 74) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 169.83999999999997 74) (mid 170.46467389999998 73.9509217) (end 171.07401879999998 73.8048913) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 171.07401879999998 73.8048913) (end 319.0740188 25.8048913) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 319.0740188 25.8048913) (mid 319.3283135 25.7128053) (end 319.5758042 25.6037458) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 319.5758042 25.6037458) (end 349.5758042 11.1537458) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 349.5758042 11.153745800000001) (mid 351.1662426 9.771735900000001) (end 351.83376389999995 7.773271200000001) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 351.83376389999995 7.7732712) (end 355.83376389999995 -63.7767288) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 355.83376389999995 -63.7767288) (mid 355.8384407 -63.8883209) (end 355.84 -64) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 355.84 -64) (end 355.84 -88) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 355.84 -88) (mid 355.8263707 -88.3299221) (end 355.7855757 -88.6575959) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 355.7855757 -88.6575959) (end 353.7855757 -100.6575959) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 353.7855757 -100.6575959) (mid 352.42549959999997 -103.0520799) (end 349.84 -104) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 349.84 -104) (end 333.84 -104) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 333.84 -104) (mid 333.8143606 -103.9999178) (end 333.7887222 -103.9996713) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 333.7887222 -103.9996713) (end 177.78872219999997 -101.9996713) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_arc (start 177.78872219999997 -101.9996713) (mid 175.22204229999997 -101.0242846) (end 173.8889482 -98.6238503) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
+(gr_line (start 173.88894809999996 -98.6238503) (end 152.94477728947368 34.022564833333035) (layer Edge.Cuts) (stroke (width 0.15) (type default)))
 
 )
 
