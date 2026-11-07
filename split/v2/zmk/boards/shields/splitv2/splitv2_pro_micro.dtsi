@@ -1,0 +1,78 @@
+/*
+ * Copyright (c) 2026 The ZMK Contributors
+ * SPDX-License-Identifier: MIT
+ *
+ * Matrix and encoders for the nice!nano v2 halves.
+ * The XIAO BLE dongle does not include this file. It has no pro_micro node.
+ *
+ * nice!nano v2 Pro Micro pads, USB at the top.
+ * Left row, top to bottom, is pads 1-12. Right row is pads 13-24.
+ *   pad 2   D0   ENC_BTN   encoder push, extra matrix row on COL_MACRO
+ *   pad 5   D2   ENC_B
+ *   pad 6   D3   ENC_A
+ *   pad 7   D4   ROW_FN
+ *   pad 8   D5   ROW_NUMS
+ *   pad 9   D6   ROW_TOP
+ *   pad 10  D7   ROW_HOME
+ *   pad 11  D8   COL_PINKY
+ *   pad 12  D9   ROW_BOT
+ *   pad 17  A3   COL_INNER
+ *   pad 18  A2   ROW_THUMB
+ *   pad 19  A1   COL_INDEX
+ *   pad 20  A0   COL_MIDDLE
+ *   pad 21  D15  COL_RING
+ *   pad 22  D14  COL_MACRO
+ *
+ * The encoder push is wired between COL_MACRO and D0, with no diode.
+ * D0 is scanned as its own row, so only the macro column has that key.
+ *
+ * steps = 120 and 30 triggers match a 30-detent EC11 (4 counts per detent).
+ * If a click does nothing or fires twice, try steps of 60 or 80.
+ */
+
+/ {
+    chosen {
+        zmk,kscan = &kscan0;
+    };
+
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+
+        row-gpios
+            = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* ROW_FN    */
+            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* ROW_NUMS  */
+            , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* ROW_TOP   */
+            , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* ROW_HOME  */
+            , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* ROW_BOT   */
+            , <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* ROW_THUMB */
+            , <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  /* ENC_BTN   */
+            ;
+
+        col-gpios
+            = <&pro_micro 14 GPIO_ACTIVE_HIGH> /* COL_MACRO  */
+            , <&pro_micro 8 GPIO_ACTIVE_HIGH>  /* COL_PINKY  */
+            , <&pro_micro 15 GPIO_ACTIVE_HIGH> /* COL_RING   */
+            , <&pro_micro 18 GPIO_ACTIVE_HIGH> /* COL_MIDDLE */
+            , <&pro_micro 19 GPIO_ACTIVE_HIGH> /* COL_INDEX  */
+            , <&pro_micro 21 GPIO_ACTIVE_HIGH> /* COL_INNER  */
+            ;
+    };
+
+    left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <120>;
+        status = "disabled";
+    };
+
+    right_encoder: encoder_right {
+        compatible = "alps,ec11";
+        a-gpios = <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <120>;
+        status = "disabled";
+    };
+};

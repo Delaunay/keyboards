@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Key layout</title>
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #161616;
+    --panel: #1e1e1e;
+    --line: #333;
+    --text: #eee;
+    --muted: #9a9a9a;
+    --bad: #ff6b6b;
+    --ok: #8fd18f;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font: 14px/1.4 system-ui, sans-serif; }
+  body { display: flex; min-height: 100%; }
+  aside {
+    width: 280px; flex: none; background: var(--panel); border-right: 1px solid var(--line);
+    padding: 16px; overflow: auto; display: flex; flex-direction: column; gap: 12px;
+  }
+  h1 { font-size: 16px; margin: 0; font-weight: 600; }
+  p.hint { margin: 0; color: var(--muted); font-size: 13px; }
+  label { display: flex; justify-content: space-between; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; }
+  input[type="number"], input[type="text"] {
+    background: #111; color: var(--text); border: 1px solid var(--line); border-radius: 4px; padding: 4px 6px; width: 84px;
+  }
+  input[type="range"] { flex: 1; min-width: 0; accent-color: #7eb6ff; }
+  input.narrow { width: 52px; }
+  input[type="text"] { width: 100%; }
+  button {
+    background: #2a2a2a; color: var(--text); border: 1px solid #444; border-radius: 4px; padding: 6px 10px; cursor: pointer;
+  }
+  button:hover { background: #333; }
+  button.on { border-color: #7eb6ff; background: #243044; }
+  .row { display: flex; gap: 8px; }
+  .row button { flex: 1; }
+  .curve {
+    border: 1px solid var(--line); border-radius: 6px; padding: 8px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .curve.selected { border-color: #7eb6ff; }
+  .curve[hidden] { display: none; }
+  .curve head, .curve .top { display: flex; align-items: center; gap: 8px; }
+  .swatch { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .gap { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .gap.bad { color: var(--bad); }
+  .gap.ok { color: var(--ok); }
+  main { flex: 1; position: relative; min-width: 0; }
+  canvas { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; outline: none; }
+  canvas.dragging { cursor: grabbing; }
+  #curves { display: flex; flex-direction: column; gap: 8px; }
+</style>
+</head>
+<body>
+<aside>
+  <h1>Key layout</h1>
+  <p class="hint">Drag a cap to slide it along its curve. Shift-drag a cap, or drag the curve line, to move the whole group. Along places the key on the curve, Up lifts it off the curve, and Tilt sets any angle. Arrows nudge it: left and right along the curve, up and down off it. Alt with up or down changes tilt.</p>
+  <label>Cap mm <input id="cap" type="number" min="10" max="30" step="0.5" value="16"></label>
+  <label>Gap mm <input id="gap" type="number" min="0" max="10" step="0.5" value="3"></label>
+  <label>Mirror <input id="mirror" type="checkbox" checked></label>
+  <label>Key names <input id="names" type="checkbox" checked></label>
+  <label>Between halves <input id="split" type="number" min="0" max="80" step="1" value="24"></label>
+  <div class="gap" id="closest">Closest —</div>
+  <label title="Editing one main curve copies its shape, key count, tilt, and per-key place to the others. Each curve stays where it is. Thumbs stay separate.">Same main shape <input id="link" type="checkbox" checked></label>
+  <div class="row">
+    <button id="as-columns" type="button">Main as columns</button>
+    <button id="as-rows" type="button">Main as rows</button>
+  </div>
+  <div class="row">
+    <button id="add" type="button">Add curve</button>
+    <button id="fit" type="button">Fit</button>
+    <button id="reset" type="button">Reset</button>
+  </div>
+  <div id="key-box" class="curve" hidden>
+    <div class="top"><span class="swatch" id="key-swatch"></span><strong id="key-title">Key</strong></div>
+    <label>Along % <input id="key-along" type="range" min="0" max="100" step="0.1" value="0"><input class="narrow" id="key-along-n" type="number" min="0" max="100" step="0.1" value="0"></label>
+    <p class="hint" id="key-mm"></p>
+    <label>Up mm <input id="key-up" type="range" min="-40" max="40" step="0.1" value="0"><input class="narrow" id="key-up-n" type="number" step="0.1" value="0"></label>
+    <label>Tilt ° <input id="key-tilt" type="range" min="-180" max="180" step="1" value="0"><input class="narrow" id="key-tilt-n" type="number" step="1" value="0"></label>
+    <button id="key-reset" type="button">Reset key</button>
+  </div>
+  <div id="curves"></div>
+  <details>
+    <summary>Positions (mm)</summary>
+    <pre id="out" style="white-space:pre-wrap;font-size:11px;color:#bbb"></pre>
+  </details>
+  <div class="row">
+    <button id="save-json" type="button">Save JSON</button>
+    <button id="apply-config" type="button">Update config.yaml</button>
+  </div>
+  <p class="hint" id="file-status">Save JSON writes layout.json and keymap.json. Update config.yaml rebuilds the Ergogen config and refreshes the keymap.</p>
+</aside>
+<main><canvas id="c" tabindex="0"></canvas></main>
+<script>
+const COLORS = ["#8ec8ff", "#ffb37a", "#d2a6ff", "#ffe08a", "#7ddeb6", "#ff9ec4", "#c6d67a"]
+const storeKey = "v3-key-layout-2"
+
+const canvas = document.getElementById("c")
+const ctx = canvas.getContext("2d")
+
+function column(name, x, y0) {
+  const span = 76
+  return {
+    name, keys: 5, twist: 0, align: "column", part: "block",
+    points: [0, 1 / 3, 2 / 3, 1].map(t => ({ x, y: y0 + span * t })),
+  }
+}
+
+function seed() {
+  const curves = []
+  const names = ["macro", "pinky", "ring", "middle", "index", "inner"]
+  names.forEach((name, i) => curves.push(column(name, i * 19, -i * 4)))
+  curves.push({
+    name: "thumbs",
+    keys: 4,
+    twist: 0,
+    align: "column",
+    part: "free",
+    points: [
+      { x: 26, y: -64 },
+      { x: 48, y: -44 },
+      { x: 86, y: -44 },
+      { x: 108, y: -64 },
+    ],
+  })
+  return { cap: 16, target: 3, mirror: true, split: 24, link: true, names: true, flow: "column", curves }
+}
+
+let state = load()
+let selected = state.curves.length - 1
+let selectedKey = null
+let view = { cx: 120, cy: 10, scale: 4 }
+let drag = null
+
+function load() {
+  try {
+    const raw = localStorage.getItem(storeKey)
+    if (raw) return prepare(JSON.parse(raw))
+  } catch (err) { /* keep the seed */ }
+  return seed()
+}
+
+function prepare(saved) {
+  saved.curves.forEach(curve => {
+    if (!curve.align) curve.align = "column"
+    if (!curve.part) curve.part = curve.name === "thumbs" ? "free" : "block"
+  })
+  if (!saved.flow) saved.flow = "column"
+  if (saved.split == null) saved.split = 24
+  if (saved.link == null) saved.link = true
+  if (saved.names == null) saved.names = true
+  return saved
+}
+
+function matchMain(source) {
+  if (!state.link || !source || source.part === "free") return
+  const origin = source.points[0]
+  const offsets = source.points.map(point => ({ x: point.x - origin.x, y: point.y - origin.y }))
+  for (const curve of state.curves) {
+    if (curve === source || curve.part === "free") continue
+    const start = curve.points[0]
+    curve.points = offsets.map(offset => ({ x: start.x + offset.x, y: start.y + offset.y }))
+    curve.keys = source.keys
+    curve.twist = source.twist || 0
+    curve.align = source.align
+    const count = source.keys | 0
+    const nudges = []
+    for (let i = 0; i < count; i++) {
+      const item = (source.nudges || [])[i]
+      nudges.push(item && (item.t != null || item.r != null || item.y != null) ? { t: item.t ?? null, r: item.r ?? null, y: item.y ?? null } : null)
+    }
+    curve.nudges = nudges
+  }
+}
+
+function syncLinkedFields() {
+  if (!state.link) return
+  document.querySelectorAll("#curves .curve").forEach((box, index) => {
+    const curve = state.curves[index]
+    if (!curve || curve.part === "free") return
+    const keys = box.querySelector("[data-keys]")
+    const twist = box.querySelector("[data-twist]")
+    const tilt = box.querySelector("[data-tilt]")
+    if (keys && document.activeElement !== keys) keys.value = curve.keys
+    if (twist && document.activeElement !== twist) twist.value = curve.twist || 0
+    if (tilt && document.activeElement !== tilt) tilt.value = curve.twist || 0
+  })
+}
+
+function save() {
+  localStorage.setItem(storeKey, JSON.stringify(state))
+}
+
+function cubic(pts, t) {
+  const u = 1 - t
+  const w = [u * u * u, 3 * u * u * t, 3 * u * t * t, t * t * t]
+  return {
+    x: w[0] * pts[0].x + w[1] * pts[1].x + w[2] * pts[2].x + w[3] * pts[3].x,
+    y: w[0] * pts[0].y + w[1] * pts[1].y + w[2] * pts[2].y + w[3] * pts[3].y,
+  }
+}
+
+function deriv(pts, t) {
+  const u = 1 - t
+  return {
+    x: 3 * u * u * (pts[1].x - pts[0].x) + 6 * u * t * (pts[2].x - pts[1].x) + 3 * t * t * (pts[3].x - pts[2].x),
+    y: 3 * u * u * (pts[1].y - pts[0].y) + 6 * u * t * (pts[2].y - pts[1].y) + 3 * t * t * (pts[3].y - pts[2].y),
+  }
+}
+
+function arcSample(pts) {
+  const steps = 96
+  const cum = [0]
+  let prev = cubic(pts, 0)
+  for (let i = 1; i <= steps; i++) {
+    const p = cubic(pts, i / steps)
+    cum.push(cum[i - 1] + Math.hypot(p.x - prev.x, p.y - prev.y))
+    prev = p
+  }
+  return { cum, steps, len: cum[steps] }
+}
+
+function tAt(sample, distance) {
+  const { cum, steps } = sample
+  if (distance <= 0) return 0
+  if (distance >= cum[steps]) return 1
+  let i = 1
+  while (cum[i] < distance) i++
+  const span = cum[i] - cum[i - 1]
+  const f = span ? (distance - cum[i - 1]) / span : 0
+  return (i - 1 + f) / steps
+}
+
+function evenAlong(i, n) {
+  return n <= 1 ? 0.5 : i / (n - 1)
+}
+
+function clampAlong(value) {
+  return Math.max(0, Math.min(1, value))
+}
+
+function keysOn(curve, curveIndex) {
+  const n = Math.max(1, curve.keys | 0)
+  const sample = arcSample(curve.points)
+  const keys = []
+  for (let i = 0; i < n; i++) {
+    const nudge = (curve.nudges || [])[i] || {}
+    const along = nudge.t == null || Number.isNaN(+nudge.t) ? evenAlong(i, n) : clampAlong(+nudge.t)
+    const at = tAt(sample, along * sample.len)
+    const tilt = nudge.r == null || Number.isNaN(+nudge.r) ? (curve.twist || 0) : +nudge.r
+    const lift = nudge.y == null || Number.isNaN(+nudge.y) ? 0 : +nudge.y
+    const p = cubic(curve.points, at)
+    keys.push({ curve: curveIndex, i, name: curve.name, x: p.x, y: p.y + lift, r: tilt, t: at, along })
+  }
+  return keys
+}
+
+function setKeyNudge(curve, index, patch) {
+  const count = Math.max(1, curve.keys | 0)
+  if (!curve.nudges) curve.nudges = []
+  while (curve.nudges.length < count) curve.nudges.push(null)
+  curve.nudges.length = count
+  const prev = curve.nudges[index] || {}
+  const next = { t: prev.t ?? null, r: prev.r ?? null, y: prev.y ?? null, ...patch }
+  const empty = next.t == null && next.r == null && (next.y == null || next.y === 0)
+  curve.nudges[index] = empty ? null : { t: next.t, r: next.r, y: next.y || null }
+  matchMain(curve)
+}
+
+function closestAlong(curve, world) {
+  placeMirror()
+  const sample = arcSample(curve.points)
+  const steps = 240
+  let best = 0
+  let bestD = Infinity
+  for (let i = 0; i <= steps; i++) {
+    const along = i / steps
+    const p = cubic(curve.points, tAt(sample, along * sample.len))
+    const shown = shownPoint(curve, p)
+    if (!shown) continue
+    const d = Math.hypot(shown.x - world.x, shown.y - world.y)
+    if (d < bestD) {
+      bestD = d
+      best = along
+    }
+  }
+  return Math.round(best * 10000) / 10000
+}
+
+function allKeys() {
+  const keys = []
+  state.curves.forEach((curve, index) => keys.push(...keysOn(curve, index)))
+  return keys
+}
+
+function mirrored(key) {
+  return { ...key, x: 2 * state.mirrorX - key.x, r: -key.r, mirror: true }
+}
+
+function square(key, size) {
+  const h = size / 2
+  const a = key.r * Math.PI / 180
+  const c = Math.cos(a)
+  const s = Math.sin(a)
+  return [[-h, -h], [h, -h], [h, h], [-h, h]].map(([x, y]) => ({
+    x: key.x + x * c - y * s,
+    y: key.y + x * s + y * c,
+  }))
+}
+
+function spanId(key) {
+  return key.curve + ":" + key.i + (key.mirror ? ":m" : "")
+}
+
+function thumbSpans(keys) {
+  const roles = legendRoles(keys)
+  const groups = new Map()
+  for (const key of keys) {
+    const role = roles.get(keyId(key))
+    if (!role || role.thumb == null) continue
+    const half = key.mirror ? "right" : "left"
+    if (!groups.has(half)) groups.set(half, [])
+    groups.get(half)[role.thumb] = key
+  }
+  const wide = new Map()
+  const hidden = new Set()
+  for (const list of groups.values()) {
+    list.forEach((key, index) => {
+      const next = list[index + 1]
+      if (!key || !next) return
+      if (!legendText(key, roles).startsWith("Space")) return
+      wide.set(spanId(key), next)
+      hidden.add(spanId(next))
+    })
+  }
+  return { wide, hidden, roles }
+}
+
+function hull(points) {
+  const pts = points
+    .map(point => ({ x: point.x, y: point.y }))
+    .sort((a, b) => a.x - b.x || a.y - b.y)
+  const cross = (o, a, b) => (a.x - o.x) * (b.y - o.y) - (a.y - o.y) * (b.x - o.x)
+  const lower = []
+  for (const point of pts) {
+    while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], point) <= 0) lower.pop()
+    lower.push(point)
+  }
+  const upper = []
+  for (let i = pts.length - 1; i >= 0; i--) {
+    const point = pts[i]
+    while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], point) <= 0) upper.pop()
+    upper.push(point)
+  }
+  upper.pop()
+  lower.pop()
+  return lower.concat(upper)
+}
+
+function wideCap(a, b, thickness) {
+  return hull([...square(a, thickness), ...square(b, thickness)])
+}
+
+function placedCaps() {
+  placeMirror()
+  const all = shownKeys()
+  const spans = thumbSpans(all)
+  const keys = []
+  const shapes = []
+  for (const key of all) {
+    if (spans.hidden.has(spanId(key))) continue
+    const partner = spans.wide.get(spanId(key))
+    keys.push(key)
+    shapes.push(partner ? wideCap(key, partner, state.cap) : square(key, state.cap))
+  }
+  return { keys, shapes, spans }
+}
+
+function inside(p, poly) {
+  let hit = false
+  for (let i = 0, j = poly.length - 1; i < poly.length; j = i++) {
+    const a = poly[i], b = poly[j]
+    if (((a.y > p.y) !== (b.y > p.y)) && (p.x < (b.x - a.x) * (p.y - a.y) / (b.y - a.y) + a.x)) hit = !hit
+  }
+  return hit
+}
+
+function pointSeg(p, a, b) {
+  const dx = b.x - a.x, dy = b.y - a.y
+  const l2 = dx * dx + dy * dy
+  let t = l2 ? ((p.x - a.x) * dx + (p.y - a.y) * dy) / l2 : 0
+  t = Math.max(0, Math.min(1, t))
+  return Math.hypot(p.x - (a.x + t * dx), p.y - (a.y + t * dy))
+}
+
+function capGap(a, b) {
+  for (const p of a) if (inside(p, b)) return -1
+  for (const p of b) if (inside(p, a)) return -1
+  let m = Infinity
+  for (const p of a) for (let i = 0; i < b.length; i++) m = Math.min(m, pointSeg(p, b[i], b[(i + 1) % b.length]))
+  for (const p of b) for (let i = 0; i < a.length; i++) m = Math.min(m, pointSeg(p, a[i], a[(i + 1) % a.length]))
+  return m
+}
+
+function placeMirror() {
+  if (!state.mirror) return
+  let edge = -Infinity
+  state.curves.forEach((curve, index) => {
+    if (curve.side === "right") return
+    for (const key of keysOn(curve, index)) {
+      for (const point of square(key, state.cap)) edge = Math.max(edge, point.x)
+    }
+  })
+  if (Number.isFinite(edge)) state.mirrorX = edge + (state.split || 0) / 2
+}
+
+function shownKeys() {
+  const keys = []
+  state.curves.forEach((curve, index) => {
+    const mine = keysOn(curve, index)
+    if (curve.side === "right") {
+      if (state.mirror) keys.push(...mine.map(mirrored))
+    } else {
+      keys.push(...mine)
+      if (state.mirror) keys.push(...mine.map(mirrored))
+    }
+  })
+  return keys
+}
+
+function shownPoint(curve, point) {
+  if (curve.side !== "right") return point
+  if (!state.mirror) return null
+  return { x: 2 * state.mirrorX - point.x, y: point.y }
+}
+
+function layout() {
+  const placed = placedCaps()
+  const keys = placed.keys
+  const shapes = placed.shapes
+  const spans = placed.spans
+  let closest = Infinity
+  let pair = null
+  const bad = new Set()
+  for (let i = 0; i < keys.length; i++) {
+    for (let j = i + 1; j < keys.length; j++) {
+      const g = capGap(shapes[i], shapes[j])
+      if (g < closest) {
+        closest = g
+        pair = [i, j]
+      }
+      if (g < state.target - 0.05) {
+        bad.add(i)
+        bad.add(j)
+      }
+    }
+  }
+  return { keys, shapes, bad, closest, pair, spans }
+}
+
+const LEFT_LEGEND = [
+  ["Shift", "Z", "X", "C", "V", "B"],
+  ["Caps", "A", "S", "D", "F", "G"],
+  ["Tab", "Q", "W", "E", "R", "T"],
+  ["`", "1", "2", "3", "4", "5"],
+  ["Esc", "F1", "F2", "F3", "F4", "F5"],
+]
+const RIGHT_LEGEND = [
+  ["Shift", "?", ".", ",", "M", "N"],
+  ["'", ";", "L", "K", "J", "H"],
+  ["[", "P", "O", "I", "U", "Y"],
+  ["-", "0", "9", "8", "7", "6"],
+  ["F11", "F10", "F9", "F8", "F7", "F6"],
+]
+// Outer to inner on the left. The mirrored key uses the same index, so index 0 is the outer key on the right too.
+// A Space label covers that key and the next thumb inward as one wide cap.
+// Space/L1 and Space/L2 tap as Space and hold that layer.
+const THUMB_LEFT = ["Ctrl", "Alt", "Space/L1", "", "⌘"]
+const THUMB_RIGHT = ["Ctrl", "Alt", "Space/L2", "", ""]
+const ROW_ORDER = ["bottom", "home", "top", "nums", "fn", "thumb"]
+const COL_ORDER = ["macro", "pinky", "ring", "middle", "index", "inner", "thumb5", "bracket", "nav"]
+
+function keyId(key) {
+  return key.curve + ":" + key.i
+}
+
+function legendRoles(keys) {
+  const roles = new Map()
+  const block = state.curves
+    .map((curve, index) => ({ curve, index }))
+    .filter(item => item.curve.part !== "free" && item.curve.side !== "right")
+  const originals = keys.filter(key => !key.mirror)
+  if (state.flow === "row") {
+    block
+      .map(item => {
+        const mine = originals.filter(key => key.curve === item.index)
+        const y = mine.reduce((sum, key) => sum + key.y, 0) / (mine.length || 1)
+        return { ...item, mine, y }
+      })
+      .sort((a, b) => a.y - b.y)
+      .forEach((row, rowIndex) => {
+        [...row.mine].sort((a, b) => a.x - b.x).forEach((key, col) => {
+          roles.set(keyId(key), { row: rowIndex, col })
+        })
+      })
+  } else {
+    block
+      .map(item => {
+        const mine = originals.filter(key => key.curve === item.index)
+        const x = mine.reduce((sum, key) => sum + key.x, 0) / (mine.length || 1)
+        return { ...item, mine, x }
+      })
+      .sort((a, b) => a.x - b.x)
+      .forEach((col, colIndex) => {
+        [...col.mine].sort((a, b) => a.y - b.y).forEach((key, row) => {
+          roles.set(keyId(key), { row, col: colIndex })
+        })
+      })
+  }
+  const thumbIndex = state.curves.findIndex(curve => curve.name === "thumbs")
+  if (thumbIndex >= 0) {
+    originals
+      .filter(key => key.curve === thumbIndex)
+      .sort((a, b) => a.x - b.x)
+      .forEach((key, index) => roles.set(keyId(key), { thumb: index }))
+  }
+  return roles
+}
+
+function legendText(key, roles) {
+  const curve = state.curves[key.curve]
+  if (curve && curve.labels) return curve.labels[key.i] || ""
+  const role = roles.get(keyId(key))
+  if (!role) return ""
+  if (role.thumb != null) {
+    const names = key.mirror ? THUMB_RIGHT : THUMB_LEFT
+    return names[role.thumb] || ""
+  }
+  const table = key.mirror ? RIGHT_LEGEND : LEFT_LEGEND
+  const line = table[role.row]
+  return line ? line[role.col] || "" : ""
+}
+
+function drawLegend(key, roles, spans) {
+  const text = legendText(key, roles)
+  if (!text) return
+  const partner = spans && spans.wide.get(spanId(key))
+  const at = partner
+    ? { x: (key.x + partner.x) / 2, y: (key.y + partner.y) / 2 }
+    : key
+  const capPx = (partner ? Math.hypot(partner.x - key.x, partner.y - key.y) + state.cap : state.cap) * view.scale
+  if (capPx < 16) return
+  const s = screenOf(at)
+  ctx.save()
+  ctx.translate(s.x, s.y)
+  let rot = partner
+    ? -Math.atan2(partner.y - key.y, partner.x - key.x)
+    : -key.r * Math.PI / 180
+  if (partner) {
+    const deg = rot * 180 / Math.PI
+    if (deg > 90) rot -= Math.PI
+    if (deg < -90) rot += Math.PI
+  }
+  ctx.rotate(rot)
+  ctx.fillStyle = key.mirror ? "rgba(255,255,255,0.55)" : "#f3f3f3"
+  ctx.textAlign = "center"
+  ctx.textBaseline = "middle"
+  let size = Math.max(8, Math.min(15, capPx * 0.28))
+  ctx.font = `600 ${size}px system-ui, sans-serif`
+  const width = ctx.measureText(text).width
+  if (width > capPx * 0.82) size *= (capPx * 0.82) / width
+  ctx.font = `600 ${size}px system-ui, sans-serif`
+  ctx.fillText(text, 0, 1)
+  ctx.restore()
+}
+
+function screenOf(p) {
+  const w = canvas.clientWidth, h = canvas.clientHeight
+  return {
+    x: w / 2 + (p.x - view.cx) * view.scale,
+    y: h / 2 - (p.y - view.cy) * view.scale,
+  }
+}
+
+function worldOf(sx, sy) {
+  const w = canvas.clientWidth, h = canvas.clientHeight
+  return {
+    x: view.cx + (sx - w / 2) / view.scale,
+    y: view.cy - (sy - h / 2) / view.scale,
+  }
+}
+
+function draw() {
+  const w = canvas.clientWidth, h = canvas.clientHeight
+  ctx.clearRect(0, 0, w, h)
+  ctx.fillStyle = "#1a1a1a"
+  ctx.fillRect(0, 0, w, h)
+
+  const origin = screenOf({ x: 0, y: 0 })
+  const step = view.scale >= 8 ? 5 : 10
+  ctx.save()
+  ctx.beginPath()
+  const tl = worldOf(0, 0), br = worldOf(w, h)
+  const x0 = Math.floor(Math.min(tl.x, br.x) / step) * step
+  const x1 = Math.ceil(Math.max(tl.x, br.x) / step) * step
+  const y0 = Math.floor(Math.min(tl.y, br.y) / step) * step
+  const y1 = Math.ceil(Math.max(tl.y, br.y) / step) * step
+  ctx.strokeStyle = "#2a2a2a"
+  ctx.lineWidth = 1
+  for (let x = x0; x <= x1; x += step) {
+    const s = screenOf({ x, y: 0 })
+    ctx.moveTo(s.x, 0); ctx.lineTo(s.x, h)
+  }
+  for (let y = y0; y <= y1; y += step) {
+    const s = screenOf({ x: 0, y })
+    ctx.moveTo(0, s.y); ctx.lineTo(w, s.y)
+  }
+  ctx.stroke()
+  ctx.restore()
+
+  ctx.strokeStyle = "#555"
+  ctx.beginPath()
+  ctx.moveTo(0, origin.y); ctx.lineTo(w, origin.y)
+  ctx.moveTo(origin.x, 0); ctx.lineTo(origin.x, h)
+  ctx.stroke()
+
+  const placed = layout()
+  if (state.mirror) {
+    const s = screenOf({ x: state.mirrorX, y: 0 })
+    ctx.save()
+    ctx.strokeStyle = "#666"
+    ctx.setLineDash([4, 4])
+    ctx.beginPath()
+    ctx.moveTo(s.x, 0); ctx.lineTo(s.x, h)
+    ctx.stroke()
+    ctx.restore()
+  }
+
+  state.curves.forEach((curve, index) => {
+    if (curve.side === "right" && !state.mirror) return
+    const color = COLORS[index % COLORS.length]
+    ctx.save()
+    ctx.strokeStyle = color
+    ctx.globalAlpha = index === selected ? 1 : 0.45
+    ctx.lineWidth = index === selected ? 2 : 1.25
+    ctx.beginPath()
+    const a = screenOf(shownPoint(curve, curve.points[0]))
+    ctx.moveTo(a.x, a.y)
+    const b = screenOf(shownPoint(curve, curve.points[1]))
+    const c = screenOf(shownPoint(curve, curve.points[2]))
+    const d = screenOf(shownPoint(curve, curve.points[3]))
+    ctx.bezierCurveTo(b.x, b.y, c.x, c.y, d.x, d.y)
+    ctx.stroke()
+    ctx.restore()
+  })
+
+  placed.shapes.forEach((poly, index) => {
+    const key = placed.keys[index]
+    ctx.beginPath()
+    poly.forEach((p, i) => {
+      const s = screenOf(p)
+      if (i === 0) ctx.moveTo(s.x, s.y)
+      else ctx.lineTo(s.x, s.y)
+    })
+    ctx.closePath()
+    ctx.fillStyle = key.mirror ? "rgba(255,255,255,0.03)" : "rgba(255,255,255,0.06)"
+    ctx.fill()
+    ctx.strokeStyle = placed.bad.has(index) ? "#ff6b6b" : "#f2f2f2"
+    ctx.lineWidth = placed.bad.has(index) ? 2 : 1.25
+    ctx.stroke()
+    if (selectedKey != null && key.curve === selected && key.i === selectedKey) {
+      ctx.strokeStyle = COLORS[key.curve % COLORS.length]
+      ctx.lineWidth = 2.5
+      ctx.stroke()
+    }
+  })
+
+  if (state.names !== false) {
+    placed.keys.forEach(key => drawLegend(key, placed.spans.roles, placed.spans))
+  }
+
+  const curve = state.curves[selected]
+  if (curve) {
+    ctx.save()
+    ctx.strokeStyle = "#888"
+    ctx.setLineDash([3, 3])
+    ;[[0, 1], [3, 2]].forEach(([from, to]) => {
+      const a = screenOf(shownPoint(curve, curve.points[from]))
+      const b = screenOf(shownPoint(curve, curve.points[to]))
+      ctx.beginPath()
+      ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke()
+    })
+    ctx.restore()
+    curve.points.forEach((p, index) => {
+      const shown = shownPoint(curve, p)
+      if (!shown) return
+      const s = screenOf(shown)
+      ctx.beginPath()
+      ctx.arc(s.x, s.y, index === 0 || index === 3 ? 6 : 5, 0, Math.PI * 2)
+      ctx.fillStyle = index === 0 || index === 3 ? "#fff" : "#1a1a1a"
+      ctx.fill()
+      ctx.lineWidth = 1.5
+      ctx.strokeStyle = COLORS[selected % COLORS.length]
+      ctx.stroke()
+    })
+  }
+
+  const el = document.getElementById("closest")
+  if (!Number.isFinite(placed.closest)) {
+    el.textContent = "Closest —"
+    el.className = "gap"
+  } else {
+    const mm = placed.closest.toFixed(2)
+    const tight = placed.closest < state.target - 0.05
+    el.textContent = tight ? `Closest ${mm} mm, under the gap` : `Closest ${mm} mm`
+    el.className = tight ? "gap bad" : "gap ok"
+  }
+  document.getElementById("out").textContent = JSON.stringify(placed.keys.filter(k => !k.mirror).map(k => ({
+    curve: k.name, i: k.i, x: +k.x.toFixed(2), y: +k.y.toFixed(2), r: +k.r.toFixed(2),
+  })), null, 2)
+  syncKeyPanel()
+}
+
+function syncKeyPanel() {
+  const box = document.getElementById("key-box")
+  const curve = state.curves[selected]
+  if (selectedKey == null || !curve || selectedKey >= (curve.keys | 0)) {
+    box.hidden = true
+    return
+  }
+  box.hidden = false
+  document.getElementById("key-swatch").style.background = COLORS[selected % COLORS.length]
+  document.getElementById("key-title").textContent = curve.name + " · key " + (selectedKey + 1)
+  const nudge = (curve.nudges || [])[selectedKey] || {}
+  const along = nudge.t == null ? evenAlong(selectedKey, curve.keys | 0) : clampAlong(+nudge.t)
+  const tilt = nudge.r == null ? (curve.twist || 0) : +nudge.r
+  const lift = nudge.y == null || Number.isNaN(+nudge.y) ? 0 : +nudge.y
+  const sample = arcSample(curve.points)
+  const alongRange = document.getElementById("key-along")
+  const alongNum = document.getElementById("key-along-n")
+  const upRange = document.getElementById("key-up")
+  const upNum = document.getElementById("key-up-n")
+  const tiltRange = document.getElementById("key-tilt")
+  const tiltNum = document.getElementById("key-tilt-n")
+  const percent = (along * 100).toFixed(1)
+  if (document.activeElement !== alongRange) alongRange.value = percent
+  if (document.activeElement !== alongNum) alongNum.value = percent
+  if (document.activeElement !== upRange) upRange.value = Math.max(-40, Math.min(40, lift))
+  if (document.activeElement !== upNum) upNum.value = +lift.toFixed(2)
+  if (document.activeElement !== tiltRange) tiltRange.value = Math.max(-180, Math.min(180, Math.round(tilt)))
+  if (document.activeElement !== tiltNum) tiltNum.value = Math.round(tilt)
+  document.getElementById("key-mm").textContent = (along * sample.len).toFixed(2) + " mm from the start of the curve"
+}
+
+function curveThrough(points, name, align) {
+  const p0 = points[0]
+  const p3 = points[points.length - 1]
+  const fallback = [
+    { x: p0.x + (p3.x - p0.x) / 3, y: p0.y + (p3.y - p0.y) / 3 },
+    { x: p0.x + 2 * (p3.x - p0.x) / 3, y: p0.y + 2 * (p3.y - p0.y) / 3 },
+  ]
+  let a2 = 0, ab = 0, b2 = 0
+  const rx = [0, 0], ry = [0, 0]
+  let length = 0
+  const cum = [0]
+  for (let i = 1; i < points.length; i++) {
+    length += Math.hypot(points[i].x - points[i - 1].x, points[i].y - points[i - 1].y)
+    cum.push(length)
+  }
+  for (let i = 0; i < points.length; i++) {
+    const t = length ? cum[i] / length : i / (points.length - 1)
+    const u = 1 - t
+    const a = 3 * u * u * t
+    const b = 3 * u * t * t
+    a2 += a * a
+    ab += a * b
+    b2 += b * b
+    const cx = points[i].x - u * u * u * p0.x - t * t * t * p3.x
+    const cy = points[i].y - u * u * u * p0.y - t * t * t * p3.y
+    rx[0] += a * cx; rx[1] += b * cx
+    ry[0] += a * cy; ry[1] += b * cy
+  }
+  const det = a2 * b2 - ab * ab
+  function solve(r, f0, f1) {
+    if (Math.abs(det) < 1e-8) return [f0, f1]
+    return [(b2 * r[0] - ab * r[1]) / det, (a2 * r[1] - ab * r[0]) / det]
+  }
+  const [p1x, p2x] = solve(rx, fallback[0].x, fallback[1].x)
+  const [p1y, p2y] = solve(ry, fallback[0].y, fallback[1].y)
+  return {
+    name,
+    keys: points.length,
+    twist: 0,
+    align,
+    part: "block",
+    points: [
+      { x: p0.x, y: p0.y },
+      { x: p1x, y: p1y },
+      { x: p2x, y: p2y },
+      { x: p3.x, y: p3.y },
+    ],
+  }
+}
+
+function regroup(align) {
+  const want = align === "row" ? "row" : "column"
+  if (state.flow === want) return
+  const block = []
+  const free = []
+  state.curves.forEach((curve, index) => {
+    const keys = keysOn(curve, index)
+    if (curve.part === "free") free.push(curve)
+    else block.push(keys)
+  })
+  if (!block.length) return
+  const rowNames = ["bottom", "home", "top", "nums", "fn"]
+  const colNames = ["macro", "pinky", "ring", "middle", "index", "inner"]
+  const order = block.map((keys, index) => ({
+    index,
+    x: keys.reduce((sum, key) => sum + key.x, 0) / keys.length,
+    y: keys.reduce((sum, key) => sum + key.y, 0) / keys.length,
+  }))
+  order.sort(align === "row" ? (a, b) => a.x - b.x : (a, b) => a.y - b.y)
+  const count = Math.max(...block.map(keys => keys.length))
+  const built = []
+  for (let i = 0; i < count; i++) {
+    const points = order.map(item => block[item.index][i]).filter(Boolean)
+    if (points.length < 2) continue
+    const name = align === "row"
+      ? (rowNames[i] || "row " + (i + 1))
+      : (colNames[i] || "column " + (i + 1))
+    built.push(curveThrough(points, name, align))
+  }
+  state.curves = built.concat(free)
+  state.flow = want
+  selected = 0
+  selectedKey = null
+  if (state.curves[0] && state.curves[0].part !== "free") matchMain(state.curves[0])
+  save()
+  renderList()
+  draw()
+}
+
+function renderList() {
+  const root = document.getElementById("curves")
+  document.getElementById("as-columns").classList.toggle("on", state.flow !== "row")
+  document.getElementById("as-rows").classList.toggle("on", state.flow === "row")
+  root.innerHTML = ""
+  state.curves.forEach((curve, index) => {
+    const box = document.createElement("div")
+    box.className = "curve" + (index === selected ? " selected" : "")
+    box.innerHTML = `
+      <div class="top">
+        <span class="swatch" style="background:${COLORS[index % COLORS.length]}"></span>
+        <input type="text" value="${curve.name}" data-name>
+        <button type="button" data-del title="Remove curve">×</button>
+      </div>
+      <label>Keys <input type="number" min="1" max="12" step="1" value="${curve.keys}" data-keys></label>
+      <label>Tilt ° <input type="range" min="-180" max="180" step="1" value="${curve.twist || 0}" data-tilt><input class="narrow" type="number" step="1" value="${curve.twist || 0}" data-twist></label>`
+    box.addEventListener("pointerdown", event => {
+      if (event.target.closest("input, button")) return
+      if (selected === index) return
+      selected = index
+      renderList()
+      draw()
+    })
+    box.querySelector("[data-name]").addEventListener("input", e => { curve.name = e.target.value; save(); draw() })
+    box.querySelector("[data-keys]").addEventListener("input", e => {
+      curve.keys = Math.max(1, +e.target.value || 1)
+      if (selected === index && selectedKey != null && selectedKey >= curve.keys) selectedKey = null
+      matchMain(curve)
+      syncLinkedFields()
+      save(); draw()
+    })
+    const applyTilt = value => {
+      curve.twist = Math.round(+value || 0)
+      matchMain(curve)
+      syncLinkedFields()
+      save(); draw()
+    }
+    box.querySelector("[data-twist]").addEventListener("input", e => applyTilt(e.target.value))
+    box.querySelector("[data-tilt]").addEventListener("input", e => applyTilt(e.target.value))
+    box.querySelector("[data-del]").addEventListener("click", e => {
+      e.stopPropagation()
+      state.curves.splice(index, 1)
+      selected = Math.max(0, Math.min(selected, state.curves.length - 1))
+      selectedKey = null
+      save(); renderList(); draw()
+    })
+    root.appendChild(box)
+  })
+}
+
+function resize() {
+  const dpr = window.devicePixelRatio || 1
+  const rect = canvas.getBoundingClientRect()
+  canvas.width = Math.max(1, rect.width * dpr)
+  canvas.height = Math.max(1, rect.height * dpr)
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
+  draw()
+}
+
+function contentBounds() {
+  placeMirror()
+  const placed = placedCaps()
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity
+  for (const poly of placed.shapes) {
+    for (const point of poly) {
+      minX = Math.min(minX, point.x); maxX = Math.max(maxX, point.x)
+      minY = Math.min(minY, point.y); maxY = Math.max(maxY, point.y)
+    }
+  }
+  return { minX, minY, maxX, maxY }
+}
+
+function reveal() {
+  const bounds = contentBounds()
+  if (!Number.isFinite(bounds.minX)) return
+  const w = canvas.clientWidth, h = canvas.clientHeight
+  const pad = 28
+  const corner = worldOf(pad, pad)
+  const opposite = worldOf(w - pad, h - pad)
+  const vis = {
+    minX: Math.min(corner.x, opposite.x), maxX: Math.max(corner.x, opposite.x),
+    minY: Math.min(corner.y, opposite.y), maxY: Math.max(corner.y, opposite.y),
+  }
+  if (bounds.minX >= vis.minX && bounds.maxX <= vis.maxX && bounds.minY >= vis.minY && bounds.maxY <= vis.maxY) return
+  const minX = Math.min(vis.minX, bounds.minX)
+  const maxX = Math.max(vis.maxX, bounds.maxX)
+  const minY = Math.min(vis.minY, bounds.minY)
+  const maxY = Math.max(vis.maxY, bounds.maxY)
+  view.scale = Math.max(0.4, Math.min(view.scale, (w - pad * 2) / (maxX - minX), (h - pad * 2) / (maxY - minY)))
+  view.cx = (minX + maxX) / 2
+  view.cy = (minY + maxY) / 2
+}
+
+function fit() {
+  const bounds = contentBounds()
+  if (!Number.isFinite(bounds.minX)) return
+  const pad = 16
+  view.scale = Math.min(
+    canvas.clientWidth / (bounds.maxX - bounds.minX + pad),
+    canvas.clientHeight / (bounds.maxY - bounds.minY + pad)
+  )
+  view.cx = (bounds.minX + bounds.maxX) / 2
+  view.cy = (bounds.minY + bounds.maxY) / 2
+  draw()
+}
+
+function hitHandle(sx, sy) {
+  const curve = state.curves[selected]
+  if (!curve) return -1
+  placeMirror()
+  for (let i = 0; i < 4; i++) {
+    const shown = shownPoint(curve, curve.points[i])
+    if (!shown) continue
+    const s = screenOf(shown)
+    if (Math.hypot(s.x - sx, s.y - sy) <= 10) return i
+  }
+  return -1
+}
+
+function hitKey(sx, sy) {
+  const world = worldOf(sx, sy)
+  const placed = placedCaps()
+  let found = null
+  placed.keys.forEach((key, index) => {
+    if (inside(world, placed.shapes[index])) found = { curve: key.curve, i: key.i }
+  })
+  return found
+}
+
+function hitCurve(sx, sy) {
+  placeMirror()
+  const world = worldOf(sx, sy)
+  let found = -1
+  state.curves.forEach((curve, index) => {
+    if (curve.side === "right" && !state.mirror) return
+    for (const key of keysOn(curve, index)) {
+      const at = curve.side === "right" ? mirrored(key) : key
+      if (inside(world, square(at, state.cap))) found = index
+    }
+    const start = shownPoint(curve, cubic(curve.points, 0))
+    if (!start) return
+    let prev = screenOf(start)
+    for (let i = 1; i <= 40; i++) {
+      const next = screenOf(shownPoint(curve, cubic(curve.points, i / 40)))
+      if (pointSeg({ x: sx, y: sy }, prev, next) <= 12) found = index
+      prev = next
+    }
+  })
+  return found
+}
+
+canvas.addEventListener("pointerdown", e => {
+  const rect = canvas.getBoundingClientRect()
+  const sx = e.clientX - rect.left, sy = e.clientY - rect.top
+  canvas.focus()
+  const handle = hitHandle(sx, sy)
+  if (handle >= 0) {
+    drag = { kind: "handle", handle, last: { sx, sy }, points: state.curves[selected].points.map(p => ({ ...p })) }
+  } else {
+    const keyHit = hitKey(sx, sy)
+    if (keyHit && !e.shiftKey) {
+      const changed = selected !== keyHit.curve
+      selected = keyHit.curve
+      selectedKey = keyHit.i
+      if (changed) renderList()
+      drag = { kind: "key", last: { sx, sy } }
+    } else if (keyHit || hitCurve(sx, sy) >= 0) {
+      const curveIndex = keyHit ? keyHit.curve : hitCurve(sx, sy)
+      if (selected !== curveIndex) {
+        selected = curveIndex
+        selectedKey = null
+        renderList()
+      }
+      drag = { kind: "curve", last: { sx, sy }, points: state.curves[selected].points.map(p => ({ ...p })) }
+    } else {
+      drag = { kind: "pan", sx, sy, cx: view.cx, cy: view.cy }
+    }
+  }
+  canvas.classList.add("dragging")
+  canvas.setPointerCapture(e.pointerId)
+})
+
+canvas.addEventListener("pointermove", e => {
+  const rect = canvas.getBoundingClientRect()
+  const sx = e.clientX - rect.left, sy = e.clientY - rect.top
+  if (!drag) {
+    const overKey = hitKey(sx, sy)
+    const over = hitHandle(sx, sy) >= 0 || hitCurve(sx, sy) >= 0
+    canvas.style.cursor = overKey ? "pointer" : over ? "move" : "grab"
+    return
+  }
+  if (drag.kind === "pan") {
+    view.cx = drag.cx - (sx - drag.sx) / view.scale
+    view.cy = drag.cy + (sy - drag.sy) / view.scale
+  } else if (drag.kind === "key") {
+    const curve = state.curves[selected]
+    if (curve && selectedKey != null) setKeyNudge(curve, selectedKey, { t: closestAlong(curve, worldOf(sx, sy)) })
+    reveal()
+  } else {
+    const dx = (sx - drag.last.sx) / view.scale
+    const dy = -(sy - drag.last.sy) / view.scale
+    drag.last = { sx, sy }
+    const flip = state.curves[selected].side === "right" ? -1 : 1
+    const pts = state.curves[selected].points
+    if (drag.kind === "curve") {
+      pts.forEach(point => { point.x += dx * flip; point.y += dy })
+    } else {
+      pts[drag.handle].x += dx * flip
+      pts[drag.handle].y += dy
+      if (drag.handle === 0) { pts[1].x += dx * flip; pts[1].y += dy }
+      if (drag.handle === 3) { pts[2].x += dx * flip; pts[2].y += dy }
+    }
+    matchMain(state.curves[selected])
+    reveal()
+  }
+  draw()
+})
+
+function endDrag(e) {
+  if (!drag) return
+  drag = null
+  canvas.classList.remove("dragging")
+  save()
+  draw()
+  if (e.pointerId != null) canvas.releasePointerCapture(e.pointerId)
+}
+canvas.addEventListener("pointerup", endDrag)
+canvas.addEventListener("pointercancel", endDrag)
+
+canvas.addEventListener("wheel", e => {
+  e.preventDefault()
+  const rect = canvas.getBoundingClientRect()
+  const sx = e.clientX - rect.left, sy = e.clientY - rect.top
+  const before = worldOf(sx, sy)
+  const factor = e.deltaY < 0 ? 1.1 : 1 / 1.1
+  view.scale = Math.min(40, Math.max(0.4, view.scale * factor))
+  const after = worldOf(sx, sy)
+  view.cx += before.x - after.x
+  view.cy += before.y - after.y
+  draw()
+}, { passive: false })
+
+document.getElementById("cap").addEventListener("input", e => { state.cap = +e.target.value || 16; save(); draw() })
+document.getElementById("gap").addEventListener("input", e => { state.target = +e.target.value || 0; save(); draw() })
+document.getElementById("mirror").addEventListener("change", e => { state.mirror = e.target.checked; save(); draw() })
+document.getElementById("names").addEventListener("change", e => { state.names = e.target.checked; save(); draw() })
+document.getElementById("split").addEventListener("input", e => { state.split = Math.max(0, +e.target.value || 0); save(); draw() })
+document.getElementById("link").addEventListener("change", e => {
+  state.link = e.target.checked
+  if (state.link) {
+    const source = state.curves[selected] && state.curves[selected].part !== "free"
+      ? state.curves[selected]
+      : state.curves.find(curve => curve.part !== "free")
+    matchMain(source)
+    syncLinkedFields()
+  }
+  save(); draw()
+})
+
+document.getElementById("as-columns").addEventListener("click", () => regroup("column"))
+document.getElementById("as-rows").addEventListener("click", () => regroup("row"))
+
+document.getElementById("add").addEventListener("click", () => {
+  const lows = state.curves.flatMap(curve => curve.points.map(p => p.y))
+  const y = (lows.length ? Math.min(...lows) : 0) - 28
+  state.curves.push({
+    name: "row " + (state.curves.length + 1),
+    keys: 6,
+    twist: 0,
+    align: "row",
+    part: "free",
+    points: [
+      { x: 0, y },
+      { x: 32, y },
+      { x: 64, y },
+      { x: 95, y },
+    ],
+  })
+  selected = state.curves.length - 1
+  selectedKey = null
+  save(); renderList(); draw()
+})
+
+document.getElementById("fit").addEventListener("click", fit)
+document.getElementById("reset").addEventListener("click", () => {
+  state = seed()
+  selected = state.curves.length - 1
+  selectedKey = null
+  localStorage.removeItem(storeKey)
+  ensureRightColumns()
+  syncFields(); renderList(); fit()
+})
+
+function syncFields() {
+  document.getElementById("cap").value = state.cap
+  document.getElementById("gap").value = state.target
+  document.getElementById("mirror").checked = state.mirror
+  document.getElementById("names").checked = state.names !== false
+  document.getElementById("split").value = state.split
+  document.getElementById("link").checked = state.link !== false
+}
+
+function ensureRightColumns() {
+  if (state.rightRev === 3) return
+  state.curves = state.curves.filter(curve => curve.side !== "right")
+  const rows = []
+  state.curves.forEach((curve, index) => {
+    if (curve.part === "free" || curve.side === "right") return
+    const keys = keysOn(curve, index)
+    if (!keys.length) return
+    const outer = keys.reduce((best, key) => key.x < best.x ? key : best)
+    rows.push({ name: curve.name, x: outer.x, y: outer.y })
+  })
+  if (rows.length < 2) return
+  const pitch = (state.cap || 16) + (state.target || 0)
+  const leftEdge = Math.min(...rows.map(row => row.x))
+  const specs = [
+    { name: "bracket", labels: { bottom: "Up", home: "Enter", top: "]", nums: "=", fn: "F12" } },
+    { name: "nav", labels: { bottom: "PgDn", home: "PgUp", top: "\\", nums: "Bksp", fn: "Del" } },
+  ]
+  specs.forEach((spec, column) => {
+    const points = rows.map(row => ({
+      name: row.name,
+      x: leftEdge - pitch * (column + 1),
+      y: row.y,
+    })).sort((a, b) => a.y - b.y)
+    const fitted = curveThrough(points, spec.name, "column")
+    fitted.part = "free"
+    fitted.side = "right"
+    fitted.labels = points.map(point => spec.labels[point.name] || "")
+    fitted.rows = points.map(point => point.name)
+    state.curves.push(fitted)
+  })
+  state.rightRev = 3
+  save()
+}
+
+function orderIndex(list, value) {
+  const index = list.indexOf(value)
+  return index < 0 ? list.length : index
+}
+
+function layoutDocument() {
+  placeMirror()
+  const roles = legendRoles(shownKeys())
+  const legendFor = (curveIndex, keyIndex, x, y, isMirror) =>
+    legendText({ curve: curveIndex, i: keyIndex, x, y, mirror: !!isMirror }, roles)
+  const columns = ["macro", "pinky", "ring", "middle", "index", "inner"]
+  const rows = ["bottom", "home", "top", "nums", "fn"]
+  const columnNet = {
+    macro: "COL_MACRO", pinky: "COL_PINKY", ring: "COL_RING",
+    middle: "COL_MIDDLE", index: "COL_INDEX", inner: "COL_INNER",
+    bracket: "COL_BRACKET", nav: "COL_NAV",
+  }
+  const rowNet = {
+    bottom: "ROW_BOT", home: "ROW_HOME", top: "ROW_TOP",
+    nums: "ROW_NUMS", fn: "ROW_FN", thumb: "ROW_THUMB",
+  }
+  const round = value => Math.round(value * 100) / 100
+  const netName = (prefix, name) => {
+    const known = prefix === "COL" ? columnNet[name] : rowNet[name]
+    if (known) return known
+    const clean = String(name).toUpperCase().replace(/[^A-Z0-9]+/g, "_").replace(/^_|_$/g, "")
+    return prefix + "_" + (clean || "KEY")
+  }
+  const keys = []
+  const used = new Set()
+  const add = key => {
+    let name = key.name
+    let n = 2
+    while (used.has(name)) name = key.name + "_" + n++
+    used.add(name)
+    key.name = name
+    keys.push(key)
+  }
+  state.curves.forEach((curve, index) => {
+    const mine = keysOn(curve, index)
+    if (curve.side === "right") {
+      if (!state.mirror) return
+      mine.forEach(key => {
+        const at = mirrored(key)
+        const row = (curve.rows && curve.rows[key.i]) || rows[key.i] || ("row" + (key.i + 1))
+        add({
+          name: "matrix_" + curve.name + "_" + row,
+          column: curve.name,
+          row,
+          column_net: netName("COL", curve.name),
+          row_net: netName("ROW", row),
+          x: round(at.x), y: round(at.y), r: round(at.r),
+          mirror: false,
+          label: legendFor(index, key.i, at.x, at.y, true),
+        })
+      })
+      return
+    }
+    if (curve.name === "thumbs") {
+      const order = ["ring", "middle", "index", "inner"]
+      const sorted = [...mine].sort((a, b) => a.x - b.x)
+      const swallowed = new Set()
+      sorted.forEach((key, thumb) => {
+        const label = legendFor(index, key.i, key.x, key.y, false)
+        if (label.startsWith("Space") && sorted[thumb + 1]) swallowed.add(thumb + 1)
+      })
+      sorted.forEach((key, thumb) => {
+        if (swallowed.has(thumb)) return
+        const column = order[thumb] || ("thumb" + (thumb + 1))
+        const copy = state.mirror ? mirrored(key) : null
+        const next = swallowed.has(thumb + 1) ? sorted[thumb + 1] : null
+        let x = round(key.x)
+        let y = round(key.y)
+        let r = round(key.r)
+        let u = 1
+        if (next) {
+          const dx = next.x - key.x
+          const dy = next.y - key.y
+          x = round((key.x + next.x) / 2)
+          y = round((key.y + next.y) / 2)
+          r = round(Math.atan2(dy, dx) * 180 / Math.PI)
+          u = 2
+        }
+        add({
+          name: "thumbs_" + column + "_thumb",
+          column,
+          row: "thumb",
+          column_net: netName("COL", column),
+          row_net: "ROW_THUMB",
+          x, y, r, u,
+          mirror: !!state.mirror,
+          label: legendFor(index, key.i, key.x, key.y, false),
+          mirror_label: copy ? legendFor(index, key.i, copy.x, copy.y, true) : "",
+        })
+      })
+      return
+    }
+    mine.forEach(key => {
+      const role = roles.get(key.curve + ":" + key.i)
+      const column = role && role.col != null ? (columns[role.col] || ("col" + (role.col + 1))) : (columns[key.i] || ("col" + (key.i + 1)))
+      const row = role && role.row != null ? (rows[role.row] || ("row" + (role.row + 1))) : curve.name
+      const copy = state.mirror ? mirrored(key) : null
+      add({
+        name: "matrix_" + column + "_" + row,
+        column,
+        row,
+        column_net: netName("COL", column),
+        row_net: netName("ROW", row),
+        x: round(key.x), y: round(key.y), r: round(key.r),
+        mirror: !!state.mirror,
+        label: legendFor(index, key.i, key.x, key.y, false),
+        mirror_label: copy ? legendFor(index, key.i, copy.x, copy.y, true) : "",
+      })
+    })
+  })
+  const keymap = []
+  keys.forEach(key => {
+    const entry = (half, label, x, y, r) => ({
+      half,
+      name: key.name,
+      column: key.column,
+      row: key.row,
+      column_net: key.column_net,
+      row_net: key.row_net,
+      label: label || "",
+      u: key.u || 1,
+      x, y, r,
+    })
+    if (key.mirror) {
+      keymap.push(entry("left", key.label, key.x, key.y, key.r))
+      keymap.push(entry(
+        "right",
+        key.mirror_label,
+        round(2 * (state.mirrorX || 0) - key.x),
+        key.y,
+        round(-(key.r || 0)),
+      ))
+    } else {
+      const half = key.x > (state.mirrorX || 0) ? "right" : "left"
+      keymap.push(entry(half, key.label, key.x, key.y, key.r))
+    }
+  })
+  keymap.sort((a, b) => {
+    if (a.half !== b.half) return a.half === "left" ? -1 : 1
+    const row = orderIndex(ROW_ORDER, a.row) - orderIndex(ROW_ORDER, b.row)
+    if (row) return row
+    const column = orderIndex(COL_ORDER, a.column) - orderIndex(COL_ORDER, b.column)
+    if (column) return column
+    return a.x - b.x
+  })
+  return {
+    version: 1,
+    mirrorX: round(state.mirrorX || 0),
+    mirror: !!state.mirror,
+    split: state.split,
+    cap: state.cap,
+    keys,
+    keymap,
+    editor: state,
+  }
+}
+
+async function postLayout(url) {
+  const status = document.getElementById("file-status")
+  status.textContent = "Saving…"
+  try {
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(layoutDocument()),
+    })
+    const body = await res.json().catch(() => ({}))
+    if (!res.ok) throw new Error(body.error || res.statusText)
+    status.textContent = body.message
+  } catch (err) {
+    status.textContent = "Could not reach the layout server. " + err.message
+  }
+}
+
+document.getElementById("save-json").addEventListener("click", () => postLayout("/api/layout"))
+document.getElementById("apply-config").addEventListener("click", () => postLayout("/api/config"))
+
+function applyKeyAlong(value) {
+  const curve = state.curves[selected]
+  if (!curve || selectedKey == null) return
+  const t = Math.round(clampAlong((+value || 0) / 100) * 10000) / 10000
+  setKeyNudge(curve, selectedKey, { t })
+  save(); draw()
+}
+
+function applyKeyTilt(value) {
+  const curve = state.curves[selected]
+  if (!curve || selectedKey == null) return
+  setKeyNudge(curve, selectedKey, { r: Math.round(+value || 0) })
+  save(); draw()
+}
+
+function applyKeyUp(value) {
+  const curve = state.curves[selected]
+  if (!curve || selectedKey == null) return
+  const y = Math.round((+value || 0) * 100) / 100
+  setKeyNudge(curve, selectedKey, { y: y === 0 ? null : y })
+  save(); draw()
+}
+
+function nudgeSelected(alongMm, liftMm) {
+  const curve = state.curves[selected]
+  if (!curve || selectedKey == null) return
+  const nudge = (curve.nudges || [])[selectedKey] || {}
+  const patch = {}
+  if (alongMm) {
+    const sample = arcSample(curve.points)
+    const along = nudge.t == null ? evenAlong(selectedKey, curve.keys | 0) : clampAlong(+nudge.t)
+    const next = sample.len ? (along * sample.len + alongMm) / sample.len : along
+    patch.t = Math.round(clampAlong(next) * 10000) / 10000
+  }
+  if (liftMm) {
+    const y = nudge.y == null || Number.isNaN(+nudge.y) ? 0 : +nudge.y
+    const next = Math.round((y + liftMm) * 100) / 100
+    patch.y = next === 0 ? null : next
+  }
+  setKeyNudge(curve, selectedKey, patch)
+  save(); draw()
+}
+
+function nudgeTilt(delta) {
+  const curve = state.curves[selected]
+  if (!curve || selectedKey == null) return
+  const nudge = (curve.nudges || [])[selectedKey] || {}
+  const tilt = nudge.r == null ? (curve.twist || 0) : +nudge.r
+  setKeyNudge(curve, selectedKey, { r: Math.round(tilt + delta) })
+  save(); draw()
+}
+
+document.getElementById("key-along").addEventListener("input", e => applyKeyAlong(e.target.value))
+document.getElementById("key-along-n").addEventListener("input", e => applyKeyAlong(e.target.value))
+document.getElementById("key-up").addEventListener("input", e => applyKeyUp(e.target.value))
+document.getElementById("key-up-n").addEventListener("input", e => applyKeyUp(e.target.value))
+document.getElementById("key-tilt").addEventListener("input", e => applyKeyTilt(e.target.value))
+document.getElementById("key-tilt-n").addEventListener("input", e => applyKeyTilt(e.target.value))
+document.getElementById("key-reset").addEventListener("click", () => {
+  const curve = state.curves[selected]
+  if (!curve || selectedKey == null) return
+  setKeyNudge(curve, selectedKey, { t: null, r: null, y: null })
+  save(); draw()
+})
+
+window.addEventListener("keydown", e => {
+  if (e.target.closest && e.target.closest("input, textarea, select")) return
+  if (selectedKey == null) return
+  const step = e.shiftKey ? 0.1 : 0.5
+  if (e.altKey && e.key === "ArrowUp") { nudgeTilt(1); e.preventDefault() }
+  else if (e.altKey && e.key === "ArrowDown") { nudgeTilt(-1); e.preventDefault() }
+  else if (e.key === "ArrowLeft") { nudgeSelected(-step, 0); e.preventDefault() }
+  else if (e.key === "ArrowRight") { nudgeSelected(step, 0); e.preventDefault() }
+  else if (e.key === "ArrowUp") { nudgeSelected(0, step); e.preventDefault() }
+  else if (e.key === "ArrowDown") { nudgeSelected(0, -step); e.preventDefault() }
+})
+
+window.addEventListener("resize", resize)
+ensureRightColumns()
+syncFields()
+renderList()
+resize()
+fit()
+</script>
+</body>
+</html>

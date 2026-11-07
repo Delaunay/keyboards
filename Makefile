@@ -10,3 +10,4 @@ v2:
 
 v3:
 	node ergogen/src/cli.js split/v3 -o split/v3 --svg
+	python3 split/v3/style_outlines.py

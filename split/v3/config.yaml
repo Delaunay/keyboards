@@ -9,6 +9,8 @@ units:
   # parallel, so the gap does not open up toward the top of the board.
   step: 4
 points:
+  # Positions come from layout.json. Save JSON, then Update config.yaml,
+  # to replace this section. Footprints below stay as they are.
   key:
     spread: pitch
     padding: pitch
@@ -16,90 +18,463 @@ points:
     height: cap
   zones:
     matrix:
-      # Whole half leans clockwise. The stair comes from the column steps.
       anchor:
-        rotate: -10
+        rotate: 0
+      key:
+        spread: 0
+        stagger: 0
+        padding: 0
+        splay: 0
       columns:
-        macro:
-          key.column_net: COL_MACRO
-        pinky:
-          key.column_net: COL_PINKY
-          key.stagger: -step
-        ring:
-          key.column_net: COL_RING
-          key.stagger: -step
-          rows.thumb.skip: false
-        middle:
-          key.column_net: COL_MIDDLE
-          key.stagger: -step
-          rows.thumb.skip: false
-        index:
-          key.column_net: COL_INDEX
-          key.stagger: -step
-          rows.thumb.skip: false
-        inner:
-          key.column_net: COL_INNER
-          key.stagger: -step
-          rows.thumb.skip: false
-      rows:
-        thumb:
-          row_net: ROW_THUMB
-          skip: true
-        bottom:
-          row_net: ROW_BOT
-        home:
-          row_net: ROW_HOME
-        top:
-          row_net: ROW_TOP
-        nums:
-          row_net: ROW_NUMS
-        fn:
-          row_net: ROW_FN
-    # Holes for a bridge that holds the halves in this pose. Leave it off to use them split.
-    link_upper:
+        matrix_macro_bottom:
+          key:
+            shift: [0.15, 0.45]
+            rotate: 0
+            column_net: COL_MACRO
+            name: matrix_macro_bottom
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_pinky_bottom:
+          key:
+            shift: [19.72, 3.4]
+            rotate: 0
+            column_net: COL_PINKY
+            name: matrix_pinky_bottom
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_ring_bottom:
+          key:
+            shift: [39.37, 5.75]
+            rotate: 0
+            column_net: COL_RING
+            name: matrix_ring_bottom
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_middle_bottom:
+          key:
+            shift: [59.14, 5.78]
+            rotate: 0
+            column_net: COL_MIDDLE
+            name: matrix_middle_bottom
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_index_bottom:
+          key:
+            shift: [78.76, 3.27]
+            rotate: 0
+            column_net: COL_INDEX
+            name: matrix_index_bottom
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_inner_bottom:
+          key:
+            shift: [98.23, -0.27]
+            rotate: 0
+            column_net: COL_INNER
+            name: matrix_inner_bottom
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_macro_home:
+          key:
+            shift: [0, 19]
+            rotate: 0
+            column_net: COL_MACRO
+            name: matrix_macro_home
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_pinky_home:
+          key:
+            shift: [19.57, 21.95]
+            rotate: 0
+            column_net: COL_PINKY
+            name: matrix_pinky_home
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_ring_home:
+          key:
+            shift: [39.22, 24.31]
+            rotate: 0
+            column_net: COL_RING
+            name: matrix_ring_home
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_middle_home:
+          key:
+            shift: [58.99, 24.34]
+            rotate: 0
+            column_net: COL_MIDDLE
+            name: matrix_middle_home
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_index_home:
+          key:
+            shift: [78.61, 21.83]
+            rotate: 0
+            column_net: COL_INDEX
+            name: matrix_index_home
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_inner_home:
+          key:
+            shift: [98.08, 18.28]
+            rotate: 0
+            column_net: COL_INNER
+            name: matrix_inner_home
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_macro_top:
+          key:
+            shift: [0, 38]
+            rotate: 0
+            column_net: COL_MACRO
+            name: matrix_macro_top
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_pinky_top:
+          key:
+            shift: [19.57, 40.95]
+            rotate: 0
+            column_net: COL_PINKY
+            name: matrix_pinky_top
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_ring_top:
+          key:
+            shift: [39.22, 43.31]
+            rotate: 0
+            column_net: COL_RING
+            name: matrix_ring_top
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_middle_top:
+          key:
+            shift: [58.99, 43.34]
+            rotate: 0
+            column_net: COL_MIDDLE
+            name: matrix_middle_top
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_index_top:
+          key:
+            shift: [78.61, 40.83]
+            rotate: 0
+            column_net: COL_INDEX
+            name: matrix_index_top
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_inner_top:
+          key:
+            shift: [98.08, 37.28]
+            rotate: 0
+            column_net: COL_INNER
+            name: matrix_inner_top
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_macro_nums:
+          key:
+            shift: [0, 57]
+            rotate: 0
+            column_net: COL_MACRO
+            name: matrix_macro_nums
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_pinky_nums:
+          key:
+            shift: [19.57, 59.95]
+            rotate: 0
+            column_net: COL_PINKY
+            name: matrix_pinky_nums
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_ring_nums:
+          key:
+            shift: [39.22, 62.31]
+            rotate: 0
+            column_net: COL_RING
+            name: matrix_ring_nums
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_middle_nums:
+          key:
+            shift: [58.99, 62.34]
+            rotate: 0
+            column_net: COL_MIDDLE
+            name: matrix_middle_nums
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_index_nums:
+          key:
+            shift: [78.61, 59.83]
+            rotate: 0
+            column_net: COL_INDEX
+            name: matrix_index_nums
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_inner_nums:
+          key:
+            shift: [98.08, 56.28]
+            rotate: 0
+            column_net: COL_INNER
+            name: matrix_inner_nums
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_macro_fn:
+          key:
+            shift: [0, 76]
+            rotate: 0
+            column_net: COL_MACRO
+            name: matrix_macro_fn
+          rows:
+            at:
+              row_net: ROW_FN
+        matrix_pinky_fn:
+          key:
+            shift: [19.57, 78.95]
+            rotate: 0
+            column_net: COL_PINKY
+            name: matrix_pinky_fn
+          rows:
+            at:
+              row_net: ROW_FN
+        matrix_ring_fn:
+          key:
+            shift: [39.22, 81.31]
+            rotate: 0
+            column_net: COL_RING
+            name: matrix_ring_fn
+          rows:
+            at:
+              row_net: ROW_FN
+        matrix_middle_fn:
+          key:
+            shift: [58.99, 81.34]
+            rotate: 0
+            column_net: COL_MIDDLE
+            name: matrix_middle_fn
+          rows:
+            at:
+              row_net: ROW_FN
+        matrix_index_fn:
+          key:
+            shift: [78.61, 78.83]
+            rotate: 0
+            column_net: COL_INDEX
+            name: matrix_index_fn
+          rows:
+            at:
+              row_net: ROW_FN
+        matrix_inner_fn:
+          key:
+            shift: [98.08, 75.28]
+            rotate: 0
+            column_net: COL_INNER
+            name: matrix_inner_fn
+          rows:
+            at:
+              row_net: ROW_FN
+        thumbs_ring_thumb:
+          key:
+            shift: [59.21, -12.11]
+            rotate: 0
+            column_net: COL_RING
+            name: thumbs_ring_thumb
+          rows:
+            at:
+              row_net: ROW_THUMB
+        thumbs_middle_thumb:
+          key:
+            shift: [78.82, -15.41]
+            rotate: 0
+            column_net: COL_MIDDLE
+            name: thumbs_middle_thumb
+          rows:
+            at:
+              row_net: ROW_THUMB
+        thumbs_index_thumb:
+          key:
+            shift: [107.76, -27.6]
+            rotate: -36.19
+            column_net: COL_INDEX
+            name: thumbs_index_thumb
+          rows:
+            at:
+              row_net: ROW_THUMB
+        thumbs_thumb5_thumb:
+          key:
+            shift: [128.36, -51.01]
+            rotate: 23
+            column_net: COL_THUMB5
+            name: thumbs_thumb5_thumb
+          rows:
+            at:
+              row_net: ROW_THUMB
+        matrix_bracket_bottom:
+          key:
+            shift: [320.7, 0.45]
+            rotate: 0
+            column_net: COL_BRACKET
+            name: matrix_bracket_bottom
+            asym: source
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_bracket_home:
+          key:
+            shift: [320.7, 19.33]
+            rotate: 0
+            column_net: COL_BRACKET
+            name: matrix_bracket_home
+            asym: source
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_bracket_top:
+          key:
+            shift: [320.7, 38.22]
+            rotate: 0
+            column_net: COL_BRACKET
+            name: matrix_bracket_top
+            asym: source
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_bracket_nums:
+          key:
+            shift: [320.7, 57.11]
+            rotate: 0
+            column_net: COL_BRACKET
+            name: matrix_bracket_nums
+            asym: source
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_bracket_fn:
+          key:
+            shift: [320.7, 76]
+            rotate: 0
+            column_net: COL_BRACKET
+            name: matrix_bracket_fn
+            asym: source
+          rows:
+            at:
+              row_net: ROW_FN
+        matrix_nav_bottom:
+          key:
+            shift: [339.7, 0.45]
+            rotate: 0
+            column_net: COL_NAV
+            name: matrix_nav_bottom
+            asym: source
+          rows:
+            at:
+              row_net: ROW_BOT
+        matrix_nav_home:
+          key:
+            shift: [339.7, 19.33]
+            rotate: 0
+            column_net: COL_NAV
+            name: matrix_nav_home
+            asym: source
+          rows:
+            at:
+              row_net: ROW_HOME
+        matrix_nav_top:
+          key:
+            shift: [339.7, 38.22]
+            rotate: 0
+            column_net: COL_NAV
+            name: matrix_nav_top
+            asym: source
+          rows:
+            at:
+              row_net: ROW_TOP
+        matrix_nav_nums:
+          key:
+            shift: [339.7, 57.11]
+            rotate: 0
+            column_net: COL_NAV
+            name: matrix_nav_nums
+            asym: source
+          rows:
+            at:
+              row_net: ROW_NUMS
+        matrix_nav_fn:
+          key:
+            shift: [339.7, 76]
+            rotate: 0
+            column_net: COL_NAV
+            name: matrix_nav_fn
+            asym: source
+          rows:
+            at:
+              row_net: ROW_FN
+    mcu:
+      # Outside the outer column. USB points off that edge.
       anchor:
-        ref: matrix_inner_fn
-        shift: [16, 0]
+        ref: matrix_macro_fn
+        shift: [-30, 0]
       columns:
-        hole:
-          key.name: connector_upper
-          key.skip: false
+        board:
+          key.name: mcu
       rows:
         one: {}
-    link_lower:
-      anchor:
-        ref: matrix_inner_nums
-        shift: [16, 0]
-      columns:
-        hole:
-          key.name: connector_lower
-          key.skip: false
-      rows:
-        one: {}
-  mirror:
-    ref: matrix_pinky_home
-    distance: 204
-
+  mirror: 150.85
 outlines:
   caps:
     - what: rectangle
-      where: /^matrix_|^thumbs_/
+      where: /^matrix_|^thumbs_(ring|middle|thumb5)_/
       asym: both
       size: cap
+    # Space covers that key and the thumb beside it. Length is the
+    # distance between those two centers plus one cap.
+    - what: rectangle
+      where: /^thumbs_index_thumb$/
+      asym: both
+      size: [35.41, cap]
   board:
     - what: rectangle
       where: /^matrix_|^thumbs_/
       asym: both
       size: [23, 21]
     - what: rectangle
-      where: /^connector_/
+      where: /^mcu$/
       asym: both
-      size: [14, 12]
+      size: [38, 22]
+      adjust:
+        shift: [2, 0]
+    # Ears so the mounting holes and the encoder sit on the board.
     - what: circle
-      where: /^connector_/
+      where: /^m3_/
       asym: both
-      radius: 1.6
-      operation: subtract
+      radius: 7
+    - what: rectangle
+      where: /^encoder$/
+      asym: both
+      size: [22, 18]
 
 pcbs:
   keyboard:
@@ -124,6 +499,44 @@ pcbs:
         params:
           from: "{{column_net}}"
           to: "{{colrow}}"
+      mcu:
+        # nice!nano v2, one per half. Same pin map as v2. Solder the headers on the back.
+        what: nice_nano
+        where: /^mcu$/
+        asym: both
+        params:
+          P19: ROW_FN
+          P18: ROW_NUMS
+          P15: ROW_TOP
+          P14: ROW_HOME
+          P10: ROW_BOT
+          P3: ROW_THUMB
+          P16: COL_PINKY
+          P7: COL_MACRO
+          P6: COL_RING
+          P5: COL_MIDDLE
+          P4: COL_INDEX
+          P2: COL_INNER
+          P0: COL_THUMB5  # from layout
+          P1: COL_BRACKET  # from layout
+          P21: COL_NAV  # from layout
+      m3:
+        # Non-plated 3.2 mm hole for an M3 screw. Three per half.
+        what: m3
+        where: /^m3_/
+        asym: both
+      encoder:
+        # EC11, one per half. Center pin is the common. The push is a direct pin.
+        # A and B are the rotation signals. Spare controller pins: P20, P8, P9.
+        what: rotary
+        where: /^encoder$/
+        asym: both
+        params:
+          A: P20
+          B: P8
+          C: GND
+          from: P9
+          to: GND
       diode:
         # Back-side SOD-123. See footprints/diode.js. Cathode (pad 1) faces the row.
         what: diode

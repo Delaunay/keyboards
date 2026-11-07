@@ -1,0 +1,30 @@
+version|qty|part|package|on_pcb|notes
+v1|2|PCB|split v1|yes|One reversible board per half. Both halves use the same PCB.
+v1|68|MX switch|MX|yes|Any MX-style switch. 34 per half.
+v1|68|Kailh MX hotswap socket|CPG151101S11|yes|One per switch. Pads are on the MX footprint.
+v1|68|Switching diode|SOD-123|yes|1N4148 or equivalent, one per key. The ComboDiode footprint also accepts an axial diode at 7.62 mm pitch. Use one style, not both.
+v1|2|nice!nano v2|Pro Micro|yes|Reversible footprint, one per half.
+v1|4|Pin header|1x12 2.54 mm|yes|Two strips per nice!nano.
+v1|2|Rotary encoder|Alps EC11E vertical H20mm|yes|Includes the push switch. One per half.
+v1|2|Battery holder|Keystone 2466|yes|1xAAA holder, one per half.
+v1|2|AAA cell|AAA|no|Fits the Keystone 2466 holder.
+v1|68|Keycap|MX|no|One per switch.
+v1|10|M2 screw|M2|no|Five 2.2 mm mounting holes per half. Screw length is not specified.
+v2|2|PCB|split v2|yes|One reversible board per half. Both halves use the same PCB.
+v2|68|Kailh Choc switch|PG1350|yes|Low profile. 34 per half.
+v2|68|Kailh Choc hotswap socket|CPG135001S01|yes|One per switch. Pads are on the PG1350 footprint.
+v2|68|Switching diode|SOD-123|yes|1N4148 or equivalent, one per key. The ComboDiode footprint also accepts an axial diode at 7.62 mm pitch. Use one style, not both.
+v2|2|nice!nano v2|Pro Micro|yes|One per half. Peripheral half.
+v2|1|nice!nano v2|Pro Micro|no|USB dongle. Not on the keyboard PCB.
+v2|6|Pin header|1x12 2.54 mm|yes|Two strips per nice!nano, including the dongle.
+v2|2|Rotary encoder|Alps EC11E vertical H20mm|yes|Push switch is on the matrix. Firmware expects 30 detents. One per half.
+v2|2|Battery holder|Keystone 2466|yes|1xAAA holder is on the PCB. Do not power the board from an AAA cell.
+v2|2|LiPo cell|single cell|no|Connect to the battery pads. The AAA holder is tied to RAW, which is the LiPo input.
+v2|68|Keycap|Choc|no|One per switch.
+v3|2|PCB|split v3|yes|Left and right are different boards in one file. Not reversible. Right half adds the bracket and nav columns.
+v3|80|Kailh Choc switch|PG1350|yes|Press-fit from the front. Not soldered. 35 keys mirrored, plus 10 keys on the right half only.
+v3|80|Kailh Choc hotswap socket|CPG135001S01|yes|Soldered on the back, one per switch.
+v3|80|Switching diode|SOD-123|yes|1N4148 or equivalent. Back side only. Cathode is pad 1.
+v3|2|nice!nano v2|Pro Micro|yes|One per half. Headers soldered on the back.
+v3|4|Pin header|1x12 2.54 mm|yes|Two strips per nice!nano.
+v3|80|Keycap|Choc 16 mm|no|One per switch. Center pitch is 19 mm.

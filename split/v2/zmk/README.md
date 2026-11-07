@@ -1,6 +1,6 @@
 # Split v2 ZMK firmware
 
-Wireless split firmware for the keyboard in `split/v2`. The dongle is the USB central. Each half is a nice!nano v2 peripheral, so neither half talks to the computer on its own.
+Wireless split firmware for the keyboard in `split/v2`. The dongle is a Seeed Studio XIAO BLE (nRF52840) and is the USB central. Each half is a nice!nano v2 peripheral, so neither half talks to the computer on its own.
 
 The shield is written for the PCB as built: 6 columns, 5 rows, 4 thumb keys, and an EC11 encoder whose push switch sits on its own matrix row. Diodes point from column to row. The right half is this board mirrored, with its columns listed inner-to-outer so the keymap still reads left to right.
 
@@ -10,22 +10,23 @@ This folder is the ZMK config for split v2. Another keyboard gets the same files
 
 GitHub only runs workflow files stored at the repository root, so `.github/workflows/build.yml` stays there and calls `.github/workflows/zmk.yml` with `keyboard_dir: split/v2/zmk`. That job copies `config/` into its own west workspace. ZMK's shared workflow cannot do that for a nested folder: `west init -l split/v2/zmk/config` creates the workspace inside `split/v2/zmk`, and the next step runs `west update` from the repository root, where no workspace exists.
 
-The workflow builds four UF2 files:
+The workflow builds five UF2 files:
 
 | Artifact | Flash onto |
 |---|---|
-| `splitv2_dongle` | the dongle |
+| `splitv2_dongle` | the XIAO BLE dongle |
 | `splitv2_left` | the left nice!nano |
 | `splitv2_right` | the right nice!nano |
-| `splitv2_settings_reset` | each board, once, before the first real flash |
+| `splitv2_dongle_settings_reset` | the XIAO BLE, once, before the first real flash |
+| `splitv2_settings_reset` | each nice!nano, once, before the first real flash |
 
-`build.yaml` uses `nice_nano_v2` because `west.yml` pins ZMK v0.3. Newer ZMK renamed that board to `nice_nano//zmk`. If the dongle is a different BLE board, change that one `board:` line.
+`west.yml` pins ZMK v0.3, so the dongle board is `seeeduino_xiao_ble` and the halves are `nice_nano_v2`. Newer ZMK renamed those to `xiao_ble//zmk` and `nice_nano//zmk`. A settings-reset UF2 is built for each board, because the two boards do not share a flash layout.
 
 ## First flash
 
-1. Double-tap reset on a board so it shows up as a USB drive.
-2. Copy `splitv2_settings_reset` to that drive and wait for it to reboot. Do this for the dongle and both halves. It clears old Bluetooth bonds.
-3. Flash `splitv2_dongle`, `splitv2_left`, and `splitv2_right` the same way.
+1. Double-tap reset on a board so it shows up as a USB drive. On the XIAO BLE the button is the small one beside the USB-C port.
+2. Copy `splitv2_dongle_settings_reset` to the XIAO, and `splitv2_settings_reset` to each nice!nano. Wait for the board to reboot. This clears old Bluetooth bonds.
+3. Flash `splitv2_dongle` to the XIAO, and `splitv2_left` and `splitv2_right` to the halves.
 4. Power the halves. They pair to the dongle by themselves.
 5. Plug the dongle into the computer. It is the keyboard.
 
@@ -43,12 +44,12 @@ Esc  F1 F2 F3 F4 F5          F6 F7 F8 F9 F10 F11
 Tab  Q  W  E  R  T           Y  U  I  O  P   Bksp
 Ctrl A  S  D  F  G           H  J  K  L  ;   '
 Shft Z  X  C  V  B           N  M  ,  .  /   Shft
-       Gui Bksp Space Nav    Sym Enter Space Alt
+       Ctrl Alt Space Gui    Enter Space Alt Ctrl
 ```
 
-`Esc` is a layer-tap: tap for Escape, hold for the system layer. The left knob is volume, and its push is mute. The right knob is page up and page down, and its push is play/pause.
+`Esc` is a layer-tap: tap for Escape, hold for the system layer. Both `Space` thumbs are layer-taps: tap for Space, hold the left one for Nav and the right one for Symbols. The left knob is volume, and its push is mute. The right knob is page up and page down, and its push is play/pause.
 
-Hold `Nav` (left inner thumb) for arrows and a numpad. Hold `Sym` (right inner thumb) for symbols.
+Hold the left `Space` for arrows and a numpad. Hold the right `Space` for symbols. Backspace stays on the key after `P`.
 
 System layer, while holding the top-left key:
 

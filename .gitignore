@@ -1,2 +1,3 @@
 *.zip
 pcbway_production/
+__pycache__/

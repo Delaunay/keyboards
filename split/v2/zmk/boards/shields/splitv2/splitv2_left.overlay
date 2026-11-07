@@ -4,6 +4,7 @@
  */
 
 #include "splitv2.dtsi"
+#include "splitv2_pro_micro.dtsi"
 
 &left_encoder {
     status = "okay";
